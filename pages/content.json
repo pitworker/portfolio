@@ -1,0 +1,203 @@
+{
+  "home": {
+    "title": "Home",
+    "hash": "home"
+  },
+  "about": {
+    "title": "About",
+    "hash": "about"
+  },
+  "work": {
+    "title": "Work",
+    "hash": "work"
+  },
+  "content": [
+    {
+      "title": "Professor Square-1",
+      "hash": "professor-square-1",
+      "tags": {
+        "year": 2016,
+        "course": null,
+        "people": null,
+        "company": null,
+        "skills": [
+          "SolidWorks",
+          "3D printing",
+          "mechanism design"
+        ],
+        "tags": [
+          "product design",
+          "toys",
+          "twisty puzzles"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "carousel",
+                  "content": [
+                    {
+                      "url": "profSQ1Forum1.jpg",
+                      "alt": "solved",
+                      "active": true
+                    },
+                    {
+                      "url": "profSQ1Forum2.jpg",
+                      "alt": "mid-rotation",
+                      "active": false
+                    },
+                    {
+                      "url": "profSQ1Forum3.jpg",
+                      "alt": "partially scrambled",
+                      "active": false
+                    },
+                    {
+                      "url": "profSQ1Forum4.jpg",
+                      "alt": "fully scrambled",
+                      "active": false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                "type": "text",
+                "content": "One of my favorite puzzles for a long time has been the Square-1. It's one of the most mechanically simple twisty puzzles I have encountered, yet it is also far harder to solve than many of the more mechanically complex puzzles are. Interested in making my own puzzle, I decided to make a variant of the Square-1 by taking further inspiration from the Professor Cube (a 5x5x5 variation of the normally 3x3x3 Rubik's Cube). In short, I added two extra layers to straight axis of the puzzle and added four more slices to the offset axis. This produces a puzzle that is very similar looking to the Square-1, but more complex mechanically and also more challenging to solve."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            "type": "column",
+            "width": 6,
+            "content": [
+              {
+                "type": "img",
+                "alt": "mechanism rendering",
+                "url": "profSQ1Render2.JPG"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Offset Tetrahedron",
+      "hash": "offset-tetrahedron",
+      "tags": {
+        "year": 2018,
+        "course": [
+          "Products Lab I",
+          "Intro to Rapid Prototyping Technologies"
+        ],
+        "people": null,
+        "company": null,
+        "skills": [
+          "SolidWorks",
+          "3D printing",
+          "mechanism design"
+        ],
+        "tags": [
+          "product design",
+          "toys",
+          "twisty puzzles"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "carousel",
+                  "content": [
+                    {
+                      "url": "IMG1.JPG",
+                      "alt": "solved",
+                      "active": true
+                    },
+                    {
+                      "url": "IMG3.JPG",
+                      "alt": "mid-rotation",
+                      "active": false
+                    },
+                    {
+                      "url": "IMG5.JPG",
+                      "alt": "partially scrambled",
+                      "active": false
+                    },
+                    {
+                      "url": "IMG7.JPG",
+                      "alt": "fully scrambled",
+                      "active": false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This is the second completed, functional twisty puzzle I've created. It's mechanically based off of the Face-Turning Octahedron. I took the internal mechanism, moved the cuts slightly to add a couple more pieces, then I transformed the octahedron into a tetrahedron. Unsatisfied with what I had created (I'd inadvertantly recreated a Master Tetrahedron), I offset all the cuts in relation to the tetrahedron they were intersecting. This not only made the puzzle more interesting, but it resulted in a puzzle that becomes complete chaos when it is scrambled, which I significantly enjoyed."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "mechanism rendering",
+                  "url": "SW0.PNG"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Creating this puzzle offered a new challenge, as it was my first experience designing a puzzle with fully concealed pieces. With the Professor Square-1, every single part of the puzzle is visible in some way from the outside of the puzzle. In the Offset Tetrahedron, though, there is a significant number of pieces housed within the puzzle that can never be seen when the puzzle is fully assembled. They are vital to the puzzle's function, but they remain invisible. Figuring out how to cut the puzzle apart in a way that preserved these internal pieces was something new for me."
+            }
+          ]
+        },
+        {
+          "type": "row"
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "video",
+                  "url": "https://www.youtube.com/embed/FACJ-QhMtsI"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+  ]
+}
