@@ -48,38 +48,112 @@ function clearPage() {
 
 function generateTitle(t) {
   let e = document.createElement("H1");
-  e.innerText(t);
+  e.innerHTML = t;
 
   let s = document.createElement("SPAN");
   s.style.color = "#ffc600";
   s.innerText("&#9646;");
 
   e.appendChild(s);
+
+  document.getElementById("content").appendChild(e);
 }
 
 function generateTags(t) {
   let r = document.createElement("DIV");
+  r.className = "row";
   r.style["padding-left"] = "15px";
   r.style["padding-right"] = "15px";
 
-  let p = document.createElement("P");
-  //TODO: FINISH THIS METHOD
+  let c = document.createElement("DIV");
+  c.id = "tags";
+
+  let tags = {
+    year: {
+      cat: "Year: ",
+      con: t.year
+    },
+    course: {
+      cat: "Course: ",
+      con: t.course
+    },
+    company: {
+      cat: "Company: ",
+      con: t.company
+    },
+    people: {
+      cat: "People: ",
+      con: t.people
+    },
+    skills: {
+      cat: "Skills: ",
+      con: t.skills
+    },
+    categories: {
+      cat: "Categories: ",
+      con: t.categories
+    }
+  }
+
+  for (let i = 0; i < Object.keys(tags).length; i++) {
+    let tag = tags[Object.keys(tags)[i]];
+
+    if (tag.con != undefined || tag.con != null) {
+      let cat = document.createElement("SPAN");
+
+      let catT = document.createElement("SPAN");
+      catT.id = "tagSection";
+      catT.innerHTML = tag.cat;
+
+      cat.appendChild(catT);
+
+      if (typeof tag.con == "object") {
+        for (let j = 0; j < tag.con.length; j++) {
+          let catC = document.createElement("SPAN");
+          catC.id = tag + "Tag";
+          catC.innerHTML = tag.con[j];
+
+          cat.appendChild(catC);
+
+          if (j + 1 < tag.con.length) {
+            cat.appendChild(document.createTextNode(" "));
+          }
+        }
+      } else {
+        let catC = document.createElement("SPAN");
+        catC.id = tag + "Tag";
+        catC.innerHTML = tag.con;
+
+        cat.appendChild(catC);
+      }
+
+      if (i + 1 < Object.keys(tags).length) {
+        cat.appendChild(document.createTextNode("  "));
+      }
+
+      c.appendChild(cat);
+    }
+  }
+
+  r.appendChild(c)
+
+  document.getElementById("content").appendChild(r);;
 }
 
-function generateContent(c) {
+function generateContent(c,n) {
   for (let i = 0; i < c.length; i++) {
     if (c[i].type == "row") {
-      generateRow(c[i].content);
+      n.appendChild(generateRow(c[i].content));
     } else if (c[i].type == "column") {
-      generateColumn(c[i].width, c[i].content);
+      n.appendChild(generateColumn(c[i].width, c[i].content));
     } else if (c[i].type == "carousel") {
-      generateCarousel(c[i].content);
+      n.appendChild(generateCarousel(c[i].content));
     } else if (c[i].type == "text") {
-      generateText(c[i].content);
+      n.appendChild(generateText(c[i].content));
     } else if (c[i].type == "img") {
-      generateImg(c[i].alt, c[i].url);
+      n.appendChild(generateImg(c[i].alt, c[i].url));
     } else if (c[i].type == "video") {
-      generateVideo(c[i].url);
+      n.appendChild(generateVideo(c[i].url));
     } else {
       console.log("type " + c[i].type + " is unrecognized");
     }
@@ -89,7 +163,7 @@ function generateContent(c) {
 function generateRow(c) {
   let e = document.createElement("DIV");
   e.className = "row";
-  e.appendChild(generateContent(c));
+  generateContent(c,e);
   return e;
 }
 
@@ -97,7 +171,7 @@ function generateColumn(w,c) {
   let e = document.createElement("DIV");
   e.className = "col-md-" + w + " col-12";
   e.style["padding-bottom"] = "30px";
-  e.appendChild(generateContent(c));
+  generateContent(c,e);
   return e;
 }
 
@@ -132,7 +206,7 @@ function generateCarousel(c) {
 
 function generateText(c) {
   let e = document.createElement("P");
-  e.innerText = c;
+  e.innerHTML = c;
   return e;
 }
 
@@ -176,7 +250,7 @@ function generateCopyright() {
 
   let p = document.createElement("P");
   p.className("text-center");
-  p.innerText = "&copy;" + CONTENT.copyright;
+  p.innerHTML = "&copy;" + CONTENT.copyright;
 
   e.appendChild(p);
   return e;
@@ -186,7 +260,7 @@ function populateContentPage(p) {
   let c = document.getElementById("content");
   c.appendChild(generateTitle(p.title));
   c.appendChild(generateTags(p.tags));
-  c.appendChild(generateContent(p.content));
+  generateContent(p.content, c);
   c.appendChild(generateCopyright());
 }
 
