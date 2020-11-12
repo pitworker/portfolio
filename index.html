@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Black|Roboto" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Sebastian CSS -->
+    <link rel="stylesheet" type="text/css" href="src/style.css"/>
+
+    <link rel= "icon" media="all" type="image/x-icon" href="http://sebastiancarpenter.xyz/images/icon.ico"/>
+    <link rel= "icon" media="all" type="image/vnd.microsoft.icon" href="http://sebastiancarpenter.xyz/images/icon.ico"/>
+
+    <title>Sebastian Carpenter</title>
+  </head>
+  <body onhashchange="populate()">
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="link">
+        <a href="#about">About</a>
+        <a href="../design.html">Design</a>
+        <a href="../computer.html">Code</a>
+        <a href="../art.html">Art</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class = "row align-items-bottom" id="topBar">
+        <h2 class="col-10 justify-content-between text-left"><a href="../home.html">Sebastian Carpenter.</a></h2>
+        <h3 class="col-2 justify-content-between text-right"><a href="javascript:openNav()">&#8803;</a></h3>
+      </div>
+      <div id="content">
+        <!-- js generated page content goes here -->
+      </div>
+    </div>
+    <script src="src/sideNav.js"></script>
+    <script src="src/makePage.js"></script>
+  </body>
+</html>
