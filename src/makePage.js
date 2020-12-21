@@ -12,11 +12,11 @@ function loadJSON(callback) {
 }
 
 function init() {
-    let content;
-    loadJSON(function(response) {
-        content = JSON.parse(response);
-    });
-    return content;
+  let content;
+  loadJSON(function(response) {
+    content = JSON.parse(response);
+  });
+  return content;
 }
 
 const CONTENT = init();
@@ -42,8 +42,8 @@ function findHash(h) {
 function clearPage() {
   let c = document.getElementById("content");
   if (c != null) {
-    while(c.hasChildNodes()) {
-      c.removeChild(c.firstChild);
+    while (c.hasChildNodes()) {
+      c.removeChild(c.lastChild);
     }
   }
 }
@@ -68,6 +68,7 @@ function generateTags(t,n) {
   r.className = "row";
   r.style["padding-left"] = "15px";
   r.style["padding-right"] = "15px";
+	r.style["padding-bottom"] = "30px";
 
   let c = document.createElement("DIV");
   c.id = "tags";
@@ -246,17 +247,18 @@ function generateVideo(u,n) {
 function generateCopyright(n) {
   let e = document.createElement("DIV");
   e.className = "row";
-  e.appendChild(document.createElement("BR"));
-  e.appendChild(document.createElement("BR"));
-  e.appendChild(document.createElement("BR"));
-  e.appendChild(document.createElement("BR"));
-  e.appendChild(document.createElement("BR"));
+
+	let c = document.createElement("DIV");
+  c.className = "col-12";
+  c.style["padding-bottom"] = "30px";
+	c.style["padding-top"] = "60px";
 
   let p = document.createElement("P");
   p.className = "text-center";
-  p.innerHTML = "&copy;" + CONTENT.copyright;
-
-  e.appendChild(p);
+  p.innerHTML = "&copy;" + CONTENT.copyright;  
+  
+  c.appendChild(p);
+	e.appendChild(c);
   n.appendChild(e);
 }
 
