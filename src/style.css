@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  font-family: 'Archivo Black', Sans-Serif;
+  font-family: 'Space Mono', Mono;
   color: #000000;
   font-weight: 800;
   font-size: 38pt;
@@ -22,9 +22,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Archivo', Sans-Serif;
+  font-family: 'Space Mono', Mono;
   color: #000000;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 28pt;
   line-height: 28pt;
   float: left;
@@ -32,9 +32,9 @@ h2 {
 }
 
 h3 {
-  font-family: 'Archivo', Sans-Serif;
+  font-family: 'Space Mono', Mono;
   color: #000000;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 28pt;
   line-height: 28pt;
   float: right;
@@ -42,7 +42,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Archivo Black', Sans-Serif;
+  font-family: 'Space Mono', Mono;
   color: #000000;
   font-weight: 800;
   font-size: 12pt;
@@ -51,7 +51,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Archivo Black', Sans-Serif;
+  font-family: 'Space Mono', Mono;
   color: #000000;
   font-weight: 800;
   font-size: 24pt;
@@ -62,16 +62,16 @@ h5 {
 }
 
 h6 {
-  font-family: 'Archivo Black', Sans-Serif;
+  font-family: 'Space Mono', Mono;
   color: #000000;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 12pt;
   line-height: 18pt;
   text-align: left;
 }
 
 p {
-  font-family: 'Archivo', Sans-Serif;
+  font-family: 'IBM Plex Sans', Sans-Serif;
   color: #000000;
   font-weight: 400;
   font-size: 12pt;
@@ -160,12 +160,151 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 }
 
 #tags {
-  font-family: 'Archivo', Sans-Serif;
-  color: #fc532d;
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+#YearSection {
+  /*white-space: nowrap;*/
+}
+
+#YearTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
   font-weight: 400;
   font-size: 12pt;
   line-height: 18pt;
   text-align: left;
+  white-space: nowrap;
+}
+
+#YearTag a {
+  background-color: #fc532d;
+  color: #ffffff;
+}
+
+#YearTag a:hover {
+  background-color: transparent;
+  color: #fc532d;
+}
+
+#CourseSection {
+  /*white-space: nowrap;*/
+}
+
+#CourseTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+}
+
+#CourseTag a {
+  background-color: #04db85;
+  color: #ffffff;
+}
+
+#CourseTag a:hover {
+  background-color: transparent;
+  color: #04db85;
+}
+
+#CompanySection {
+  /*white-space: nowrap;*/
+}
+
+#CompanyTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+}
+
+#CompanyTag a {
+  background-color: #a955fc;
+  color: #ffffff;
+}
+
+#CompanyTag a:hover {
+  background-color: transparent;
+  color: #a955fc;
+}
+
+#PeopleSection {
+  /*white-space: nowrap;*/
+}
+
+#PeopleTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+}
+
+#PeopleTag a {
+  background-color: #828282;
+  color: #ffffff;
+}
+
+#PeopleTag a:hover {
+  background-color: transparent;
+  color: #828282;
+}
+  
+#SkillsSection {
+  /*white-space: nowrap;*/
+}
+
+#SkillsTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+}
+
+#SkillsTag a {
+  background-color: #11a0ff;
+  color: #ffffff;
+}
+
+#SkillsTag a:hover {
+  background-color: transparent;
+  color: #11a0ff;
+}
+
+#CategoriesSection {
+  /*white-space: nowrap;*/
+}
+
+#CategoriesTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+}
+
+#CategoriesTag a {
+  background-color: #ffc600;
+  color: #ffffff;
+}
+
+#CategoriesTag a:hover {
+  background-color: transparent;
+  color: #ffc600;
 }
 
 /*REGARDING THE TOP BAR*/
@@ -194,7 +333,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
-  font-family: "Archivo Black", Sans-Serif;
+  font-family: "Space Mono", Mono;
   font-weight: 900;
 }
 
@@ -313,7 +452,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 
 .imgText {
   color: #000000;
-  font-family: "Archivo Black", Sans-Serif;
+  font-family: "Space Mono", Mono;
   font-size: 25pt;
   position: absolute;
   top: 50%;

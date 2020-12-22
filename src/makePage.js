@@ -75,27 +75,27 @@ function generateTags(t,n) {
 
   let tags = {
     year: {
-      cat: "Year: ",
+      cat: "Year",
       con: t.year
     },
     course: {
-      cat: "Course: ",
+      cat: "Course",
       con: t.course
     },
     company: {
-      cat: "Company: ",
+      cat: "Company",
       con: t.company
     },
     people: {
-      cat: "People: ",
+      cat: "People",
       con: t.people
     },
     skills: {
-      cat: "Skills: ",
+      cat: "Skills",
       con: t.skills
     },
     categories: {
-      cat: "Categories: ",
+      cat: "Categories",
       con: t.categories
     }
   }
@@ -105,19 +105,24 @@ function generateTags(t,n) {
 
     if (tag.con != undefined || tag.con != null) {
       let cat = document.createElement("SPAN");
-
-      let catT = document.createElement("SPAN");
-      catT.id = "tagSection";
-      catT.innerHTML = tag.cat;
+			cat.id = tag.cat + "Section";
+			
+			let catT = document.createElement("SPAN");
+      catT.id = "tagTitle";
+      catT.innerHTML = tag.cat + ": ";
 
       cat.appendChild(catT);
 
       if (typeof tag.con == "object") {
         for (let j = 0; j < tag.con.length; j++) {
           let catC = document.createElement("SPAN");
-          catC.id = tag + "Tag";
-          catC.innerHTML = tag.con[j];
+					catC.id = tag.cat + "Tag";
 
+					let lnk = document.createElement("A");
+					lnk.href = "index.html#" + tag.con[j].replace(/ /g, '-');
+					lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
+					
+          catC.appendChild(lnk);
           cat.appendChild(catC);
 
           if (j + 1 < tag.con.length) {
@@ -126,9 +131,13 @@ function generateTags(t,n) {
         }
       } else {
         let catC = document.createElement("SPAN");
-        catC.id = tag + "Tag";
-        catC.innerHTML = tag.con;
-
+        catC.id = tag.cat + "Tag";
+        let lnk = document.createElement("A");
+				lnk.href = "index.html#" +
+					(typeof tag.con == "string" ? tag.con : tag.con.toString()).replace(/ /g, '-');
+				lnk.innerHTML = "&nbsp;" + tag.con + "&nbsp;";
+				
+        catC.appendChild(lnk);
         cat.appendChild(catC);
       }
 
