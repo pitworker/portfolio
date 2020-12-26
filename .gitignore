@@ -5,5 +5,8 @@ src/content.json~
 src/makePage.js~
 src/style.css~
 src/sideNav.js~
+src/makeTopBar.js~
+src/makeIndex.js~
 index.html~
 work.html~
+about.html~

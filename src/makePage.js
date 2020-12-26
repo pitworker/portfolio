@@ -1,38 +1,31 @@
+let content;
+
+let pageTitle;
+
 // LOAD THE PAGE CONTENT JSON
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open("GET", "src/content.json", false);
+  xobj.open("GET", "src/content.json", true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
     }
   };
   xobj.send(null);
+	console.log("loadingJSON");
 }
-
-function init() {
-  let content;
-  loadJSON(function(response) {
-    content = JSON.parse(response);
-  });
-  return content;
-}
-
-const CONTENT = init();
-
-let pageTitle;
 
 function findHash(h) {
   if (h == "#home" || h == "") {
-    return CONTENT.home;
+    return content.home;
   } else if (h == "#about") {
-    return CONTENT.about;
+    return content.about;
   } else if (h == "#work") {
-    return CONTENT.work;
+    return content.work;
   } else {
-    for (let i = 0; i < CONTENT.content.length; i++) {
-      let c = CONTENT.content[i];
+    for (let i = 0; i < content.content.length; i++) {
+      let c = content.content[i];
       if ("#" + c.hash == h) return c;
     }
     return null;
@@ -264,7 +257,7 @@ function generateCopyright(n) {
 
   let p = document.createElement("P");
   p.className = "text-center";
-  p.innerHTML = "&copy;" + CONTENT.copyright;  
+  p.innerHTML = "&copy;" + content.copyright;  
   
   c.appendChild(p);
 	e.appendChild(c);
@@ -297,4 +290,11 @@ function populate() {
   }
 }
 
-populate();
+function init() {
+  loadJSON(function(response) {
+    content = JSON.parse(response);
+		populate();
+  });
+}
+
+init();

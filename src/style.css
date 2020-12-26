@@ -206,13 +206,13 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 }
 
 #CourseTag a {
-  background-color: #04db85;
+  background-color: #ff8402;
   color: #ffffff;
 }
 
 #CourseTag a:hover {
   background-color: transparent;
-  color: #04db85;
+  color: #ff8402;
 }
 
 #CompanySection {
@@ -298,13 +298,13 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 }
 
 #CategoriesTag a {
-  background-color: #ffc600;
+  background-color: #04db85;
   color: #ffffff;
 }
 
 #CategoriesTag a:hover {
   background-color: transparent;
-  color: #ffc600;
+  color: #04db85;
 }
 
 /*REGARDING THE TOP BAR*/
