@@ -182,14 +182,14 @@
               ]
             },
             {
-							"type": "column",
-							"width": 6,
-							"content": [
-								{
-									"type": "text",
-									"content": "Creating this puzzle offered a new challenge, as it was my first experience designing a puzzle with fully concealed pieces. With the Professor Square-1, every single part of the puzzle is visible in some way from the outside of the puzzle. In the Offset Tetrahedron, though, there is a significant number of pieces housed within the puzzle that can never be seen when the puzzle is fully assembled. They are vital to the puzzle's function, but they remain invisible. Figuring out how to cut the puzzle apart in a way that preserved these internal pieces was something new for me."
-								}
-							]
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Creating this puzzle offered a new challenge, as it was my first experience designing a puzzle with fully concealed pieces. With the Professor Square-1, every single part of the puzzle is visible in some way from the outside of the puzzle. In the Offset Tetrahedron, though, there is a significant number of pieces housed within the puzzle that can never be seen when the puzzle is fully assembled. They are vital to the puzzle's function, but they remain invisible. Figuring out how to cut the puzzle apart in a way that preserved these internal pieces was something new for me."
+                }
+              ]
             }
           ]
         },

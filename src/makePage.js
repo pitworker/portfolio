@@ -13,7 +13,7 @@ function loadJSON(callback) {
     }
   };
   xobj.send(null);
-	console.log("loadingJSON");
+  console.log("loadingJSON");
 }
 
 function findHash(h) {
@@ -61,7 +61,7 @@ function generateTags(t,n) {
   r.className = "row";
   r.style["padding-left"] = "15px";
   r.style["padding-right"] = "15px";
-	r.style["padding-bottom"] = "30px";
+  r.style["padding-bottom"] = "30px";
 
   let c = document.createElement("DIV");
   c.id = "tags";
@@ -88,7 +88,7 @@ function generateTags(t,n) {
       con: t.skills
     },
     categories: {
-      cat: "Categories",
+      cat: "Tags",
       con: t.categories
     }
   }
@@ -96,11 +96,11 @@ function generateTags(t,n) {
   for (let i = 0; i < Object.keys(tags).length; i++) {
     let tag = tags[Object.keys(tags)[i]];
 
-    if (tag.con != undefined || tag.con != null) {
+    if (tag.con != undefined && tag.con != null) {
       let cat = document.createElement("SPAN");
-			cat.id = tag.cat + "Section";
-			
-			let catT = document.createElement("SPAN");
+      cat.id = tag.cat + "Section";
+      
+      let catT = document.createElement("SPAN");
       catT.id = "tagTitle";
       catT.innerHTML = tag.cat + ": ";
 
@@ -109,12 +109,12 @@ function generateTags(t,n) {
       if (typeof tag.con == "object") {
         for (let j = 0; j < tag.con.length; j++) {
           let catC = document.createElement("SPAN");
-					catC.id = tag.cat + "Tag";
+          catC.id = tag.cat + "Tag";
 
-					let lnk = document.createElement("A");
-					lnk.href = "index.html#" + tag.con[j].replace(/ /g, '-');
-					lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
-					
+          let lnk = document.createElement("A");
+          lnk.href = "index.html#" + tag.con[j].replace(/ /g, '-');
+          lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
+          
           catC.appendChild(lnk);
           cat.appendChild(catC);
 
@@ -126,10 +126,10 @@ function generateTags(t,n) {
         let catC = document.createElement("SPAN");
         catC.id = tag.cat + "Tag";
         let lnk = document.createElement("A");
-				lnk.href = "index.html#" +
-					(typeof tag.con == "string" ? tag.con : tag.con.toString()).replace(/ /g, '-');
-				lnk.innerHTML = "&nbsp;" + tag.con + "&nbsp;";
-				
+        lnk.href = "index.html#" +
+          (typeof tag.con == "string" ? tag.con : tag.con.toString()).replace(/ /g, '-');
+        lnk.innerHTML = "&nbsp;" + tag.con + "&nbsp;";
+        
         catC.appendChild(lnk);
         cat.appendChild(catC);
       }
@@ -250,17 +250,17 @@ function generateCopyright(n) {
   let e = document.createElement("DIV");
   e.className = "row";
 
-	let c = document.createElement("DIV");
+  let c = document.createElement("DIV");
   c.className = "col-12";
   c.style["padding-bottom"] = "30px";
-	c.style["padding-top"] = "60px";
+  c.style["padding-top"] = "60px";
 
   let p = document.createElement("P");
   p.className = "text-center";
   p.innerHTML = "&copy;" + content.copyright;  
   
   c.appendChild(p);
-	e.appendChild(c);
+  e.appendChild(c);
   n.appendChild(e);
 }
 
@@ -278,22 +278,14 @@ function populate() {
 
   if (page != null) {
     clearPage();
-    if (page.hash == "home") {
-
-    } else if (page.hash == "about") {
-
-    } else if (page.hash == "work") {
-
-    } else {
-      populateContentPage(page);
-    }
+    populateContentPage(page);
   }
 }
 
 function init() {
   loadJSON(function(response) {
     content = JSON.parse(response);
-		populate();
+    populate();
   });
 }
 

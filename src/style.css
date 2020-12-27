@@ -160,13 +160,40 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 }
 
 #tags {
-  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-family: 'Space Mono', Mono;
   color: #000000;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12pt;
   line-height: 18pt;
   text-align: left;
   white-space: pre-wrap;
+}
+
+#tagsTitle {
+  font-family: 'Space Mono', Mono;
+  color: #000000;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+}
+
+#tagsMod {
+  font-family: 'Space Mono', Mono;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+}
+
+#tagsMod a {
+  background-color: transparent;
+  color: #000000;
+}
+
+#tagsMod a:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 #YearSection {
@@ -243,7 +270,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 }
 
 #PeopleTag {
-  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-family : 'IBM Plex Sans', Sans-Serif;
   font-weight: 400;
   font-size: 12pt;
   line-height: 18pt;
@@ -284,11 +311,11 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   color: #11a0ff;
 }
 
-#CategoriesSection {
+#TagsSection {
   /*white-space: nowrap;*/
 }
 
-#CategoriesTag {
+#TagsTag {
   font-family: 'IBM Plex Sans', Sans-Serif;
   font-weight: 400;
   font-size: 12pt;
@@ -297,12 +324,12 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   white-space: nowrap;
 }
 
-#CategoriesTag a {
+#TagsTag a {
   background-color: #04db85;
   color: #ffffff;
 }
 
-#CategoriesTag a:hover {
+#TagsTag a:hover {
   background-color: transparent;
   color: #04db85;
 }

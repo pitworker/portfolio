@@ -1,42 +1,111 @@
+let content;
+
+let pageTitle;
+
 // LOAD THE PAGE CONTENT JSON
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open("GET", "src/content.json", false);
+  xobj.open("GET", "src/content.json", true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
     }
   };
   xobj.send(null);
+  console.log("loadingJSON");
 }
-
-function init() {
-  let content;
-  loadJSON(function(response) {
-    content = JSON.parse(response);
-  });
-  return content;
-}
-
-const CONTENT = init();
-
-let pageTitle;
 
 function findHash(h) {
   if (h == "#home" || h == "") {
-    return CONTENT.home;
+    return content.home;
   } else if (h == "#about") {
-    return CONTENT.about;
+    return content.about;
   } else if (h == "#work") {
-    return CONTENT.work;
+    return content.work;
   } else {
-    for (let i = 0; i < CONTENT.content.length; i++) {
-      let c = CONTENT.content[i];
+    for (let i = 0; i < content.content.length; i++) {
+      let c = content.content[i];
       if ("#" + c.hash == h) return c;
     }
     return null;
   }
+}
+
+function listAllTags() {
+  let tagList = {
+    year: [],
+    course: [],
+    people: [],
+    company: [],
+    skills: [],
+    categories: []
+  };
+  
+  for (let i = 0; i < content.content.length; i++) {
+    let c = content.content[i];
+    
+    for (t in c.tags) {
+      if (t == "year" && !tagList.year.includes(c.tags.year)) {
+        tagList.year.push(c.tags.year.toString());
+      } else if (t != "year" && c.tags[t] != null) {
+        for (let j = 0; j < c.tags[t].length; j++) {
+          tagList[t].push(c.tags[t][j]);
+        }
+      }
+    }
+  }
+  
+  for (t in tagList) {
+    tagList[t].sort();
+  }
+  
+  return tagList;
+}
+
+function parseTags(h) {
+  let tags = [];
+  let subH = h.substring(1);
+  let i = subH.indexOf('+');
+  while (i > 0) {
+    tags.push(subH.substring(0,i).replace(/-/g, ' '));
+    subH = subH.substring(i + 1);
+    i = subH.indexOf('+');
+  }
+  tags.push(subH.replace(/-/g, ' '));
+
+  tags.sort();
+  
+  return tags;
+}
+
+function labelTags(t,allTags) {
+  let labelT = {
+    year: [],
+    course: [],
+    people: [],
+    company: [],
+    skills: [],
+    categories: []
+  }
+
+  for (let i = 0; i < t.length; i++) {
+    let foundTag = false;
+
+    for (j in allTags) {
+      if (allTags[j].includes(t[i])) {
+        labelT[j].push(t[i]);
+        foundTag = true;
+        break;
+      }
+    }
+
+    if (!foundTag) {
+      console.log("INVALID TAG: " + t[i]);
+    }
+  }
+  
+  return labelT;
 }
 
 function clearPage() {
@@ -48,31 +117,33 @@ function clearPage() {
   }
 }
 
-function generateTitle(t,n) {
-  let e = document.createElement("H1");
-  e.innerHTML = t;
-
-  let s = document.createElement("SPAN");
-  s.style.color = "#ffc600";
-  s.innerHTML = "&#9646;";
-
-  e.appendChild(s);
-
-  document.getElementById("content").appendChild(e);
-
-  n.appendChild(e);
-}
-
 function generateTags(t,n) {
   let r = document.createElement("DIV");
   r.className = "row";
+  r.style["padding-top"] = "30px";
   r.style["padding-left"] = "15px";
   r.style["padding-right"] = "15px";
-	r.style["padding-bottom"] = "30px";
+  r.style["padding-bottom"] = "30px";
 
   let c = document.createElement("DIV");
   c.id = "tags";
 
+  let f = document.createElement("SPAN");
+  f.id = "tagsMod";
+  
+  let fBtn = document.createElement("A");
+  fBtn.href = "javascript:openTags()";
+  fBtn.innerHTML = "&#8942; Filters ";
+
+  f.appendChild(fBtn);
+  c.appendChild(f);
+  
+  /*let fTitle = document.createElement("SPAN");
+  fTitle.id = "tagsTitle";
+  fTitle.innerText =  " Filters ";
+
+  c.appendChild(fTitle);*/
+  
   let tags = {
     year: {
       cat: "Year",
@@ -95,7 +166,7 @@ function generateTags(t,n) {
       con: t.skills
     },
     categories: {
-      cat: "Categories",
+      cat: "Tags",
       con: t.categories
     }
   }
@@ -103,198 +174,79 @@ function generateTags(t,n) {
   for (let i = 0; i < Object.keys(tags).length; i++) {
     let tag = tags[Object.keys(tags)[i]];
 
-    if (tag.con != undefined || tag.con != null) {
+    if (tag.con != undefined && tag.con != null && tag.con.length > 0) {
       let cat = document.createElement("SPAN");
-			cat.id = tag.cat + "Section";
-			
-			let catT = document.createElement("SPAN");
-      catT.id = "tagTitle";
-      catT.innerHTML = tag.cat + ": ";
-
-      cat.appendChild(catT);
-
-      if (typeof tag.con == "object") {
-        for (let j = 0; j < tag.con.length; j++) {
-          let catC = document.createElement("SPAN");
-					catC.id = tag.cat + "Tag";
-
-					let lnk = document.createElement("A");
-					lnk.href = "index.html#" + tag.con[j].replace(/ /g, '-');
-					lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
-					
-          catC.appendChild(lnk);
-          cat.appendChild(catC);
-
-          if (j + 1 < tag.con.length) {
-            cat.appendChild(document.createTextNode(" "));
-          }
-        }
-      } else {
+      cat.id = tag.cat + "Section";
+      
+      for (let j = 0; j < tag.con.length; j++) {
         let catC = document.createElement("SPAN");
         catC.id = tag.cat + "Tag";
+        
         let lnk = document.createElement("A");
-				lnk.href = "index.html#" +
-					(typeof tag.con == "string" ? tag.con : tag.con.toString()).replace(/ /g, '-');
-				lnk.innerHTML = "&nbsp;" + tag.con + "&nbsp;";
-				
+        lnk.href = "index.html#" + tag.con[j].replace(/ /g, '-');
+        lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
+        
         catC.appendChild(lnk);
         cat.appendChild(catC);
+        
+        if (j + 1 < tag.con.length) {
+          cat.appendChild(document.createTextNode(" "));
+        }
       }
 
       if (i + 1 < Object.keys(tags).length) {
-        cat.appendChild(document.createTextNode("  "));
+        cat.appendChild(document.createTextNode(" "));
       }
 
       c.appendChild(cat);
     }
   }
 
-  r.appendChild(c)
+  r.appendChild(c);
 
-  n.appendChild(r);;
-}
-
-function generateContent(c,n) {
-  for (let i = 0; i < c.length; i++) {
-    if (c[i].type == "row") {
-      generateRow(c[i].content, n);
-    } else if (c[i].type == "column") {
-      generateColumn(c[i].width, c[i].content, n);
-    } else if (c[i].type == "carousel") {
-      generateCarousel(c[i].content, n);
-    } else if (c[i].type == "text") {
-      generateText(c[i].content, n);
-    } else if (c[i].type == "img") {
-      generateImg(c[i].alt, c[i].url, n);
-    } else if (c[i].type == "video") {
-      generateVideo(c[i].url, n);
-    } else {
-      console.log("type " + c[i].type + " is unrecognized");
-    }
-  }
-}
-
-function generateRow(c,n) {
-  let e = document.createElement("DIV");
-  e.className = "row";
-  generateContent(c,e);
-  n.appendChild(e);
-}
-
-function generateColumn(w,c,n) {
-  let e = document.createElement("DIV");
-  e.className = "col-md-" + w + " col-12";
-  e.style["padding-bottom"] = "30px";
-  generateContent(c,e);
-  n.appendChild(e);
-}
-
-function generateCarousel(c,n) {
-  let e = document.createElement("DIV");
-  e.className = "carousel slide";
-  e.setAttribute("id", "carousel1");
-  e.setAttribute("data-ride", "carousel");
-  e.setAttribute("data-interval", "false");
-
-  let inner = document.createElement("DIV");
-  inner.className = "carousel-inner";
-
-  for (let i = 0; i < c.length; i++) {
-    let img = document.createElement("DIV");
-    if (i == 0) img.className = "carousel-item active";
-    else img.className = "carousel-item";
-
-    let imgChild = document.createElement("IMG");
-    imgChild.className = "img-fluid";
-    imgChild.setAttribute("src", c[i].url);
-    imgChild.setAttribute("alt", c[i].alt);
-
-    img.appendChild(imgChild);
-    inner.appendChild(img);
-  }
-
-  e.appendChild(inner);
-
-  n.appendChild(e);
-}
-
-function generateText(c,n) {
-  let e = document.createElement("P");
-  e.innerHTML = c;
-  n.appendChild(e);
-}
-
-function generateImg(a,u,n) {
-  let e = document.createElement("IMG");
-  e.className = "img-fluid";
-  e.setAttribute("src", u);
-  e.setAttribute("alt", a);
-  n.appendChild(e);
-}
-
-function generateVideo(u,n) {
-  let e = document.createElement("DIV");
-  e.style.position = "relative";
-  e.style.overflow = "hidden";
-  e.style["padding-bottom"] = "56.25%";
-
-  let i = document.createElement("IFRAME");
-  i.style.position = "absolute";
-  i.style.top = "0";
-  i.style.left = "0";
-  i.style.width = "100%";
-  i.style.height = "100%";
-  i.style.border = "0";
-  i.setAttribute("src", u);
-  i.setAttribute("frameborder", "0");
-  i.setAttributeNode(document.createAttribute("allowfullscreen"));
-
-  e.appendChild(i);
-  n.appendChild(e);
+  n.appendChild(r);
 }
 
 function generateCopyright(n) {
   let e = document.createElement("DIV");
   e.className = "row";
 
-	let c = document.createElement("DIV");
+  let c = document.createElement("DIV");
   c.className = "col-12";
   c.style["padding-bottom"] = "30px";
-	c.style["padding-top"] = "60px";
+  c.style["padding-top"] = "60px";
 
   let p = document.createElement("P");
   p.className = "text-center";
-  p.innerHTML = "&copy;" + CONTENT.copyright;  
+  p.innerHTML = "&copy;" + content.copyright;  
   
   c.appendChild(p);
-	e.appendChild(c);
+  e.appendChild(c);
   n.appendChild(e);
 }
 
-function populateContentPage(p) {
+function populateIndexPage(t, allTags) {
   let c = document.getElementById("content");
-  generateTitle(p.title,c);
-  generateTags(p.tags,c);
-  generateContent(p.content, c);
+  generateTags(labelTags(t,allTags),c);
   generateCopyright(c);
 }
 
 function populate() {
   let hash = location.hash;
-  let page = findHash(hash);
-
-  if (page != null) {
+  let tags = parseTags(hash);
+  let allTags = listAllTags();
+  
+  if (tags != null && tags != []) {
     clearPage();
-    if (page.hash == "home") {
-
-    } else if (page.hash == "about") {
-
-    } else if (page.hash == "work") {
-
-    } else {
-      populateContentPage(page);
-    }
+    populateIndexPage(tags,allTags);
   }
 }
 
-populate();
+function init() {
+  loadJSON(function(response) {
+    content = JSON.parse(response);
+    populate();
+  });
+}
+
+init();
