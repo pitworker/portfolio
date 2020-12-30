@@ -159,8 +159,85 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   display: inline-block;
 }
 
+/*TAGS! :)*/
+#sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  font-family: "Space Mono", Mono;
+  font-weight: 900;
+}
+
+#sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+#sideNav a:hover {
+  color: #ffffff;
+}
+
+#link a:hover {
+  color: #000000;
+  background-color: #ffffff;
+  outline-style: solid;
+  outline-color: #000000;
+  outline-width: 3px;
+}
+
+#sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding: 0;
+  border: none;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#sideNav .closebtn:hover {
+  color: #ffc600;
+}
+
+#main {
+  transition: margin-right .3s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  #sideNav {padding-top: 15px;}
+  #sideNav a {font-size: 18px;}
+}
+
+#indexTags {
+  background-color: #ffffff;
+  /*border-bottom-style: solid;
+  border-bottom-color: #000000;
+  border-bottom-width: 3px;*/
+  padding-top: 15px;
+  padding-bottom: 13px;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
 #tags {
-  font-family: 'Space Mono', Mono;
+  font-family: 'IBM Plex Sans', Sans-Serif;
   color: #000000;
   font-weight: 400;
   font-size: 12pt;
@@ -170,16 +247,16 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 }
 
 #tagsTitle {
-  font-family: 'Space Mono', Mono;
+  font-family: 'IBM Plex Sans', Sans-Serif;
   color: #000000;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12pt;
   line-height: 18pt;
   text-align: left;
 }
 
 #tagsMod {
-  font-family: 'Space Mono', Mono;
+  font-family: 'IBM Plex Sans', Sans-Serif;
   font-weight: 400;
   font-size: 12pt;
   line-height: 18pt;
@@ -346,61 +423,6 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-}
-
-/*REGARDING THE SIDE NAV*/
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  background-color: #ffc600;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-  font-family: "Space Mono", Mono;
-  font-weight: 900;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000000;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #ffffff;
-}
-
-.link a:hover {
-  color: #000000;
-  background-color: #ffffff;
-  outline-style: solid;
-  outline-color: #000000;
-  outline-width: 3px;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-right .3s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 /*REGARDING THE SOCIAL BAR*/
