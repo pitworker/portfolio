@@ -46,13 +46,14 @@ function listAllTags() {
     let c = content.content[i];
     
     for (let t in c.tags) {
-      if (t == "year" && tagList.year.indexOf(c.tags.year) < 0) {
+      if (t == "year" &&
+	  tagList.year.indexOf(c.tags.year.toString()) < 0) {
         tagList.year.push(c.tags.year.toString());
       } else if (t != "year" && c.tags[t] != null) {
         for (let j = 0; j < c.tags[t].length; j++) {
           if (tagList[t].indexOf(c.tags[t][j]) < 0) {
-	    tagList[t].push(c.tags[t][j]);
-	  }
+            tagList[t].push(c.tags[t][j]);
+          }
         }
       }
     }
@@ -146,6 +147,47 @@ function addTag(t) {
   console.log("addTag " + t);
 }
 
+function getTaggedWork(t) {
+  let work = [];
+  for (let i = 0; i < content.content.length; i++) {
+    let included = false;
+    let w = {
+      title: content.content[i].title,
+      hash: content.content[i].hash,
+      rank: content.content[i].rank,
+      size: content.content[i].size,
+      tags: content.content[i].tags
+    };
+    for (let tagSection in t) {
+      if (t[tagSection].length == 0) {
+        included = true;
+      } else {
+        let found = false;
+        for (let i = 0; i < t[tagSection].length; i++) {
+          console.log(w.tags[tagSection]);
+          if (w.tags[tagSection] != null &&
+              ((typeof w.tags[tagSection] == "number" &&
+                w.tags[tagSection] == t[tagSection][i]) ||
+               (typeof w.tags[tagSection] == "object" &&
+                 w.tags[tagSection].indexOf(t[tagSection][i]) >= 0))) {
+            included = true;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          included = false;
+          break;
+        }
+      }
+    }
+    if (included) {
+      work.push(w);
+    }
+  }
+  return work;
+}
+
 function clearPage() {
   let c = document.getElementById("content");
   let m = document.getElementById("sideNav");
@@ -181,7 +223,7 @@ function generateTagList(tags,allTags,c) {
   };
 
   for (let t in tagSections) {
-    tagSections[t].id = t + "Menu";
+    tagSections[t].id = "tagsMenuTitle";
     let title = document.createTextNode(
       (t == "categories") ? "Tags" :
         t.charAt(0).toUpperCase() + t.slice(1));
@@ -190,6 +232,7 @@ function generateTagList(tags,allTags,c) {
 
     for (let i = 0; i < allTags[t].length; i++) {
       let btn = document.createElement("BUTTON");
+      btn.className = "tagButton";
       if (tags[t].indexOf(allTags[t][i]) >= 0) {
         btn.id = t + "Selected";
         btn.onclick = function() {removeTag(allTags[t][i]);};
@@ -209,21 +252,22 @@ function generateTagList(tags,allTags,c) {
 
 function generateTags(t,n) {
   let r = document.createElement("DIV");
-  r.className = "row";
+  r.className = "row align-items-bottom";
   r.style["padding-top"] = "30px";
   r.style["padding-left"] = "15px";
   r.style["padding-right"] = "15px";
   r.style["padding-bottom"] = "30px";
 
   let c = document.createElement("DIV");
-  c.id = "tags";
+  c.id = "indexTags";
 
   let f = document.createElement("SPAN");
   f.id = "tagsMod";
   
   let fBtn = document.createElement("BUTTON");
+  fBtn.id = "tagsButton";
   fBtn.onclick = function() {openTags();};
-  fBtn.innerHTML = "&nbsp;&#8942; Filters&nbsp;";
+  fBtn.innerHTML = "&nbsp;&#8942; Filter&nbsp;";
 
   f.appendChild(fBtn);
   c.appendChild(f);
@@ -266,12 +310,7 @@ function generateTags(t,n) {
       for (let j = 0; j < tag.con.length; j++) {
         let catC = document.createElement("SPAN");
         catC.id = tag.cat + "Tag";
-        
-        let lnk = document.createElement("A");
-        lnk.href = "index.html#" + tag.con[j].replace(/ /g, '-');
-        lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
-        
-        catC.appendChild(lnk);
+        catC.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
         cat.appendChild(catC);
         
         if (j + 1 < tag.con.length) {
@@ -293,7 +332,41 @@ function generateTags(t,n) {
 }
 
 function generateTiles(t,c) {
+  let thumbs = getTaggedWork(t);
+  thumbs.sort(function(a,b) {return b.rank - a.rank;});
 
+  let r = document.createElement("DIV");
+  r.className = "row";
+  for (let i = 0; i < thumbs.length; i++) {
+    let tileCol = document.createElement("DIV");
+    tileCol.className = "col-lg-3 col-md-4 col-sm-6 col-12 spacer";
+
+    let tileContainer = document.createElement("DIV");
+    tileContainer.className = "imgContainer";
+
+    let tileLnk = document.createElement("A");
+    tileLnk.href = "work.html#" + thumbs[i].hash;
+
+    let tileImg = document.createElement("IMG");
+    tileImg.src = "media/thumb/" + thumbs[i].hash + ".png";
+    tileImg.alt = thumbs[i].title;
+    tileImg.className = "imageLink img-fluid";
+
+    let tileOverlay = document.createElement("DIV");
+    tileOverlay.className = "imgOverlay";
+
+    let tileTxt = document.createElement("DIV");
+    tileTxt.className = "imgText";
+    tileTxt.innerText = thumbs[i].title;
+
+    tileOverlay.appendChild(tileTxt);
+    tileLnk.appendChild(tileImg);
+    tileLnk.appendChild(tileOverlay);
+    tileContainer.appendChild(tileLnk);
+    tileCol.appendChild(tileContainer);
+    r.appendChild(tileCol);
+  }
+  c.appendChild(r);
 }
 
 function generateCopyright(n) {

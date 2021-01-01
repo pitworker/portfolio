@@ -1,7 +1,5 @@
 let content;
 
-let pageTitle;
-
 // LOAD THE PAGE CONTENT JSON
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
@@ -157,7 +155,9 @@ function generateContent(c,n) {
       generateCarousel(c[i].content, n);
     } else if (c[i].type == "text") {
       generateText(c[i].content, n);
-    } else if (c[i].type == "img") {
+    } else if (c[i].type == "html") {
+      generateHTML(c[i].content, n);
+    }else if (c[i].type == "img") {
       generateImg(c[i].alt, c[i].url, n);
     } else if (c[i].type == "video") {
       generateVideo(c[i].url, n);
@@ -199,7 +199,9 @@ function generateCarousel(c,n) {
 
     let imgChild = document.createElement("IMG");
     imgChild.className = "img-fluid";
-    imgChild.setAttribute("src", c[i].url);
+    imgChild.setAttribute("src",
+			  "media/" + location.hash.substring(1) + "/" +
+			  c[i].url);
     imgChild.setAttribute("alt", c[i].alt);
 
     img.appendChild(imgChild);
@@ -213,6 +215,12 @@ function generateCarousel(c,n) {
 
 function generateText(c,n) {
   let e = document.createElement("P");
+  e.innerText = c;
+  n.appendChild(e);
+}
+
+function generateHTML(c,n) {
+  let e = document.createElement("P");
   e.innerHTML = c;
   n.appendChild(e);
 }
@@ -220,7 +228,7 @@ function generateText(c,n) {
 function generateImg(a,u,n) {
   let e = document.createElement("IMG");
   e.className = "img-fluid";
-  e.setAttribute("src", u);
+  e.setAttribute("src", "media/" + location.hash.substring(1) + "/" + u);
   e.setAttribute("alt", a);
   n.appendChild(e);
 }

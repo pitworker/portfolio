@@ -16,6 +16,8 @@
     {
       "title": "Professor Square-1",
       "hash": "professor-square-1",
+      "rank": 3,
+      "size": 1,
       "tags": {
         "year": 2016,
         "course": null,
@@ -23,13 +25,13 @@
         "company": null,
         "skills": [
           "SolidWorks",
-          "3D printing",
-          "mechanism design"
+          "3D Printing",
+          "Mechanism Design"
         ],
         "categories": [
-          "product design",
-          "toys",
-          "twisty puzzles"
+          "Product Design",
+          "Toys",
+          "Twisty Puzzles"
         ]
       },
       "content": [
@@ -44,22 +46,22 @@
                   "type": "carousel",
                   "content": [
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/profSQ1Forum1.jpg",
+                      "url": "profSQ1Forum1.jpg",
                       "alt": "solved",
                       "active": true
                     },
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/profSQ1Forum2.jpg",
+                      "url": "profSQ1Forum2.jpg",
                       "alt": "mid-rotation",
                       "active": false
                     },
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/profSQ1Forum3.jpg",
+                      "url": "profSQ1Forum3.jpg",
                       "alt": "partially scrambled",
                       "active": false
                     },
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/profSQ1Forum4.jpg",
+                      "url": "profSQ1Forum4.jpg",
                       "alt": "fully scrambled",
                       "active": false
                     }
@@ -89,7 +91,7 @@
                 {
                   "type": "img",
                   "alt": "mechanism rendering",
-                  "url": "http://sebastiancarpenter.xyz/images/puzzle/profSQ1Render2.JPG"
+                  "url": "SQ1Render2.JPG"
                 }
               ]
             }
@@ -101,6 +103,8 @@
     {
       "title": "Offset Tetrahedron",
       "hash": "offset-tetrahedron",
+      "rank": 4,
+      "size": 1,
       "tags": {
         "year": 2018,
         "course": [
@@ -111,13 +115,13 @@
         "company": null,
         "skills": [
           "SolidWorks",
-          "3D printing",
-          "mechanism design"
+          "3D Printing",
+          "Mechanism Design"
         ],
         "categories": [
-          "product design",
-          "toys",
-          "twisty puzzles"
+          "Product Design",
+          "Toys",
+          "Twisty Puzzles"
         ]
       },
       "content": [
@@ -132,22 +136,22 @@
                   "type": "carousel",
                   "content": [
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/IMG1.JPG",
+                      "url": "IMG1.JPG",
                       "alt": "solved",
                       "active": true
                     },
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/IMG3.JPG",
+                      "url": "IMG3.JPG",
                       "alt": "mid-rotation",
                       "active": false
                     },
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/IMG5.JPG",
+                      "url": "IMG5.JPG",
                       "alt": "partially scrambled",
                       "active": false
                     },
                     {
-                      "url": "http://sebastiancarpenter.xyz/images/puzzle/IMG7.JPG",
+                      "url": "IMG7.JPG",
                       "alt": "fully scrambled",
                       "active": false
                     }
@@ -177,7 +181,7 @@
                 {
                   "type": "img",
                   "alt": "mechanism rendering",
-                  "url": "http://sebastiancarpenter.xyz/images/puzzle/SW0.PNG"
+                  "url": "SW0.PNG"
                 }
               ]
             },
@@ -208,6 +212,78 @@
             }
           ]
         }
+      ]
+    },
+
+    {
+      "title": "Infinite Industry",
+      "hash": "infinite-industry",
+      "rank": 1,
+      "size": 1,
+      "tags": {
+        "year": 2018,
+        "course": ["Computation and Interactivity"],
+        "people": null,
+        "company": null,
+        "skills": ["Java", "Processing"],
+        "categories": ["Art", "Animation", "Generative Art"]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Infinite Industry animation",
+                  "url": "final.gif"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>Infinite Industry</strong> is an infinitely repetative generative abstract animation that gives a sense of industrial production. Items are being moved around, and they change color, suggesting they are heating up and cooling off, as they move. The piece was designed to be tiled infinitely in all directions, adding to the sense of unendingness of the production."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "All the motion in this animation is timed based on various curved mathematical functions. The movement laterally of the rectangles and circles is based on a double odd polynomial ogee function. A fairly large portion of the function has a near-zero slope, which gave me the opportunity to invert the movement of the circles compared to the rectangles, stopping when it is time for circles to travel through the rectangles.\nThe expansion and contraction of the rectangles is tied to an adjustable center cosine window function, which allowed me to have a slow expansion of the rectangle followed by a quick contraction."
+                }
+              ]
+            },
+	    {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "The vertical movement of the circles is based off of a double elliptic sigmoid function, which, given a portion of a nearly vertical slope, allows for a quick acceleration of the circle through the rectangles. By playing with the constants of this function and the adjustable center cosine window function for the rectangles, I was able to get the motion of the two to sync up.<br />All of these functions were taken from Professor <a target=\"_blank\" href=\"http://www.art.cmu.edu/people/golan-levin/\">Golan Levin</a>'s <a target=\"_blank\" href=\"https://github.com/golanlevin/Pattern_Master\">Pattern Master code</a>.<br />The code for the animation can be found on my <a target=\"_blank\" href=\"https://github.com/pitworker/IndustryGIF\">GitHub</a>."
+                }
+              ]
+            }
+          ]
+        },
+	{
+	  "type": "html",
+	  "content": "<div class=\"row\" style=\"padding-left: 15px; padding-right: 15px;\"><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div></div>"
+	}
       ]
     }
   ]

@@ -160,6 +160,19 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 }
 
 /*TAGS! :)*/
+#tagsButton {
+  padding: 0;
+  border: none;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#tagsButton:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 #sideNav {
   height: 100%;
   width: 0;
@@ -171,8 +184,6 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
-  font-family: "Space Mono", Mono;
-  font-weight: 900;
 }
 
 #sideNav a {
@@ -200,7 +211,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 24px;
   margin-left: 50px;
   padding: 0;
   border: none;
@@ -223,11 +234,27 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   #sideNav a {font-size: 18px;}
 }
 
+#tagsMenuTitle {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Space Mono", Mono;
+  font-weight: 400;
+  font-size: 12pt;
+}
+
+.tagButton {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  /*margin-left: 20px;*/
+  margin-top: 5px;
+  font-size: 12pt;
+  font-family: "IBM Plex Sans", Sans-Serif;
+  text-align: left;
+}
+
 #indexTags {
   background-color: #ffffff;
-  /*border-bottom-style: solid;
-  border-bottom-color: #000000;
-  border-bottom-width: 3px;*/
   padding-top: 15px;
   padding-bottom: 13px;
   z-index: 1;
@@ -284,15 +311,17 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   line-height: 18pt;
   text-align: left;
   white-space: nowrap;
-}
-
-#YearTag a {
   background-color: #fc532d;
   color: #ffffff;
 }
 
-#YearTag a:hover {
-  background-color: transparent;
+#YearTag a, #yearSelected, #yearUnselected:hover {
+  background-color: #fc532d;
+  color: #ffffff;
+}
+
+#YearTag a:hover, #yearUnselected, #yearSelected:hover {
+  background-color: #ffffff;
   color: #fc532d;
 }
 
@@ -307,15 +336,17 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   line-height: 18pt;
   text-align: left;
   white-space: nowrap;
-}
-
-#CourseTag a {
   background-color: #ff8402;
   color: #ffffff;
 }
 
-#CourseTag a:hover {
-  background-color: transparent;
+#CourseTag a, #courseSelected, #courseUnselected:hover {
+  background-color: #ff8402;
+  color: #ffffff;
+}
+
+#CourseTag a:hover, #courseUnselected, #courseSelected:hover {
+  background-color: #ffffff;
   color: #ff8402;
 }
 
@@ -330,15 +361,17 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   line-height: 18pt;
   text-align: left;
   white-space: nowrap;
-}
-
-#CompanyTag a {
   background-color: #a955fc;
   color: #ffffff;
 }
 
-#CompanyTag a:hover {
-  background-color: transparent;
+#CompanyTag a, #companySelected, #companyUnselected:hover {
+  background-color: #a955fc;
+  color: #ffffff;
+}
+
+#CompanyTag a:hover, #companyUnselected, #companySelected:hover {
+  background-color: #ffffff;
   color: #a955fc;
 }
 
@@ -353,15 +386,17 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   line-height: 18pt;
   text-align: left;
   white-space: nowrap;
-}
-
-#PeopleTag a {
   background-color: #828282;
   color: #ffffff;
 }
 
-#PeopleTag a:hover {
-  background-color: transparent;
+#PeopleTag a, #peopleSelected, #peopleUnselected:hover {
+  background-color: #828282;
+  color: #ffffff;
+}
+
+#PeopleTag a:hover, #peopleUnselected, #peopleSelected:hover {
+  background-color: #ffffff;
   color: #828282;
 }
   
@@ -376,15 +411,17 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   line-height: 18pt;
   text-align: left;
   white-space: nowrap;
-}
-
-#SkillsTag a {
   background-color: #11a0ff;
   color: #ffffff;
 }
 
-#SkillsTag a:hover {
-  background-color: transparent;
+#SkillsTag a, #skillsSelected, #skillsUnselected:hover {
+  background-color: #11a0ff;
+  color: #ffffff;
+}
+
+#SkillsTag a:hover, #skillsUnselected, #skillsSelected:hover {
+  background-color: #ffffff;
   color: #11a0ff;
 }
 
@@ -399,15 +436,17 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   line-height: 18pt;
   text-align: left;
   white-space: nowrap;
-}
-
-#TagsTag a {
   background-color: #04db85;
   color: #ffffff;
 }
 
-#TagsTag a:hover {
-  background-color: transparent;
+#TagsTag a, #categoriesSelected, #categoriesUnselected:hover {
+  background-color: #04db85;
+  color: #ffffff;
+}
+
+#TagsTag a:hover, #categoriesUnselected, #categoriesSelected:hover {
+  background-color: #ffffff;
   color: #04db85;
 }
 
@@ -419,7 +458,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   border-bottom-width: 3px;
   padding-top: 15px;
   padding-bottom: 13px;
-  z-index: 1;
+  z-index: 2;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
