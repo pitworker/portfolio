@@ -151,16 +151,20 @@ function generateContent(c,n) {
       generateRow(c[i].content, n);
     } else if (c[i].type == "column") {
       generateColumn(c[i].width, c[i].content, n);
+    } else if (c[i].type == "fixedCol") {
+      generateFixedCol(c[i].width, c[i].content, n);
     } else if (c[i].type == "carousel") {
       generateCarousel(c[i].content, n);
     } else if (c[i].type == "text") {
       generateText(c[i].content, n);
     } else if (c[i].type == "html") {
       generateHTML(c[i].content, n);
-    }else if (c[i].type == "img") {
+    } else if (c[i].type == "img") {
       generateImg(c[i].alt, c[i].url, n);
     } else if (c[i].type == "video") {
       generateVideo(c[i].url, n);
+    } else if (c[i].type == "header") {
+      generateHeader(c[i].content, n);
     } else {
       console.log("type " + c[i].type + " is unrecognized");
     }
@@ -177,6 +181,14 @@ function generateRow(c,n) {
 function generateColumn(w,c,n) {
   let e = document.createElement("DIV");
   e.className = "col-md-" + w + " col-12";
+  e.style["padding-bottom"] = "30px";
+  generateContent(c,e);
+  n.appendChild(e);
+}
+
+function generateFixedCol(w,c,n) {
+  let e = document.createElement("DIV");
+  e.className = "col-" + w;
   e.style["padding-bottom"] = "30px";
   generateContent(c,e);
   n.appendChild(e);
@@ -222,6 +234,12 @@ function generateText(c,n) {
 function generateHTML(c,n) {
   let e = document.createElement("P");
   e.innerHTML = c;
+  n.appendChild(e);
+}
+
+function generateHeader(c,n) {
+  let e = document.createElement("H5");
+  e.innerText = c;
   n.appendChild(e);
 }
 

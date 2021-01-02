@@ -177,7 +177,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   background-color: #ffffff;

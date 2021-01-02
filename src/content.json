@@ -40,30 +40,59 @@
           "content": [
             {
               "type": "column",
-              "width": 6,
+              "width": 8,
               "content": [
                 {
-                  "type": "carousel",
+                  "type": "row",
                   "content": [
                     {
-                      "url": "profSQ1Forum1.jpg",
-                      "alt": "solved",
-                      "active": true
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "solved",
+                          "url": "profSQ1Forum1.jpg"
+                        }
+                      ]
                     },
                     {
-                      "url": "profSQ1Forum2.jpg",
-                      "alt": "mid-rotation",
-                      "active": false
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "mid-rotation",
+                          "url": "profSQ1Forum2.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "partially scrambled",
+                          "url": "profSQ1Forum3.jpg"
+                        }
+                      ]
                     },
                     {
-                      "url": "profSQ1Forum3.jpg",
-                      "alt": "partially scrambled",
-                      "active": false
-                    },
-                    {
-                      "url": "profSQ1Forum4.jpg",
-                      "alt": "fully scrambled",
-                      "active": false
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "fully scrambled",
+                          "url": "profSQ1Forum4.jpg"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -71,7 +100,7 @@
             },
             {
               "type": "column",
-              "width": 6,
+              "width": 4,
               "content": [
                 {
                   "type": "text",
@@ -130,30 +159,59 @@
           "content": [
             {
               "type": "column",
-              "width": 6,
+              "width": 8,
               "content": [
                 {
-                  "type": "carousel",
+                  "type": "row",
                   "content": [
                     {
-                      "url": "IMG1.JPG",
-                      "alt": "solved",
-                      "active": true
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "solved",
+                          "url": "IMG1.JPG"
+                        }
+                      ]
                     },
                     {
-                      "url": "IMG3.JPG",
-                      "alt": "mid-rotation",
-                      "active": false
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "mid-rotation",
+                          "url": "IMG3.JPG"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "partially scrambled",
+                          "url": "IMG5.JPG"
+                        }
+                      ]
                     },
                     {
-                      "url": "IMG5.JPG",
-                      "alt": "partially scrambled",
-                      "active": false
-                    },
-                    {
-                      "url": "IMG7.JPG",
-                      "alt": "fully scrambled",
-                      "active": false
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "fully scrambled",
+                          "url": "IMG7.JPG"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -161,7 +219,7 @@
             },
             {
               "type": "column",
-              "width": 6,
+              "width": 4,
               "content": [
                 {
                   "type": "text",
@@ -222,7 +280,7 @@
       "size": 1,
       "tags": {
         "year": 2018,
-        "course": ["Computation and Interactivity"],
+        "course": ["Electronic Media Studio"],
         "people": null,
         "company": null,
         "skills": ["Java", "Processing"],
@@ -268,7 +326,7 @@
                 }
               ]
             },
-	    {
+            {
               "type": "column",
               "width": 6,
               "content": [
@@ -280,10 +338,397 @@
             }
           ]
         },
-	{
-	  "type": "html",
-	  "content": "<div class=\"row\" style=\"padding-left: 15px; padding-right: 15px;\"><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div></div>"
-	}
+        {
+          "type": "html",
+          "content": "<div class=\"row\" style=\"padding-left: 15px; padding-right: 15px;\"><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div><div class=\"col-3\" style=\"padding-left: 0px; padding-right: 0px;\"><img src=\"media/infinite-industry/final.gif\" alt=\"tiled animation\" class=\"img-fluid\"></div></div>"
+        }
+      ]
+    },
+
+    {
+      "title": "Watch",
+      "hash": "watch",
+      "rank": 3,
+      "size": 2,
+      "tags": {
+        "year": 2018,
+        "course": ["Electronic Media Studio"],
+        "people": null,
+        "company": null,
+        "skills": ["JavaScript", "p5.js"],
+        "categories": ["Art", "Animation", "Generative Art"]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>Watch</strong> is a reactive piece of generative art that changes based on the time of the day. Through most of the day, the green eye is open, watching you. It sits within a coral red and black striped background that blinks on random intervals. Later in the day, the red begins to fade to a dark brown. As it gets late, the eye gets tired and soon falls asleep. A couple hours pass, and then a yellow  monster's eye opens and begins to watch you as you sleep. As the sun rises and the green eye begins to wake up, the monster goes to sleep."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The piece explores the sense of being watched, it combines it with the passage of time to give character to the thing that is watching you. During the day, you experience the adult fear of being watched by a potentially untrustworthy person, and at night you experience the childlike fear of being watched by the monster under the bed, so depending on when you run the application, your experience of being watched will be different."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "html",
+              "content": "<div style=\"position: relative; overflow: hidden; padding-bottom: 820px;\"><iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"https://www.openprocessing.org/sketch/591140/embed/\" frameborder=\"0\" allowfullscreen></iframe></div>"
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "Watch, awake",
+                          "url": "eye0.png"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "Watch, sleepy",
+                          "url": "eye1.png"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "Watch, asleep",
+                          "url": "eye2.png"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "Watch, monster is out",
+                          "url": "eye3.png"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>Watch</strong> at different times of the day: midday, late at night just before the green eye has fallen asleep, late at night just after the green eye has fallen asleep, and even later at night when the monster is awake."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Writing System",
+      "hash": "writing-system",
+      "rank": 3,
+      "size": 1,
+      "tags": {
+        "year": 2017,
+        "course": null,
+        "people": null,
+        "company": null,
+        "skills": null,
+        "categories": ["Typography", "Linguistics"]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I'm fascinated with linguistics; I'm particularly interested in writing systems. Unlike spoken language, which evolves naturally, writing systems are invented and standardized. They often go unchanged, even as languages evolve, resulting in spelling that could depart significantly from the pronunciation of the word (caught and cot could be pronounced the same or differently depending on where in the US you live).\nInterested in thinking about English spelling in a different way, I worked on creating a phonetic writing system for the English language. In addition to making the writing system phonetically represent English as I pronounced it, rather than the only semi-phonetic spelling that currently exists, I chose to make the writing system an abugida as opposed to an alphabet. In an abugida, words are spelled with consonant bases that are modified with vowels. This would save space and make a writing system that is more visually efficient."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Final Writing System"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Sebastian, written in the writing system",
+                  "url": "sebastian.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "My name, Sebastian, written in the final writing system."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "the full writing system",
+                  "url": "LettersTimes3.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "All the consonants and vowels in the writing system. English has both voiced and unvoiced consonants in it. Many of these voiced and unvoiced consonants exist in pairs, where the tongue and mouth are in the same position, and the only difference is the voicing of the consonant (whether or not the voice box is being used). To emphasize these pairs, a number of the consonants in the writing system are different only by a voicing mark that is added to differentiate them.\nYou may also notice that there are more consonants and vowels here than are in the current English alphabet. This is because we actually have more sounds in our language than we do in our alphabet. Some letters represent multiple different sounds or combine with other letters to represent new sounds. I chose to represent every sound with a different character for the sake of clarity."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Process"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I initially set about creating the writing system by exploring types of writing systems that already exist. I looked at how sounds are organized into symbols in different languages and explored the major categories of writing systems. Keeping this information in mind as a baseline, I wrote down all the phonetic sounds in the English language (at least in my dialect of it). From this, I considered which of the types of writing systems might suit English, and I made random symbol scribbles to explore what a writing system might look like. I chose to pursue an abugida that follows the style of the Latin, Greek, and Cyrillic."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "exploration of writing system types",
+                  "url": "sketch00.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "examining how english could be adapted into different writing systems and the advantages of each",
+                  "url": "sketch01.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "mapping out english phonetics and looking at different possible appearances for writing system",
+                  "url": "sketch02.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "early iteration of character designs",
+                  "url": "sketch03.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "I then created characters for the vowels and consonants. These characters were fairly arbitrary in their form, though there were a couple of cases where the sound influenced the shape of the character. Voiced and unvoiced consonants were differentiated with a bar at the bottom of the character, and the three nasal consonants (m, n, and &#331;) all share similar forms."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "With the character forms mostly figured out, I explored serif and sans serif variations of the writing system before creating the characters. Preferring the appearance of the serif version, I created the final digitized version of the writing system by cutting up and reassembling parts of letterforms from Times New Roman."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "working on writing system characters for serif and sans serif",
+                  "url": "sketch05.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "writing system characters in sans serif",
+                  "url": "sketch06.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "revisited writing system, with particular attention paid to certain letterforms",
+                  "url": "sketch07.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "A couple of months after making the final version, I revisited the writing system and worked on making improvements to it. I worked on making the forms more visually appealing and sensible, and I worked particularly the t, &#643;, and &#679; (and by extension d, &#658;, and &#676;) to visually demonstrate that &#679;, while it operates as its own consonant, is really just a combination between t and &#643;. I also added the &#660; to the writing system. &#660; (the glottal stop) is present in the English language, although it is a fairly hidden consonant as it only shows up in rare cases and is never identified in written English. I never digitized this updated version of the writing system."
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ]
