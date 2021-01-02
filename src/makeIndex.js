@@ -47,7 +47,7 @@ function listAllTags() {
     
     for (let t in c.tags) {
       if (t == "year" &&
-	  tagList.year.indexOf(c.tags.year.toString()) < 0) {
+          tagList.year.indexOf(c.tags.year.toString()) < 0) {
         tagList.year.push(c.tags.year.toString());
       } else if (t != "year" && c.tags[t] != null) {
         for (let j = 0; j < c.tags[t].length; j++) {
@@ -216,37 +216,39 @@ function generateTagList(tags,allTags,c) {
   let tagSections = {
     year: document.createElement("DIV"),
     course: document.createElement("DIV"),
-    people: document.createElement("DIV"),
+    //people: document.createElement("DIV"),
     company: document.createElement("DIV"),
     skills: document.createElement("DIV"),
     categories: document.createElement("DIV")
   };
 
   for (let t in tagSections) {
-    tagSections[t].id = "tagsMenuTitle";
-    let title = document.createTextNode(
-      (t == "categories") ? "Tags" :
-        t.charAt(0).toUpperCase() + t.slice(1));
-
-    tagSections[t].appendChild(title);
-
-    for (let i = 0; i < allTags[t].length; i++) {
-      let btn = document.createElement("BUTTON");
-      btn.className = "tagButton";
-      if (tags[t].indexOf(allTags[t][i]) >= 0) {
-        btn.id = t + "Selected";
-        btn.onclick = function() {removeTag(allTags[t][i]);};
-        btn.innerHTML = "&nbsp;" + allTags[t][i] + "&nbsp;&#215;&nbsp;";
-      } else {
-        btn.id = t + "Unselected";
-        btn.onclick = function() {addTag(allTags[t][i]);};
-        btn.innerHTML = "&nbsp;" + allTags[t][i] + "&nbsp;";
+    if (t != "people") {
+      tagSections[t].id = "tagsMenuTitle";
+      let title = document.createTextNode(
+        (t == "categories") ? "Tags" :
+          t.charAt(0).toUpperCase() + t.slice(1));
+      
+      tagSections[t].appendChild(title);
+      
+      for (let i = 0; i < allTags[t].length; i++) {
+        let btn = document.createElement("BUTTON");
+        btn.className = "tagButton";
+        if (tags[t].indexOf(allTags[t][i]) >= 0) {
+          btn.id = t + "Selected";
+          btn.onclick = function() {removeTag(allTags[t][i]);};
+          btn.innerHTML = "&nbsp;" + allTags[t][i] + "&nbsp;&#215;&nbsp;";
+        } else {
+          btn.id = t + "Unselected";
+          btn.onclick = function() {addTag(allTags[t][i]);};
+          btn.innerHTML = "&nbsp;" + allTags[t][i] + "&nbsp;";
+        }
+        tagSections[t].appendChild(document.createElement("BR"));
+        tagSections[t].appendChild(btn);
       }
-      tagSections[t].appendChild(document.createElement("BR"));
-      tagSections[t].appendChild(btn);
+      
+      menu.appendChild(tagSections[t]);
     }
-
-    menu.appendChild(tagSections[t]);
   }
 }
 

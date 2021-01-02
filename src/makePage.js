@@ -110,7 +110,9 @@ function generateTags(t,n) {
           catC.id = tag.cat + "Tag";
 
           let lnk = document.createElement("A");
-          lnk.href = "index.html#" + tag.con[j].replace(/ /g, '-');
+          lnk.href = (Object.keys(tags)[i] == "people") ?
+            content.people[tag.con[j]] :
+            "index.html#" + tag.con[j].replace(/ /g, '-');
           lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
           
           catC.appendChild(lnk);
@@ -212,8 +214,8 @@ function generateCarousel(c,n) {
     let imgChild = document.createElement("IMG");
     imgChild.className = "img-fluid";
     imgChild.setAttribute("src",
-			  "media/" + location.hash.substring(1) + "/" +
-			  c[i].url);
+                          "media/" + location.hash.substring(1) + "/" +
+                          c[i].url);
     imgChild.setAttribute("alt", c[i].alt);
 
     img.appendChild(imgChild);
