@@ -474,7 +474,7 @@
     {
       "title": "Writing System",
       "hash": "writing-system",
-      "rank": 3,
+      "rank": 2,
       "size": 1,
       "tags": {
         "year": 2017,
@@ -729,6 +729,87 @@
             }
           ]
         }
+      ]
+    },
+
+    {
+      "title": "Lollipop Licker",
+      "hash": "lollipop-licker",
+      "rank": 2,
+      "size": 1,
+      "tags": {
+        "year": 2018,
+        "course": ["Electronic Media Studio"],
+        "people": ["Paul Park"],
+        "company": null,
+        "skills": [
+          "Arduino",
+          "SolidWorks",
+          "Laser Cutting"
+        ],
+        "categories": [
+          "Art",
+          "Sculpture",
+          "Robotic Sculpture"
+        ]
+      },
+      "content": [
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "html",
+		  "content": "There isn't really that much to explain about this project&mdash;it's a robot that licks lollipops down to their sticks and makes a mess while doing it. It senses when a lollipop is placed into it, and, using a sponge wetted from a trough of water, licks the lollipop until it is just a stick. The intentional lack of a runoff collection system leads to a pool of liquid lollipop to collect around the robot all over the table the robot is on. The entire project was inspired by my partner, Paul, and me finding an orange sponge at the <a target=\"_blank\" href=\"http://pccr.org/\">Pittsburgh Center for Creative Reuse</a>."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "video",
+		  "url": "https://www.youtube.com/embed/DW7IsEc858w"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "img",
+		  "alt": "the licking robot",
+		  "url": "lick.jpg"
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "The tongue is powered by a servo motor, and the spinning lollipop is powered by a stepper motor. The robot senses when a lollipop has been placed into it using a infrared distance sensor. The sensor, motor, and servo are all connected to an Arduino with a motor shield mounted on it. All of the electronics are within the black acrylic casing and are mounted above the water trough to keep them out of contact with the water."
+		}
+	      ]
+	    }
+	  ]
+	}
       ]
     }
   ]
