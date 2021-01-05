@@ -335,7 +335,9 @@ function generateTags(t,n) {
 
 function generateTiles(t,c) {
   let thumbs = getTaggedWork(t);
-  thumbs.sort(function(a,b) {return b.rank - a.rank;});
+  thumbs.sort(function(a,b) {
+    return b.rank == a.rank ? b.tags.year - a.tags.year : b.rank - a.rank;
+  });
 
   let r = document.createElement("DIV");
   r.className = "row";

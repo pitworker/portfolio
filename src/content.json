@@ -802,6 +802,604 @@
           ]
         }
       ]
+    },
+
+    {
+      "title": "Stack",
+      "hash": "stack",
+      "rank": 4,
+      "size": 2,
+      "tags": {
+        "year": 2018,
+        "course": null,
+        "people": null,
+        "company": null,
+        "skills": [
+          "Fusion 360",
+          "3D Printing",
+          "3D Scanning"
+        ],
+        "categories": [
+          "Fashion",
+          "Sculpture",
+          "Art"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Full Stack line on stage at Lunar Gala",
+                  "url": "full.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "Between September 2017 and February 2018 I designed a four-piece line of wearable sculpture titled <strong>Stack</strong>. The line explored multiple different concepts: the intersection of the organic with the inorganic, forms that reveal themselves when viewed at multiple angles, and the idea of personal space. Using flat, rigid, and inorganic materials, I constructed organic, wearable forms. The layering technique used allowed the looks to give very different impressions when viewed from the front or back than when viewed from the sides. From some angles, the outfits hide most of the body, while from others, they reveal the body underneath; each look features spikes, that while they look elegant, also announce to viewers to keep their distance.<br /><br />The line was featured in Lunar Gala in 2018, Carnegie Mellon's premiere student fashion show, and Pittsburgh's largest fashion event."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 1, view 1",
+                          "url": "gilly4.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 1, view 2",
+                          "url": "gilly3.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 2, view 1",
+                          "url": "zack1.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 2, view 2",
+                          "url": "zack4.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 3, view 1",
+                          "url": "sandy3.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 3, view 2",
+                          "url": "sandy1.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 4, view 1",
+                          "url": "julie1.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "look 4, view 2",
+                          "url": "julie6.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "video",
+                  "url": "https://www.youtube.com/embed/I2tcuxHCJxU"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Process"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "sketches of full line",
+                  "url": "FullLineSmall.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The line began with eight initial sketches (shown above) of different looks that fit the concept. From these eight sketches, I chose the four that I felt were the strongest. My next task was to figure out how to make the outfits stay together and be wearable. The outfits needed to be taken off and put on easily, as the models would be featured in other lines in the show. The outfits needed to be comfortable enough to walk in. They also needed to be adjustable to account for measurement tolerance and the fact that the models' bodies might change over time.\n\nUltimately, I settled on a system of two plastic rings inside the outfits, connecting all the layers of outer material. Each of these rings supported a strap that could be tightened or loosened to adjust to the model's body. The rings also split in half so the outfit can be taken off the model."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "With a rigid outfit that was going to be produced entirely in a CAD software (specifically Fusion 360), there were unique challenges in measuring the models. The tape-measure typically used in fashion design proved to messy for what I needed to do, so I resorted to 3D-scanning my models. I took hundreds of photos at different angles of each model, ran the photos through Agisoft Photoscan, and produced rough 3D models or each model. I then modelled the outfits directly on top of these 3D models.\n\nThe rings were 3D-printed, and the flat layers were cut on a CNC mill. I initially intended to make the layers out of transparent, colored acrylic. The acrylic proved to be far too expensive incredibly heavy. I ended up replacing the acrylic with white Gator Foam (similar to foamcore but far more rigid). After being cut and printed, all the pieces were glued and press-fit together by hand."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "R is for Red Squirrel",
+      "hash": "squirrel",
+      "rank": 1,
+      "size": 1,
+      "tags": {
+        "year": 2018,
+        "course": ["Design Lab"],
+        "people": null,
+        "company": null,
+        "skills": [
+          "Adobe Illustrator",
+          "Mechanism Design"
+        ],
+        "categories": [
+          "Graphic Design",
+          "Educational"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The aim of this project was to raise awareness about an endangered or nearly endangered animal from my home region. I chose to study the Eurasian red squirrel (Sciurus vulgaris), which, while not endangered everywhere, is facing population decline in the United Kingdom as a result of disease and the spread of the invasive Eastern grey squirrel (Sciurus carolinensis)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Part A: Poster"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "squirrel poster version a",
+                  "url": "poster0.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "squirrel poster version b",
+                  "url": "poster1.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Developing the poster, I spent time trying to understand the form of the squirrel, the issues facing it, and how to best represent those issues in a visual format."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "early sketches, comparison to grey squirrel, and examination of issues faced by red squirrel",
+                  "url": "sketch0.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "sketches to understand how the body of the red squirrel moves",
+                  "url": "sketch1.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "early poster sketches",
+                  "url": "sketch4.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "later poster sketches",
+                  "url": "sketch4.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "early poster draft made from cut paper",
+                  "url": "paperPoster.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Part B: Pop-Up"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "video",
+                  "url": "https://www.youtube.com/embed/cWrRPcFGXYA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The goal of this pop-up was to represent the red squirrel in its natural habitat. The color blocking and simple shapes are translated over from the posters, but the pop-up adds a level of depth and dynamic motion that couldn't be represented in the poster. In addition to figuring out the composition, I explored various popup mechanisms. My explorations were both driven by and led me to my composition ideas."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "sketches exploring compositions for the pop-up",
+                  "url": "sketch6.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "pop-up exploration 1, unfolded",
+                          "url": "popupMech0.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "pop-up exploration 1, folded",
+                          "url": "popupMech5.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "pop-up exploration 2, unfolded",
+                          "url": "popupMech4.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "pop-up exploration 2, folded",
+                          "url": "popupMech3.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "pop-up exploration 3, unfolded",
+                          "url": "popupMech1.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "pop-up exploration 3, folded",
+                          "url": "popupMech2.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
