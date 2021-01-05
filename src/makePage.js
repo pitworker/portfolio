@@ -167,6 +167,8 @@ function generateContent(c,n) {
       generateVideo(c[i].url, n);
     } else if (c[i].type == "header") {
       generateHeader(c[i].content, n);
+    } else if (c[i].type == "subHeader") {
+      generateSubHeader(c[i].content, n);
     } else {
       console.log("type " + c[i].type + " is unrecognized");
     }
@@ -241,6 +243,12 @@ function generateHTML(c,n) {
 
 function generateHeader(c,n) {
   let e = document.createElement("H5");
+  e.innerText = c;
+  n.appendChild(e);
+}
+
+function generateSubHeader(c,n) {
+  let e = document.createElement("H6");
   e.innerText = c;
   n.appendChild(e);
 }

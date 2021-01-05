@@ -1400,6 +1400,845 @@
           ]
         }
       ]
+    },
+    {
+      "title": "CMU Campus Tour",
+      "hash": "cmu-tour",
+      "rank": 1,
+      "size": 1,
+      "tags": {
+        "year": 2018,
+        "course": ["Environments Studio I"],
+        "people": null,
+        "company": null,
+        "skills": [
+          "Adobe Illustrator",
+          "Unity3D"
+        ],
+        "categories": [
+          "UX Design",
+          "Augmented Reality"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This was a speculative project designed around the premise of a campus tour using an augmented reality system similar to Microsoft's HoloLens In this scenario, the technology is also location sensative (precise to knowing where someone is within a building). Under these premises, I proposed a guided tour around campus that creates a path for the visitor based on interests that the visitor selects, but also allows visitors to learn about other parts of campus if they walk by something that grabs their attention.\n\nI wanted to focus on a couple things with the tour: allowing the visitor to select their own interests and tailoring a tour to those interests, giving personal student perspectives to the visitor, and allowing the user to know if there is information available that isn't part of their specific tour."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "tour selection menu",
+                  "url": "selection.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "When the visitor first begins their tour, they are met with a menu from which they select from different majors and aspects of student life that are interesting to them. When selecting these items, they are pulled from a list and pulled over to a red circle around which they orbit. This not only gives a more physical interaction to something that is otherwise just a digital projection over the real world, but it also introduces the visual language of a red circle with information orbitting it, something that will continue to resurface throughout the tour."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "navigation in simple contexts",
+                  "url": "simpleNav.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Visitors are aided in wayfinding around campus in a number of ways. When close enough and obvious enough, doors that visitors are supposed to go through are highlighted. When navigation becomes more complex, or when there aren't clear entryways for the person to walk towards, for example, when navigating networks of paved walkways the school has, arrows will sometimes appear on the ground pointing out where the visitor is supposed to go."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "navigation in complex contexts",
+                  "url": "complexNav.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "As someone is being guided around, there is always a text item that appears at the bottom of the person's field of view letting them know where they are supposed to go. Unlike the arrows and the entryway highlighting, these text elements are locked to the person's gaze rather than the physical world."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "firefly information circles",
+                  "url": "fireflies.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The information content of the tour is accessed entirely through circular UI items that appear in locations where there is something that the visitor can learn about. Information that is relevant to the tour based off of the person's interests will be indicated by red circles, whereas information unrelated to the interests the person selected will be indicated by grey circles. This gives the person a clear understanding of what information is related to their interests and what information is not while still giving the person the freedom to look at information that is unrelated to their interests."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "firefly information circles opened",
+                  "url": "openFireflys.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "When a person selects one of the circles, icons representing categories of different information are revealed around the circle. Circles may have up to six categories around them, but they may have as little as one category depending on the location. These icons gravitate towards the right side of the circle when there are fewer than six.\n\nRegardless of the color (red or grey) of the circle that the person selected, the icons always appear initially grey. When the user selects an icon, it turns red and then the information related to it appears. This is shown more clearly in the video below."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "video",
+                  "url": "https://www.youtube.com/embed/gbLVLkYO2BQ"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "When the visitor selects a category, information is presented in one of two ways. Most information is presented as text that appears projected over the space the person is in. This text is positioned relative to the world, rather than gaze, so if the person turns their head, the text stays in its real-world position. Text can be exited by swiping it away with a finger.\n\nSome information, specifically personal testimonials and perspectives by students, is presented as a projected recording of the actual student talking. Despite being a projection, this appears to be a real student in the space. When the student is done talking, they fade out of the visitor's view. If the visitor no longer wants to hear the student's perspective before the student is done talking, the visitor can simply turn their head, and the student's voice will fade. If the visitor turns their head back to the student before the voice fades completely, the student will continue talking, but if the visitor lets the voice fade completely, the student will disappear."
+                }
+              ]
+            }
+          ]
+        },
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "The Current Campus Tour"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "html",
+		  "content": "This project began with an exploration of current approaches to campus tours. As a class, we signed up for and took an official CMU guided campus tour. Last year, the campus tour was redesigned to be more personal to the student tour guide’s experience. The goal was to give a more personal perspective on the school that a visitor wouldn’t be able to otherwise get from a visit to the school’s website or a self-guided tour. Student tour guides submit their own scripts and points of interest on campus and give a tour that is entirely about their own experience.<br /><br />Unfortunately, in an attempt to make the tour more personal, the tours have become much less informative. The tour barely shows you the campus, and the guides give very little history about the school or about opportunities available that do not pertain to their life on campus. A student visiting who is interested in business wouldn’t be able to glean much about the major they are interested in from a tour guide who studies art, for example.<br /><br />Alternatively, the self-guided tour gives the visitors a decent amount of information about nearly every location on campus and a map, so the visitor has the ability to visit any of these buildings to see the spaces they might occupy in the future. The self-guided tour, though, dumps a nearly overwhelming amount of information on the visitor and asks them to parse through the information themselves. Furthermore, the self-guided tour gives almost nothing with regards to an actual student’s perspective.<a target=\"_blank\" href=\"https://admission.enrollment.cmu.edu/media/W1siZiIsIjIwMTgvMDkvMTgvOGtxZWM1bzZldl9XYWxraW5nX1RvdXJfTWFwX1NlcHQyMDE4LnBkZiJdXQ/Walking_Tour_Map_Sept2018.pdf\"> The current self-guided tour can be found here.</a>"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Priorities for a New Campus Tour"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "To form a new campus tour, I kept a few things in mind: I wanted the new tour to be maximize information, relevance, and personality. The tour needed to educate visitors about the school, focusing on things that the visitor was interested in, and give the visitor a personal perspective on the school from the point of view of members of the community. The tour should highlight points of interest without completely censoring points unrelated to the selected interests, since the visitor might be interested knowing what a building is or what happens in a specific location."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "What Kind of Tour?"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "My first decision when designing the new tour was to decide whether the tour was going to be an augmented reality experience to complement a student-led tour, or if the tour was going to be an augmented reality self-guided tour. I ultimately decided to work on a self-guided tour, as I figured that a student-led tour was more valuable as an unaltered face-to-face conversation."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Personas"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "html",
+		  "content": "An important part of creating a tour was coming up with personas, or imaginary people that would take this tour. In creating these personas, I tried to imagine prospective students and parents and what they would be trying to get out of a tour. I tried to think about what questions they would have and what they would be trying to learn. <a target=\"_blank\" href=\"https://medium.com/@scarpent_51045/environments-studio-i-personas-for-project-2-8bc1ec06df54\">A Medium article containing the personas I created for this project can be found here.</a>"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Storyboard 1"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "img",
+		  "alt": "storyboard sketch",
+		  "url": "sketch029.jpg"
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "Next, I prototyped by creating a high-level storyboard for the tour. In this story board, I created a tour that does a couple things. The visitor selects their interests from a list, and then the tour would be tailored to those selections. It projects arrows on the ground to guide the visitor. Buildings of note are highlighted with a red outline and text information is displayed in space near the building.\n\nIn the same storyboard, I also toyed with the idea of having an avatar present the information by speaking to the person on the tour. This would not only create a more personal experience, but it would provide an avenue through which a personal perspective could be shared. This avatar also acts as a tour guide and directs the visitor around campus. At this point I also thought about synchronizing the experience so a group of people visiting campus together could experience the same augmented reality tour."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Storyboard 2"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "img",
+		  "alt": "storyboard sketch",
+		  "url": "sketch028.jpg"
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "In my second storyboard, I worked to refine the details of my tour. In the interest of simplicity, I scrapped the idea of synchronizing tours, as I thought it would introduce a level of complexity to things like interest selection that was too high for the timescale this project was assigned in.\n\nThe new tour again starts with the visitor selecting interests from a scrolling list. The tour then directs the visitor around, again by placing arrows on the ground. Added to the new tour, though, is a contextual text box, locked to a position within the viewer’s field of vision rather than a position in the real world, that tells the visitor where they are being directed.\n\nLike the previous iteration, buildings and points of interest are highlighted with a red outline. Rather than an avatar tour guide that stays in the tour the whole time (like the second version of the previous iteration), the avatar only pops up when a student perspective is being presented.\n\nAdded to this iteration is the ability to point to buildings unrelated to the tour and get some basic information about them. This would allow the visitor to learn about the place they are looking at without it detracting too much from the tour. If the visitor wants to actually visit that place, they can add it to their tour."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Photo Prototypes 1"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "row",
+		  "content": [
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch020.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch021.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch023.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch018.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch019.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch022.jpg"
+			}
+		      ]
+		    }
+		  ]
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "In order to prototype the interactions in the actual space, I took photos of places that might be part of a tour and drew the interactions over them. This allowed me to see things that I otherwise would have missed in the areas that I was sketching, as I would be forced to have an unedited view of the space in front of me (rather than an idealized sketch).\n\nThrough these prototypes, I thought it would help the student perspective avatars if something they were talking about was highlighted (for example, the student talks about buggy in the Tepper building and the buggies on the walls are highlighted).\n\nI realized through this that I needed a way of indicating that there was information to be given. Having information just pop up while a person is walking might be jarring, and making sure the person notices that there is something to learn in a spot might be challenging without some sort of indication beforehand, unless the tour specifically told them to stop and look in a certain direction at every point where there is information, which might be overkill. Furthermore, it might be hard for the visitor to know which non-tour things on campus are worthy of pointing to and gleaning information and which are not."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Storyboard 3"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "img",
+		  "alt": "sketches of fireflies",
+		  "url": "sketch030.jpg"
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "In my third storyboard, I attempted to address all the concerns that I noticed in my photograph prototypes. In this version, the tour still began with an interest selection menu, which looked the same as the previous iterations of the tour. The person on the tour is still guided by arrows on the ground, with a text element telling them where they are going.\n\nTo this version, though, I added small circles that are mapped to certain locations on campus where there is information. Circles are red when the information is relevant to the interests they selected, and grey when the information is not relevant. All locations that have information display circles of either red or grey, this way, the visitor can distinguish what is relevant to them while still being able to learn about things they see and are curious about. When a circle is selected, a student avatar will appear to give information to the visitor. When the person appears, so does another icon: a small red circle with an X on it. The visitor can point to this icon to make the avatar disappear if they do not want to see it."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Photo Prototypes 2"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "row",
+		  "content": [
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch004.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch009.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch005.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch006.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch007.jpg"
+			}
+		      ]
+		    },
+		    {
+		      "type": "fixedCol",
+		      "width": 6,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "storyboard sketch",
+			  "url": "sketch010.jpg"
+			}
+		      ]
+		    }
+		  ]
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "I explored the interactions present in the storyboard above with more photo prototypes. I was trying to figure out a way of representing what type of content the location was going to reveal, as I had decided that different categories of content would be displayed in different ways (only student testimonies would actually be presented by a student talking, while other information would be presented as text).\n\nMy first thought was to have only one type of content located at each circle and then an icon to indicate the type of content that is located there. I decided this wasn’t a good idea because there would be locations where multiple different categories can be talked about, and I thought it would be messy to have a bunch of circles near each other.\n\nNext I thought of having text be revealed when the visitor initially points to the circle. A text element would also appear above the circle telling the visitor where they were. Just showing text was a little unintuitive for something that was supposed to be selected by a finger in space, so I needed to do something else.\n\nI thought about having icons appear around the circle when the circle is pointed to. These would more clearly be buttons to select, and the visitor would learn what kind of content is implied by the icons as they are guided around the campus and interact with these icons more.\n\nWhen a student is talking and gestures to a specific item in the space, in addition to pointing, that space is highlighted. Given the challenge of highlighting movable objects, it is likely that this would only work for static things, but I figured that in most cases, it would only be static things that are being highlighted by students.\n\nI also prototyped what would happen when the user selects the X to end an interaction with a student testimony. I thought to have the student twist and shrink into the background. This would give a sense of space and get rid of the student in a way that wasn’t too jarring.\n\nNavigation across campus was still done with an arrow on the ground in this version.\n\nWhen a circle for an entire building is selected in this version, it is highlighted and some basic information is given about it with a button to reveal more information."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Designing the Interactions"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "img",
+		  "alt": "sketches of fireflies",
+		  "url": "sketch031.jpg"
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "Given the pervasive use of these circles throughout my tour experience, I felt it was important to dedicate time to just these interactions.\n\nFirst I thought about what categories of information I wanted in my tour. I initially came up with 10 categories based on questions I thought that the personas I had created would ask, but by consolidating a few into each other, I ended up with six final categories: finances, student life, classes, general information, jobs/after school/research, infrastructure. I came up with icons that could represent each of these categories.\n\nSecond, I thought about how interaction with the circle would work. First I thought of different shapes for the circles. Then I thought about how the icons would be revealed when the circle is selected. The icons could either be revealed within a larger circle, the icon currently being selected highlighted, or the icons could just float around the circle and be boxed in when selected.\n\nI deliberately decided to depart from the conventions of the Hololens, as I was trying to design an interface that was more comfortable to use. When using the Hololens, I hated the interaction of having to pinch to select UI elements. With better hand tracking technology (such as that in a leap motion), I figured I could use more comfortable interactions. I opted to have the user quickly bend their pointer finger to select a circle. Then with the selected, a series of flicks select the category from the circle (this was never prototyped but it is shown in the final video)."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "row",
+		  "content": [
+		    {
+		      "type": "column",
+		      "width": 12,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "simple navigation",
+			  "url": "simpleNav.jpg"
+			}
+		      ]
+		    }
+		  ]
+		},
+		{
+		  "type": "row",
+		  "content": [
+		    {
+		      "type": "column",
+		      "width": 12,
+		      "content": [
+			{
+			  "type": "img",
+			  "alt": "complex navigation",
+			  "url": "complexNav.jpg"
+			}
+		      ]
+		    }
+		  ]
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "I also wanted to think about how the guidance on the tour would be done, as it seemed to be overkill to have arrows on the ground pointing the visitor through the entire door. In a lot of cases (such as in open space) simply highlighting windows and doors would be enough to point the visitor. I settled on using a combination of the two, but only using arrows on the ground when absolutely necessary. Arrows would be used when the correct path could not be found otherwise."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "img",
+		  "alt": "prototype image with description window",
+		  "url": "MMText.jpg"
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "Lastly, I thought about how someone would exit out of information when they no longer want to see it. Since I figured that the students giving personal perspectives would be locked to the world, but text elements would be locked to the gaze, they needed different ways of being exited. Originally I thought I could keep an X to exit both of them, but ultimately I decided that the X was not ideal in either situation.\n\nFor the text, I settled on a swipe to get rid of it. I felt this reflected a more visceral interaction in physical space, something I thought would be better for an AR experience. Again, this was not prototyped, but it is shown in the final video.\n\nFor the student story, since the student was locked to an actual physical location rather than the gaze, I also had freedom to use the viewer’s gaze as an interactive element. Rather than swiping the person away, which is something you would never do to a real person, I thought it would be better to have the viewer simply look away. As the user turns their head away from the student, the student’s voice becomes quieter. Once the voice gets quieted to the point where it is inaudible, the student is no longer projected. This decrease in volume is not linked to head movement (as that might require the visitor to turn their head 180 degrees to quiet the student, for example). Instead, the student is quieted by the amount of time the user has not been looking at the student. This was also not prototyped, but it was shown (without sound) in the video."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Experimenting with the Circle Icons in Actual Space"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "video",
+		  "url": "https://www.youtube.com/embed/vicq6XPPUwk"
+		}
+	      ]
+	    },
+	    {
+	      "type": "column",
+	      "width": 6,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "Just to experience what looking at these circle icons would actually be like, I made a quick Unity project putting the circles in CFA using 8th Wall location tracking. This didn’t end up being super helpful for understanding what the AR experience would be like for a couple reasons. First, it was on a phone, not a headset. Second, the app was quite glitchy (mostly my own fault). Finally, it wasn’t interactive in any way. The circle just stayed where it was."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "subHeader",
+		  "content": "Resources Used in the Project"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "html",
+		  "content": "I did not create the final vector graphic icons used for the categories. The icons in this project were used under Creative Commons license from <a target=\"_blank\" href=\"https://thenounproject.com\">the Noun Project</a><br />Specific icons were created by:  Adrien Coquet, Aldric Rodríguez, Aleks, amantaka, Bieutuong Nam, carlos gonzalez, Creative Mahira, Dinosoft Labs, farias, Hopkins, Icon Solid, Ivan Colic, Juan Carlos Altamirano, Lemon Liu, Saifurrijal100, Smalllike, and Tom Ingebretsen<br /><br />The music in the final interaction video is \"Thereafter\" by A A Aalto. It was used under Creative Commons license and was found on <a target=\"_blank\" href=\"http://freemusicarchive.org\">Free Music Archive</a>"
+		}
+	      ]
+	    }
+	  ]
+	}
+      ]
     }
   ]
 }
