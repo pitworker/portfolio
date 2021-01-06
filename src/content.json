@@ -2650,6 +2650,161 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Insects",
+      "hash": "insects",
+      "rank": 1,
+      "size": 1,
+      "tags": {
+        "year": 2017,
+        "course": ["BXA Seminar I"],
+        "people": null,
+        "company": null,
+        "categories": [
+          "Sculpture"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "For years I've been mystified by the geometry of the insects I've seen crawling around the spaces I grew up in. Over time, this interest has spun off into a small series of wire studies."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Paraponera clavata"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "bullet ant infected by cordyceps fungus",
+                  "url": "ant.JPG"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This bullet ant has been infected by a Cordyceps fungus, which takes control of the ant's brain to reproduce. Under the fungus's command, the ant strays from its normal habitat and attaches itself to the undersude of a leaf; at which point the fungus kills the ant and begins sprouting from the ant's head. As the long stem grows, it spreads its spores to infect more ants.\n\nI was gripped by the reproductive cycle of the Cordyceps fungus. Its ability to control the mind of another organism and manipulate the ant's motion to its will is something straight out of a science fiction movie. I am always amazed by the unbelievable power that exists in nature that can often go unnoticed unless you watch closely.\n\nThis piece was completed in 2017 for the course BXA Seminar I."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Pachydiplax longipennis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "dragonfly",
+                  "url": "dragonfly.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "My mother loves dragonflies. We see them all over the place at our home during the Summer, and she and I are always enamored by the way the insects can navigate through the air with such control. I remember long Summer afternoons sitting on the grass with my mother and my siblings trying to lure dragonflies to land on our fingers.\n\nIn honor of our mutual affection for the insects, I made this sculpture for my mother's birthday in 2015."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Leptoglossus occidentalis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "conifer seed bug",
+                  "url": "carpenterBug.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "We see Western conifer seed bugs all over the place around where I live. These bugs crawl across the ground unbelievably slowly, but when stratled, they can fly quite quickly. Given the patterning on their exterior and their relatively flat body, they have incredible camouflage on the leaves and bark they evolved to spend most of their time on.\n\nInterested in combining the insect with the very things it hides on, I covered the wire armature with sticks and leaves.\n\nThis piece was completed in 2013."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
