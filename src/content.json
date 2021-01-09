@@ -273,7 +273,7 @@
         "people": null,
         "company": null,
         "skills": ["Java", "Processing"],
-        "categories": ["Art", "Animation", "Generative Art", "Coursework"]
+        "categories": ["Art", "Animation", "Generative Art"]
       },
       "content": [
         {
@@ -345,7 +345,7 @@
         "people": null,
         "company": null,
         "skills": ["JavaScript", "p5.js"],
-        "categories": ["Art", "Animation", "Generative Art", "Coursework"]
+        "categories": ["Art", "Animation", "Generative Art"]
       },
       "content": [
         {
@@ -738,8 +738,7 @@
         ],
         "categories": [
           "Art",
-          "Sculpture",
-	  "Coursework"
+          "Sculpture"
         ]
       },
       "content": [
@@ -1086,8 +1085,7 @@
         ],
         "categories": [
           "Graphic Design",
-          "Educational",
-	  "Coursework"
+          "Educational"
         ]
       },
       "content": [
@@ -1416,8 +1414,7 @@
         ],
         "categories": [
           "UX Design",
-          "Augmented Reality",
-	  "Coursework"
+          "Augmented Reality"
         ]
       },
       "content": [
@@ -2255,8 +2252,7 @@
           "Physical Prototyping"  
         ],
         "categories": [
-          "Product Design",
-	  "Coursework"
+          "Product Design"
         ]
       },
       "content": [
@@ -2663,8 +2659,7 @@
         "people": null,
         "company": null,
         "categories": [
-          "Sculpture",
-	  "Coursework"
+          "Sculpture"
         ]
       },
       "content": [
@@ -2824,608 +2819,1446 @@
           "Adobe Illustrator"
         ],
         "categories": [
-          "UX Design",
-	  "Internship"
+          "UX Design"
         ]
       },
       "content": [
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "For the Summer of 2019, I did a short internship in the autonomous vehicles divison of APTIV (later spun-off into a joint-venture with Hyundai called Motional). My primary project that Summer was to design and prototype a feature for the passenger display inside a self-driving taxi that would add contextual information about events and points of interest happening nearby as the vehicle navigates a city. The work I did that summer involved two parts: prototyping what the added interface layers would look like using Illustrator, and then building a functional demo into a fork of actual in-car display app using Android Studio.\n\nDue to intellectual property constraints, I am unable to share the code or video of the functional demo through this medium."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "header",
-		  "content": "Final Design"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "view of the final app overlay, default view.",
-		  "url": "in-car-03-06.png"
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "view of the final app overlay, info card.",
-		  "url": "in-car-03-07.png"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "The final design consists of two elements: a display of the car in-context (including representations of objects identified by the car's sensors and overlayed GPS data) with a constantly updating stack of information cards identifying nearby points of interest and the associated tags identifying which buildings those cards are associated with, and a blown up information card for a point-of-interest including images, description, and upcoming events."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "header",
-		  "content": "Process"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "subHeader",
-		  "content": "Concept Brainstorming"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "The original task I was given was relatively open-ended: develop and create a demo of a system to convey additional information to make the passenger display more engaging and useful to the passenger.\n\nThe software already displayed the location of the car in context, information about the progress of the ride, and features necessary to interact with the display or the car."
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "Together with a coworker, I came up with four candidates for additional information I could add: information about important landmarks, information about traffic events and the addition of agency to the rider with regards to what to do with those traffic events, a framework to add an interactive story or game to the user's ride (this could potentially be educational about the area the vehicle is navigating), and lastly to give information to get the rider better aquainted with their destination."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "row",
-		  "content": [
-		    {
-		      "type": "fixedCol",
-		      "width": 6,
-		      "content": [
-			{
-			  "type": "img",
-			  "alt": "whiteboard brainstorming for landmarks",
-			  "url": "whiteboard1.jpg"
-			}
-		      ]
-		    },
-		    {
-		      "type": "fixedCol",
-		      "width": 6,
-		      "content": [
-			{
-			  "type": "img",
-			  "alt": "whiteboard brainstorming for traffic events",
-			  "url": "whiteboard2.jpg"
-			}
-		      ]
-		    }
-		  ]
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "row",
-		  "content": [
-		    {
-		      "type": "fixedCol",
-		      "width": 6,
-		      "content": [
-			{
-			  "type": "img",
-			  "alt": "whiteboard brainstorming for storytelling",
-			  "url": "whiteboard3.jpg"
-			}
-		      ]
-		    },
-		    {
-		      "type": "fixedCol",
-		      "width": 6,
-		      "content": [
-			{
-			  "type": "img",
-			  "alt": "whiteboard brainstorming for destination information",
-			  "url": "whiteboard4.jpg"
-			}
-		      ]
-		    }
-		  ]
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "We ultimately ruled out the traffic events concept as it was somewhat out of the scope of the project I had been given, we ruled out the interactive story as it seemed to be too hard to scale to all the possible rides, and we ruled out the destination information concept as it seemed too likely that passengers were already aquainted with the destination they were going to and many would be unlikely to use the feature."
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "This left me with the landmarks concept."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "subHeader",
-		  "content": "Visual Development"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "After To start developing the visual prototypes of the new features I was adding, I looked at two sources for inspiration: the current display interface (on the left), and online map softwares that identified their landmarks, such as Google Maps, Apple Maps, and Waze (my notes on Google Maps on the right)"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "fixedCol",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "initial display interface",
-		  "url": "nuCar_original.jpg"
-		}
-	      ]
-	    },
-	    {
-	      "type": "fixedCol",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "my notes on google maps",
-		  "url": "maps_notes01.jpg"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "Waze proved to be relatively unhelpful given its focus on being a map for people behind a wheel, giving information to help someone drive rather than to give context about what points-of-interest are around them."
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "Apple Maps and Google Maps were particularly helpful, and I pulled inspiration primarily from the way the two apps used a system of pins to highlight interesting points and layed out their information when you tap on a landmark."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "Pretty early on, I had decided it made most sense to make information about landmarks collect in one place, given that everything would always be moving in the app and might be hard to see. This is what led me to prototype primarily concepts with stacks or rows of building cards. "
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "This led to a issue: associating those cards with the actual buildings in the context of the map. I tried various concepts: aligning buildings to tags with colors, simply highlighting buildings an letting passengers connect the two on their own, and using text or images of the buildings to connect the two."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "row",
-		  "content": [
-		    {
-		      "type": "column",
-		      "width": 12,
-		      "content": [
-			{
-			  "type": "img",
-			  "alt": "early landmark cards, highlighted buildings",
-			  "url": "in-car-01-04.png"
-			}
-		      ]
-		    }
-		  ]
-		},
-		{
-		  "type": "row",
-		  "content": [
-		    {
-		      "type": "column",
-		      "width": 12,
-		      "content": [
-			{
-			  "type": "img",
-			  "alt": "early landmark cards, colored buildings",
-			  "url": "in-car-01-03.png"
-			}
-		      ]
-		    }
-		  ]
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "early landmark cards, colored pins",
-		  "url": "in-car-01-14.png"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "After figuring out on paper an from talking to coworkers what information would be important to include in the popup cards, I prototyped different concepts for the cards. These included a small card that was just an expansion of one of the tags, and also a full screen popup that provided more space to include information."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "popup card, small",
-		  "url": "in-car-02-09.png"
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "popup card, large",
-		  "url": "in-car-02-07.png"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "subHeader",
-		  "content": "Design Language Change"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "subHeader",
-		  "content": "Design Language Change"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "In the last couple weeks of my internship, the visual language of the in-car display app was changed. I redesigned my UI to match this new language. Due to the heavy dominance of a singular color in the redesign, and my own concerns about implementing a system for picking and designating colors that could be differentiated from each other and could fell within brand guidelines to an undefined number of items, I decided to move away from the color identifiers, which had previously seemed the most promising."
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "I went back to pins, but was caught between text and images of the buildings. Ultimately, it made most sense to go with the text given that it seemed easier to quickly identify than the images, which might look the same at their small scale.\n\nWith the expanded information card, it made most sense to go full-screen rather than a small panel within the list in order to avoid clutter and maximize use of space. I adjusted the new panel to fit more images and use the space a little bit better."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "updated design, colored labels",
-		  "url": "in-car-03-02.png"
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "updated design, image labels",
-		  "url": "in-car-03-05.png"
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "updated design, text labels",
-		  "url": "in-car-03-06.png"
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "updated design, information popup",
-		  "url": "in-car-03-07.png"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 12,
-	      "content": [
-		{
-		  "type": "subHeader",
-		  "content": "Technical Development"
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "I implemented a working demo of the final concepts within the app using Android Studio. Most of the development was fairly straight-forward, the only real hurdle was figuring out how to get the information into the app. Given indications I had received that most of the information would be native to Aptiv's system, rather than pulled from some other service, it made most sense to just add this to a geojson file, given that geojsons were already being used to store the data used to draw buildings in the app."
-		}
-	      ]
-	    },
-	    {
-	      "type": "column",
-	      "width": 6,
-	      "content": [
-		{
-		  "type": "text",
-		  "content": "In the original geojson file, every feature includes a unique ID. To match the feature with the information from the info geojson, I used the same ID, and then matched the two at runtime in the app to determine which features to identify as important.\n\nBelow is a screenshot of a building and its associated landmark information in the geojson format and a screenshot of an early test of the code highlightin the buildings with landmark information in pink."
-		}
-	      ]
-	    }
-	  ]
-	},
-	{
-	  "type": "row",
-	  "content": [
-	    {
-	      "type": "fixedCol",
-	      "width": 5,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "geojson for a building feature and the feature for the info about that landmark",
-		  "url": "row34_geojson.jpg"
-		}
-	      ]
-	    },
-	    {
-	      "type": "fixedCol",
-	      "width": 7,
-	      "content": [
-		{
-		  "type": "img",
-		  "alt": "early iteration of code, highlighting buildings with information",
-		  "url": "Building_update01.jpg"
-		}
-	      ]
-	    }
-	  ]
-	}
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "For the Summer of 2019, I did a short internship in the autonomous vehicles divison of APTIV (later spun-off into a joint-venture with Hyundai called Motional). My primary project that Summer was to design and prototype a feature for the passenger display inside a self-driving taxi that would add contextual information about events and points of interest happening nearby as the vehicle navigates a city. The work I did that summer involved two parts: prototyping what the added interface layers would look like using Illustrator, and then building a functional demo into a fork of actual in-car display app using Android Studio.\n\nDue to intellectual property constraints, I am unable to share the code or video of the functional demo through this medium."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Final Design"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "view of the final app overlay, default view.",
+                  "url": "in-car-03-06.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "view of the final app overlay, info card.",
+                  "url": "in-car-03-07.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The final design consists of two elements: a display of the car in-context (including representations of objects identified by the car's sensors and overlayed GPS data) with a constantly updating stack of information cards identifying nearby points of interest and the associated tags identifying which buildings those cards are associated with, and a blown up information card for a point-of-interest including images, description, and upcoming events."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Process"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Concept Brainstorming"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The original task I was given was relatively open-ended: develop and create a demo of a system to convey additional information to make the passenger display more engaging and useful to the passenger.\n\nThe software already displayed the location of the car in context, information about the progress of the ride, and features necessary to interact with the display or the car."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Together with a coworker, I came up with four candidates for additional information I could add: information about important landmarks, information about traffic events and the addition of agency to the rider with regards to what to do with those traffic events, a framework to add an interactive story or game to the user's ride (this could potentially be educational about the area the vehicle is navigating), and lastly to give information to get the rider better aquainted with their destination."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "whiteboard brainstorming for landmarks",
+                          "url": "whiteboard1.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "whiteboard brainstorming for traffic events",
+                          "url": "whiteboard2.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "whiteboard brainstorming for storytelling",
+                          "url": "whiteboard3.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "whiteboard brainstorming for destination information",
+                          "url": "whiteboard4.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "We ultimately ruled out the traffic events concept as it was somewhat out of the scope of the project I had been given, we ruled out the interactive story as it seemed to be too hard to scale to all the possible rides, and we ruled out the destination information concept as it seemed too likely that passengers were already aquainted with the destination they were going to and many would be unlikely to use the feature."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This left me with the landmarks concept."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Visual Development"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "After To start developing the visual prototypes of the new features I was adding, I looked at two sources for inspiration: the current display interface (on the left), and online map softwares that identified their landmarks, such as Google Maps, Apple Maps, and Waze (my notes on Google Maps on the right)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "initial display interface",
+                  "url": "nuCar_original.jpg"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "my notes on google maps",
+                  "url": "maps_notes01.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Waze proved to be relatively unhelpful given its focus on being a map for people behind a wheel, giving information to help someone drive rather than to give context about what points-of-interest are around them."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Apple Maps and Google Maps were particularly helpful, and I pulled inspiration primarily from the way the two apps used a system of pins to highlight interesting points and layed out their information when you tap on a landmark."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Pretty early on, I had decided it made most sense to make information about landmarks collect in one place, given that everything would always be moving in the app and might be hard to see. This is what led me to prototype primarily concepts with stacks or rows of building cards. "
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This led to a issue: associating those cards with the actual buildings in the context of the map. I tried various concepts: aligning buildings to tags with colors, simply highlighting buildings an letting passengers connect the two on their own, and using text or images of the buildings to connect the two."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "early landmark cards, highlighted buildings",
+                          "url": "in-car-01-04.png"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "early landmark cards, colored buildings",
+                          "url": "in-car-01-03.png"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "early landmark cards, colored pins",
+                  "url": "in-car-01-14.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "After figuring out on paper an from talking to coworkers what information would be important to include in the popup cards, I prototyped different concepts for the cards. These included a small card that was just an expansion of one of the tags, and also a full screen popup that provided more space to include information."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "popup card, small",
+                  "url": "in-car-02-09.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "popup card, large",
+                  "url": "in-car-02-07.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Design Language Change"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Design Language Change"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "In the last couple weeks of my internship, the visual language of the in-car display app was changed. I redesigned my UI to match this new language. Due to the heavy dominance of a singular color in the redesign, and my own concerns about implementing a system for picking and designating colors that could be differentiated from each other and could fell within brand guidelines to an undefined number of items, I decided to move away from the color identifiers, which had previously seemed the most promising."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I went back to pins, but was caught between text and images of the buildings. Ultimately, it made most sense to go with the text given that it seemed easier to quickly identify than the images, which might look the same at their small scale.\n\nWith the expanded information card, it made most sense to go full-screen rather than a small panel within the list in order to avoid clutter and maximize use of space. I adjusted the new panel to fit more images and use the space a little bit better."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "updated design, colored labels",
+                  "url": "in-car-03-02.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "updated design, image labels",
+                  "url": "in-car-03-05.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "updated design, text labels",
+                  "url": "in-car-03-06.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "updated design, information popup",
+                  "url": "in-car-03-07.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Technical Development"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I implemented a working demo of the final concepts within the app using Android Studio. Most of the development was fairly straight-forward, the only real hurdle was figuring out how to get the information into the app. Given indications I had received that most of the information would be native to Aptiv's system, rather than pulled from some other service, it made most sense to just add this to a geojson file, given that geojsons were already being used to store the data used to draw buildings in the app."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "In the original geojson file, every feature includes a unique ID. To match the feature with the information from the info geojson, I used the same ID, and then matched the two at runtime in the app to determine which features to identify as important.\n\nBelow is a screenshot of a building and its associated landmark information in the geojson format and a screenshot of an early test of the code highlightin the buildings with landmark information in pink."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "fixedCol",
+              "width": 5,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "geojson for a building feature and the feature for the info about that landmark",
+                  "url": "row34_geojson.jpg"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 7,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "early iteration of code, highlighting buildings with information",
+                  "url": "Building_update01.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TAKE ME TO ITilly",
+      "hash": "itilly",
+      "rank": 5,
+      "size": 2,
+      "tags": {
+        "year": 2019,
+        "course": ["Environments Studio III"],
+        "people": null,
+        "company": null,
+        "skills": [
+          "SolidWorks",
+          "Laser Cutting",
+          "Adobe Photoshop"
+        ],
+        "categories": [
+          "Environments Design",
+          "Scale Model",
+          "Branding"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Concept"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>TAKE ME TO ITilly</strong> is a proposal for a popup promotional environment for illy coffee. The project aims to increase familiarity with the illy brand among a primarily American audience. Centered around illy's identity as an experience of authentic Italian culture, the popup is simultaneously erected in two locations: a stationary location in Lucca, Italy, and another installation on tour around the United States. Using two-way, livestreamed, 360&#176; projections, patrons in the US installation have an opportunity to immerse themselves in a real Italian piazza as they sip a cup of coffee, while patrons of the Lucca installation experience a more full-service coffee shop from a brand they are familiar with while also getting to interact in real-time with the American patrons."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "view from inside the American installation",
+                  "url": "render04.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "header",
+                          "content": "Brand Focus"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "illy carries on an authentic Italian tradition of coffee roasting and preparation, the brand shares coffee as an experience of culture, rather than just a beverage, and its identity carries a simple, clean, elegant design language."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "header",
+                          "content": "Intended Audience"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "A high-end product, illy coffee targets an adult audience already with an appreciation for coffee who are willing to spend a little more time and money for quality."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Location"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "The American half of the popup begins its tour in Pittsburgh, at the SouthSide Works Town Square, the center of an upscale shopping center. Lots of foot traffic and visitors with leisure time makes this a perfect location for the campaign’s audience.\nThe popup will be traveling to similar locations in cities with vibrant cultural centers."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "SouthSide Works, Pittsburgh PA",
+                          "url": "southside.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "exterior, American location",
+                          "url": "render01.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "interior, American location",
+                          "url": "render03.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "The Italian half of the popup will remain at a permanent location for the duration of the tour, in Lucca, Italy, at the Piazza del’Anfiteatro. Centered in the old walled city, the circular piazza provides an interesting view for visitors as well as small shops and restaurants. Buzzing with locals and tourists all day, the location is great for a long-term popup experience looking for fresh eyes."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "Piazza del'Anfiteatro, Lucca, Italy",
+                          "url": "piazza.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "exterior, Italian location",
+                          "url": "popup5_render03.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "interior, Italian location",
+                          "url": "popup5_render04.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Materials"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "Pulling from illy’s color and material palette, the popup emphasizes the brand identity without looking too out of place in its context."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 3,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "black enamel",
+                          "url": "black.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 9,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "black enamel"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 3,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "red enamel",
+                          "url": "red.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 9,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "red enamel"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 3,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "white enamel",
+                          "url": "white.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 9,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "white enamel"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 3,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "brushed aluminum",
+                          "url": "aluminum.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 9,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "brushed aluminum"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 3,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "cobblestone tile",
+                          "url": "stone.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 9,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "cobblestone tile"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 3,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "projection screen",
+                          "url": "projection.jpg"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 9,
+                      "content": [
+                        {
+                          "type": "text",
+                          "content": "projection screen"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 8,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "american popup",
+                          "url": "rendering_white01.JPG"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "column",
+                      "width": 12,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "italian popup",
+                          "url": "popup5_render01.JPG"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },      
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Measurement of Success"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Success of the popup will be measured by two metrics.\n\nAs two different physical experiences, it will be important to take note of the traffic that the two generate. Number of visitors, amount of interaction with the livestream, and sales of coffee will mark the success of the physical location.\n\nBeyond physical visitors, though, success of the popup will be measured by social media and press interest. Social media posts using #TakeMeToItILLY will be encouraged throughout the space, and patrons will likely intuitively want to post about the space given the novel experience it offers."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "inscriptions on counters",
+                  "url": "tableText.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Scale Models"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I built scale models of both of my final designs to help present my proposal in a more tangible and physical way."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "both models",
+                  "url": "bothModels.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Italian Model, view 1",
+                  "url": "itModel01.jpg"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "American Model, view 1",
+                  "url": "usModel01.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Italian Model, view 2",
+                  "url": "itModel02.jpg"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "American Model, view 2",
+                  "url": "usModel02.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Process"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Early Ideas"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I considered a couple concepts early on, including a popup shop where visitors select their own beans to make their own coffee and a curated mini-museum to show work by Illy-affiliated artists. I initially settled on a popup that allowed visitors to put their own designs on Illy coffee cans. A riff on Illy’s collaborations with established artists where the artists put their work on a set of Illy coffee cups, the popup would allow visitors to become the Illy artists themselves. The aim is to make Illy’s art collaborations feel more accessible and to push the idea that Illy coffee is the coffee for artists, but an artist is a role anybody can aspire to. This idea also presents an opportunity for visitors to walk away with something they can keep that is branded but also of personal significance, and also an opportunity to have people go home with a sample of the brand’s coffee."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "sketches of early concepts",
+                  "url": "IllyPopup_OUX.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Form Concepts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The outer form of the popup was initially inspired heavily by the illy can. Given the cylindrical nature of the internal space and the metaphor that the illy coffee is taking its drinkers to Italy, I thought reflecting the can design in the popup would make sense. Exploring a couple of ideas, I initially wanted to deconstruct the can a little bit to make the form more dynamic from the outside. This ended up being a little too abstracted, so I brought the form closer to that of the can. Even closer to the can’s design, the popup looked rather like a spaceship or something from the future, which is not exactly the concept I was going after, particularly given the location context in which the popup was located."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Form sketches",
+                  "url": "IllyPopup_Fexterior.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Form sketches",
+                  "url": "IllyPopup_Frender.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I shifted the outside design to an octagonal shape instead. This grounded the form more in a traditional architecture style, while still suggesting the round interior. I made most of the sides of the octagon red instead of silver to make the popup not so reflective."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>NOTE:</strong> illy and the illy logo are registered trademarks of illycaff&#232; S.p.A. My work was never commissioned by nor proposed to illycaff&#232; S.p.A. or to any representatives of the company or its subsidiaries. I am not associated with the company and do not speak for their brand or marketing strategy. The illy brand was used as a case study for academic purposes."
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ]
