@@ -4261,6 +4261,522 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Pittsburgh Tweets",
+      "hash": "pgh-tweets",
+      "rank": 3,
+      "size": 2,
+      "tags": {
+        "year": 2019,
+        "course": ["Environments Studio III"],
+        "people": null,
+        "company": null,
+        "skills": [
+          "Adobe Illustrator",
+          "Python"
+        ],
+        "categories": [
+          "UX Design"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>Pittsburgh Tweets</strong> is a proposal for a data visualization interface using geotagged tweets to map how general sentiment changes across the city of Pittsburgh over time, and where tweets tend to concentrate over time. An implemented version of this proposal could be used as a tool to understand emotions of residents across the city and also as a potential layer over other mapped data to understand how different factors might affect people's emotions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 8,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "default view of map with side bar in most recent time bracket and pittsburgh as a whole selected",
+                  "url": "fullMap01.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The default view gives users a map of Pittsburgh separated by the city's neighborhoods. Each neighborhood is highlighted with a color indicated the aggregate tweet sentiment. An information bar at the right indicates the timeframe being shown, a graph of how the aggregate tone has changed over time, and an indication of the number of tweets being considered."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 8,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "map with timeframe changed from default",
+                  "url": "fullMap04.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Moving the slider at the top of the bar allows users to see how the sentiment and aggregate data shifts over time a more granular look at how sentiment changed over time."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 8,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "selecting a certain neighborhood of Pittsburgh",
+                  "url": "fullMap03.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Hovering over a certain neighborhood will highlight that region and adjust the information on the side panel to show only the aggregate data for that specific neighborhood. This gives users a better idea of how a specific neighborhood changed over time in its sentiments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 8,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "zooming into a specific neighborhood",
+                  "url": "fullMap02.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Clicking on a neighborhood will zoom into that specific area. When zoomed in, the view changes from showing aggregate information to showing specific points for each tweet the visualization is considering. Each datapoint shows a color associated with the sentiment determined for that tweet."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 8,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "showing a tweet associated with a point",
+                  "url": "withTweet03.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 4,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Clicking on a point shows the specific tweet associated with that point in the sidebar, giving users a higher level of transparency and the ability to see what might be causing these sentiments."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Data"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "As a proof of concept that this visualization would be possible, I wrote a simple python script to collect tweets geotagged in Pittsburgh.\n\nI initially tried using Twitter's native tone filtering when pulling from the API, but I noticed a few limitations with this approach. First, Twitter uses a binary filter for its tweets (tweets are either one emotion or they are not, there is not a numeric score assigned). Second, at the time I was using the filter, it seemed that the filtering worked mostly based off of the presence of emojis, rather than an actual sentiment analysis of the text. Because of these limitations, it seems that a working implementation would have to use a more sophisticated sentiment analyzer, such as the IBM Watson Tone Analyzer.\n\nAnother limitation I noticed is that many tweets, such as the one whose geotag information is shown here, are geotagged to a general location, such as a city, but they don't have a specific location point (notice the \"geo\": null in the first row of the screenshot). This means that a severely limited subset of tweets can be shown, which might pose an issue, especially with the older timeframes."
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "a tweet without a proper location tag",
+                  "url": "tweetAPI.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Process"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Color Scheme"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "fixedCol",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "map in blue and yellow",
+                  "url": "mapOut02.png"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "map in red and yellow",
+                  "url": "mapOut01.png"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "map in red and blue",
+                  "url": "mapOut03.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "fixedCol",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "zoomed in map in blue and yellow",
+                  "url": "mapIn01.png"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "zoomed in map in red and yellow",
+                  "url": "mapIn02.png"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "zoomed in map in red and blue",
+                  "url": "mapIn03.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I experimented with a number of color combinations for the tone gradient. The gradient ranging from a medium blue to fuchsia seemed to be the most effective, as it provided the best contrast to the background while also not going through a range of grey or muddy colors like the yellow to dark blue gradient did."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Information Popups"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "timeline graph popup",
+                  "url": "timeFrame.png"
+                }
+              ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "tweet popup",
+                  "url": "withTweet01.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Initially all information not visible directly on the map was handled in the form of popups or overlays. I later realized this somewhat clunky approach was going to be cumbersome and unintuitive, and it was especially unforgiving for some of the more complex information, such as the timeframe slider."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Sidebars"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "sidebar, default view",
+                          "url": "sideBar02.png"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "sidebar, timeframe shifted",
+                          "url": "sideBar04.png"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "row",
+                  "content": [
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "sidebar, specific neighborhood",
+                          "url": "sideBar03.png"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 6,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "sidebar, tweet display",
+                          "url": "sideBar05.png"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I concentrated all the information not directly on the map into a single, flexible sidebar. This sidebar gave me a space to put a slider so users could navigate between different timeframes to see how sentiments shift over time, a graph of the average sentiment over time (which readjusts from Pittsburgh to a specific neighborhood as users focus in on certain areas), a counter for number of tweets (also localized), and a space for specific tweets to appear when selected."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "subHeader",
+                  "content": "Limitations of Scope and Access"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This project was never implemented in a functional format, and merely exists as a proposal and visual mockup. This is due to a number of factors. First, building the concept into a functioning web app was outside the scope of the class I did this project for, and there simply wasn't enough time to refine the app's concept and build a functioning version of it. Second, the Twitter API at the time presented some limitations to me. There simply wasn't enough data at the time that had a precise geotag in order to create a data visualization on the scale of this proposal. Furthermore, pulling all tweets in a certain area from Twitter's inception until the present day, which I was hoping to do, was disabled under the terms of my API key at the time. Lastly, I wasn't able to find an open source, or otherwise affordable sentiment analysis API that could function to the degree I had hoped. The Watson Tone Analyzer could have worked well for the visualization (it returns exactly the format of data needed for this type of visualization), but a license to use it was far out of my budget.\n\nAs such, the data used to fill the maps in the images above was just placeholder data and in no way reflects sentiment or even location of tweets across Pittsburgh.\n\nI hope to build a functioning version of this app someday. I just need to have the time, and potentially the budget, to do it well."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
