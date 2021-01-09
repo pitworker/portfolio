@@ -2317,17 +2317,6 @@
                       "content": [
                         {
                           "type": "img",
-                          "alt": "Final Interaction",
-                          "url": "int_final.jpg"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "fixedCol",
-                      "width": 4,
-                      "content": [
-                        {
-                          "type": "img",
                           "alt": "Early Interaction",
                           "url": "int01.jpg"
                         }
@@ -2409,6 +2398,17 @@
                           "url": "int08.jpg"
                         }
                       ]
+                    },
+                    {
+                      "type": "fixedCol",
+                      "width": 4,
+                      "content": [
+                        {
+                          "type": "img",
+                          "alt": "Final Interaction",
+                          "url": "int_final.jpg"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -2465,17 +2465,6 @@
         {
           "type": "row",
           "content": [
-            {
-              "type": "fixedCol",
-              "width": 4,
-              "content": [
-                {
-                  "type": "img",
-                  "alt": "Final form",
-                  "url": "form_final.jpg"
-                }
-              ]
-            },
             {
               "type": "fixedCol",
               "width": 4,
@@ -2596,6 +2585,17 @@
                   "url": "form20.jpg"
                 }
               ]
+            },
+            {
+              "type": "fixedCol",
+              "width": 4,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Final form",
+                  "url": "form_final.jpg"
+                }
+              ]
             }
           ]
         },
@@ -2659,7 +2659,8 @@
         "people": null,
         "company": null,
         "categories": [
-          "Sculpture"
+          "Sculpture",
+          "Art"
         ]
       },
       "content": [
@@ -2713,7 +2714,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "This bullet ant has been infected by a Cordyceps fungus, which takes control of the ant's brain to reproduce. Under the fungus's command, the ant strays from its normal habitat and attaches itself to the undersude of a leaf; at which point the fungus kills the ant and begins sprouting from the ant's head. As the long stem grows, it spreads its spores to infect more ants.\n\nI was gripped by the reproductive cycle of the Cordyceps fungus. Its ability to control the mind of another organism and manipulate the ant's motion to its will is something straight out of a science fiction movie. I am always amazed by the unbelievable power that exists in nature that can often go unnoticed unless you watch closely.\n\nThis piece was completed in 2017 for the course BXA Seminar I."
+                  "content": "This bullet ant has been infected by a Cordyceps fungus, which takes control of the ant's brain to reproduce. Under the fungus's command, the ant strays from its normal habitat and attaches itself to the underside of a leaf; at which point the fungus kills the ant and begins sprouting from the ant's head. As the long stem grows, it spreads its spores to infect more ants.\n\nI was gripped by the reproductive cycle of the Cordyceps fungus. Its ability to control the mind of another organism and manipulate the ant's motion to its will is something straight out of a science fiction movie. I am always amazed by the unbelievable power that exists in nature that can often go unnoticed unless you watch closely.\n\nThis piece was completed in 2017 for the course BXA Seminar I."
                 }
               ]
             }
