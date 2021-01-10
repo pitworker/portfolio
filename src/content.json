@@ -272,7 +272,7 @@
         "course": ["Electronic Media Studio"],
         "people": null,
         "company": null,
-        "skills": ["Java", "Processing"],
+        "skills": ["Java"],
         "categories": ["Art", "Animation", "Generative Art"]
       },
       "content": [
@@ -344,7 +344,7 @@
         "course": ["Electronic Media Studio"],
         "people": null,
         "company": null,
-        "skills": ["JavaScript", "p5.js"],
+        "skills": ["JavaScript"],
         "categories": ["Art", "Animation", "Generative Art"]
       },
       "content": [
@@ -4771,6 +4771,237 @@
                 {
                   "type": "text",
                   "content": "This project was never implemented in a functional format, and merely exists as a proposal and visual mockup. This is due to a number of factors. First, building the concept into a functioning web app was outside the scope of the class I did this project for, and there simply wasn't enough time to refine the app's concept and build a functioning version of it. Second, the Twitter API at the time presented some limitations to me. There simply wasn't enough data at the time that had a precise geotag in order to create a data visualization on the scale of this proposal. Furthermore, pulling all tweets in a certain area from Twitter's inception until the present day, which I was hoping to do, was disabled under the terms of my API key at the time. Lastly, I wasn't able to find an open source, or otherwise affordable sentiment analysis API that could function to the degree I had hoped. The Watson Tone Analyzer could have worked well for the visualization (it returns exactly the format of data needed for this type of visualization), but a license to use it was far out of my budget.\n\nAs such, the data used to fill the maps in the images above was just placeholder data and in no way reflects sentiment or even location of tweets across Pittsburgh.\n\nI hope to build a functioning version of this app someday. I just need to have the time, and potentially the budget, to do it well."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Faxtivities",
+      "hash": "faxtivities",
+      "rank": 2,
+      "size": 1,
+      "tags": {
+        "year": 2020,
+        "course": ["Experimental Capture"],
+        "people": null,
+        "company": null,
+        "skills": [
+          "Python"
+        ],
+        "categories": [
+          "Machine Learning",
+          "COVID",
+          "Art"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>Faxtivities</strong> is a piece of participatory art using GPT-2 and a couple Python scripts to generate unique drawing prompts and fax them to participants, who then respond to the prompts and fax their drawings back to me.\n\nThe final piece consisted of a collection of 20 drawings compiled from participants who had access to fax machines in quarantine. A few samples of this final set can be seen below."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Drawing for the prompt \"Draw in spring if you can find one,\" two flowers separated by a spring and a flowery number one to the right.",
+                  "url": "small_fax_04.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Drawing for the prompt \"Inspired by fairy tales? Line up tools and sketch tools,\" two rows of tools, the top labelled \"tools\" and the bottom labelled \"sketch tools\"",
+                  "url": "small_fax_06.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Drawing for the prompt \"Draw three portraits - Drawing three animals,\" three framed pictures with arms leaving the frames and drawing animals",
+                  "url": "small_fax_08.jpg"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "Drawing for the prompt \"Draws three fictional skyscrapers,\" three very tall, narrow skyscrapers, one with a large lightbulb plugged into the ground floor, one with a treehouse at the top, and one with a door to the moon at the top",
+                  "url": "small_fax_09.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The project evolved from my interest in figuring out what I could do with a fax machine. In a time when many of us were stuck in our homes and trying all sorts of ways of staying in touch with each other, I thought it was an apt opportunity to experiment with a tool for communication that, in all likelihood, is near the edge of extinction. The project eventually moved beyond just faxing and began to ask a second question: what if a computer completely manages one side of the fax?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Full Set of Drawings"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "four completed drawing prompts",
+                  "url": "faxes-01.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "four completed drawing prompts",
+                  "url": "faxes-02.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "four completed drawing prompts",
+                  "url": "faxes-03.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "four completed drawing prompts",
+                  "url": "faxes-04.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "four completed drawing prompts",
+                  "url": "faxes-05.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Artistic Context"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<strong>Faxtivities</strong> primarily pulls inspiration from the fax art of the 1980s (an example being the <a href=\"https://www.artsy.net/artwork/kaii-higashiyama-global-art-fusion\" target=\"_blank\"><strong>Global-Art-Fusion</strong></a> project by Ueli Fuchser, Andy Warhol, Joseph Beuys, and Kaii Higashiyama). Fax art was an early example of collaborative art that could be easily created and disseminated by and to parties across the world. It was one of the earliest forms of technology-assisted, visual, telematic art.<br /><br />The concept for the AI-generated drawing prompts was inspired by two sources: <strong><a href=\"http://learningtoloveyoumore.com/index.php\" target=\"_blank\">Learning to Love You More</a></strong>, a piece created by Miranda July and Harrell Fletcher which asks its audience to respond to a list of assignments. I was also inspired by <strong><a href=\"https://youtu.be/K0c94ghBS4A\" target=\"_blank\">Billie Eilish Gets Interviewed by a Robot</a></strong>, created by Brook Linder, Taeko Masuyama, Lisa Romagnoli, and Nicole He for <strong>Vogue</strong>, a video in which Billie Eilish is interviewed using questions generated by a tweaked GPT-2 AI. Synthesizing the concepts from these pieces of work are what led to the strange, almost anachronistic, mix of disparate things that became <strong>Faxtivities</strong>."
                 }
               ]
             }
