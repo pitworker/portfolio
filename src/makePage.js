@@ -113,6 +113,7 @@ function generateTags(t,n) {
           lnk.href = (Object.keys(tags)[i] == "people") ?
             content.people[tag.con[j]] :
             "index.html#" + tag.con[j].replace(/ /g, '-');
+          if (tag.cat == "People") lnk.target = "_blank";
           lnk.innerHTML = "&nbsp;" + tag.con[j] + "&nbsp;";
           
           catC.appendChild(lnk);
