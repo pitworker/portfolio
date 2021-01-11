@@ -361,7 +361,7 @@ function generateTiles(t,c) {
 
     let tileTxt = document.createElement("DIV");
     tileTxt.className = "imgText";
-    tileTxt.innerText = thumbs[i].title;
+    tileTxt.innerHTML = thumbs[i].title;
 
     tileOverlay.appendChild(tileTxt);
     tileLnk.appendChild(tileImg);
