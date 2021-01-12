@@ -237,7 +237,7 @@ function generateText(c,n) {
 }
 
 function generateHTML(c,n) {
-  let e = document.createElement("P");
+  let e = document.createElement("DIV");
   e.innerHTML = c;
   n.appendChild(e);
 }

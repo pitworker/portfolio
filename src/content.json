@@ -301,7 +301,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>Infinite Industry</strong> is an infinitely repetative generative abstract animation that gives a sense of industrial production. Items are being moved around, and they change color, suggesting they are heating up and cooling off, as they move. The piece was designed to be tiled infinitely in all directions, adding to the sense of unendingness of the production."
+                  "content": "<p><strong>Infinite Industry</strong> is an infinitely repetative generative abstract animation that gives a sense of industrial production. Items are being moved around, and they change color, suggesting they are heating up and cooling off, as they move. The piece was designed to be tiled infinitely in all directions, adding to the sense of unendingness of the production.</p>"
                 }
               ]
             }
@@ -326,7 +326,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "The vertical movement of the circles is based off of a double elliptic sigmoid function, which, given a portion of a nearly vertical slope, allows for a quick acceleration of the circle through the rectangles. By playing with the constants of this function and the adjustable center cosine window function for the rectangles, I was able to get the motion of the two to sync up.<br />All of these functions were taken from Professor <a target=\"_blank\" href=\"http://www.art.cmu.edu/people/golan-levin/\">Golan Levin</a>'s <a target=\"_blank\" href=\"https://github.com/golanlevin/Pattern_Master\">Pattern Master code</a>.<br />The code for the animation can be found on my <a target=\"_blank\" href=\"https://github.com/pitworker/IndustryGIF\">GitHub</a>."
+                  "content": "<p>The vertical movement of the circles is based off of a double elliptic sigmoid function, which, given a portion of a nearly vertical slope, allows for a quick acceleration of the circle through the rectangles. By playing with the constants of this function and the adjustable center cosine window function for the rectangles, I was able to get the motion of the two to sync up.<br />All of these functions were taken from Professor <a target=\"_blank\" href=\"http://www.art.cmu.edu/people/golan-levin/\">Golan Levin</a>'s <a target=\"_blank\" href=\"https://github.com/golanlevin/Pattern_Master\">Pattern Master code</a>.<br />The code for the animation can be found on my <a target=\"_blank\" href=\"https://github.com/pitworker/IndustryGIF\">GitHub</a>.</p>"
                 }
               ]
             }
@@ -362,7 +362,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>Watch</strong> is a reactive piece of generative art that changes based on the time of the day. Through most of the day, the green eye is open, watching you. It sits within a coral red and black striped background that blinks on random intervals. Later in the day, the red begins to fade to a dark brown. As it gets late, the eye gets tired and soon falls asleep. A couple hours pass, and then a yellow  monster's eye opens and begins to watch you as you sleep. As the sun rises and the green eye begins to wake up, the monster goes to sleep."
+                  "content": "<p><strong>Watch</strong> is a reactive piece of generative art that changes based on the time of the day. Through most of the day, the green eye is open, watching you. It sits within a coral red and black striped background that blinks on random intervals. Later in the day, the red begins to fade to a dark brown. As it gets late, the eye gets tired and soon falls asleep. A couple hours pass, and then a yellow  monster's eye opens and begins to watch you as you sleep. As the sun rises and the green eye begins to wake up, the monster goes to sleep.</p>"
                 }
               ]
             },
@@ -456,7 +456,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>Watch</strong> at different times of the day: midday, late at night just before the green eye has fallen asleep, late at night just after the green eye has fallen asleep, and even later at night when the monster is awake."
+                  "content": "<p><strong>Watch</strong> at different times of the day: midday, late at night just before the green eye has fallen asleep, late at night just after the green eye has fallen asleep, and even later at night when the monster is awake.</p>"
                 }
               ]
             }
@@ -654,7 +654,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "I then created characters for the vowels and consonants. These characters were fairly arbitrary in their form, though there were a couple of cases where the sound influenced the shape of the character. Voiced and unvoiced consonants were differentiated with a bar at the bottom of the character, and the three nasal consonants (m, n, and &#331;) all share similar forms."
+                  "content": "<p>I then created characters for the vowels and consonants. These characters were fairly arbitrary in their form, though there were a couple of cases where the sound influenced the shape of the character. Voiced and unvoiced consonants were differentiated with a bar at the bottom of the character, and the three nasal consonants (m, n, and &#331;) all share similar forms.</p>"
                 }
               ]
             }
@@ -717,7 +717,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "A couple of months after making the final version, I revisited the writing system and worked on making improvements to it. I worked on making the forms more visually appealing and sensible, and I worked particularly the t, &#643;, and &#679; (and by extension d, &#658;, and &#676;) to visually demonstrate that &#679;, while it operates as its own consonant, is really just a combination between t and &#643;. I also added the &#660; to the writing system. &#660; (the glottal stop) is present in the English language, although it is a fairly hidden consonant as it only shows up in rare cases and is never identified in written English. I never digitized this updated version of the writing system."
+                  "content": "<p>A couple of months after making the final version, I revisited the writing system and worked on making improvements to it. I worked on making the forms more visually appealing and sensible, and I worked particularly the t, &#643;, and &#679; (and by extension d, &#658;, and &#676;) to visually demonstrate that &#679;, while it operates as its own consonant, is really just a combination between t and &#643;. I also added the &#660; to the writing system. &#660; (the glottal stop) is present in the English language, although it is a fairly hidden consonant as it only shows up in rare cases and is never identified in written English. I never digitized this updated version of the writing system.</p>"
                 }
               ]
             }
@@ -756,7 +756,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "There isn't really that much to explain about this project&mdash;it's a robot that licks lollipops down to their sticks and makes a mess while doing it. It senses when a lollipop is placed into it, and, using a sponge wetted from a trough of water, licks the lollipop until it is just a stick. The intentional lack of a runoff collection system leads to a pool of liquid lollipop to collect around the robot all over the table the robot is on. The entire project was inspired by my partner, Paul, and me finding an orange sponge at the <a target=\"_blank\" href=\"http://pccr.org/\">Pittsburgh Center for Creative Reuse</a>."
+                  "content": "<p>There isn't really that much to explain about this project&mdash;it's a robot that licks lollipops down to their sticks and makes a mess while doing it. It senses when a lollipop is placed into it, and, using a sponge wetted from a trough of water, licks the lollipop until it is just a stick. The intentional lack of a runoff collection system leads to a pool of liquid lollipop to collect around the robot all over the table the robot is on. The entire project was inspired by my partner, Paul, and me finding an orange sponge at the <a target=\"_blank\" href=\"http://pccr.org/\">Pittsburgh Center for Creative Reuse</a>.</p>"
                 }
               ]
             }
@@ -853,7 +853,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "Between September 2017 and February 2018 I designed a four-piece line of wearable sculpture titled <strong>Stack</strong>. The line explored multiple different concepts: the intersection of the organic with the inorganic, forms that reveal themselves when viewed at multiple angles, and the idea of personal space. Using flat, rigid, and inorganic materials, I constructed organic, wearable forms. The layering technique used allowed the looks to give very different impressions when viewed from the front or back than when viewed from the sides. From some angles, the outfits hide most of the body, while from others, they reveal the body underneath; each look features spikes, that while they look elegant, also announce to viewers to keep their distance.<br /><br />The line was featured in Lunar Gala in 2018, Carnegie Mellon's premiere student fashion show, and Pittsburgh's largest fashion event."
+                  "content": "<p>Between September 2017 and February 2018 I designed a four-piece line of wearable sculpture titled <strong>Stack</strong>. The line explored multiple different concepts: the intersection of the organic with the inorganic, forms that reveal themselves when viewed at multiple angles, and the idea of personal space. Using flat, rigid, and inorganic materials, I constructed organic, wearable forms. The layering technique used allowed the looks to give very different impressions when viewed from the front or back than when viewed from the sides. From some angles, the outfits hide most of the body, while from others, they reveal the body underneath; each look features spikes, that while they look elegant, also announce to viewers to keep their distance.<br /><br />The line was featured in Lunar Gala in 2018, Carnegie Mellon's premiere student fashion show, and Pittsburgh's largest fashion event.</p>"
                 }
               ]
             }
@@ -1632,7 +1632,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "This project began with an exploration of current approaches to campus tours. As a class, we signed up for and took an official CMU guided campus tour. Last year, the campus tour was redesigned to be more personal to the student tour guide’s experience. The goal was to give a more personal perspective on the school that a visitor wouldn’t be able to otherwise get from a visit to the school’s website or a self-guided tour. Student tour guides submit their own scripts and points of interest on campus and give a tour that is entirely about their own experience.<br /><br />Unfortunately, in an attempt to make the tour more personal, the tours have become much less informative. The tour barely shows you the campus, and the guides give very little history about the school or about opportunities available that do not pertain to their life on campus. A student visiting who is interested in business wouldn’t be able to glean much about the major they are interested in from a tour guide who studies art, for example.<br /><br />Alternatively, the self-guided tour gives the visitors a decent amount of information about nearly every location on campus and a map, so the visitor has the ability to visit any of these buildings to see the spaces they might occupy in the future. The self-guided tour, though, dumps a nearly overwhelming amount of information on the visitor and asks them to parse through the information themselves. Furthermore, the self-guided tour gives almost nothing with regards to an actual student’s perspective.<a target=\"_blank\" href=\"https://admission.enrollment.cmu.edu/media/W1siZiIsIjIwMTgvMDkvMTgvOGtxZWM1bzZldl9XYWxraW5nX1RvdXJfTWFwX1NlcHQyMDE4LnBkZiJdXQ/Walking_Tour_Map_Sept2018.pdf\"> The current self-guided tour can be found here.</a>"
+                  "content": "<p>This project began with an exploration of current approaches to campus tours. As a class, we signed up for and took an official CMU guided campus tour. Last year, the campus tour was redesigned to be more personal to the student tour guide’s experience. The goal was to give a more personal perspective on the school that a visitor wouldn’t be able to otherwise get from a visit to the school’s website or a self-guided tour. Student tour guides submit their own scripts and points of interest on campus and give a tour that is entirely about their own experience.<br /><br />Unfortunately, in an attempt to make the tour more personal, the tours have become much less informative. The tour barely shows you the campus, and the guides give very little history about the school or about opportunities available that do not pertain to their life on campus. A student visiting who is interested in business wouldn’t be able to glean much about the major they are interested in from a tour guide who studies art, for example.<br /><br />Alternatively, the self-guided tour gives the visitors a decent amount of information about nearly every location on campus and a map, so the visitor has the ability to visit any of these buildings to see the spaces they might occupy in the future. The self-guided tour, though, dumps a nearly overwhelming amount of information on the visitor and asks them to parse through the information themselves. Furthermore, the self-guided tour gives almost nothing with regards to an actual student’s perspective.<a target=\"_blank\" href=\"https://admission.enrollment.cmu.edu/media/W1siZiIsIjIwMTgvMDkvMTgvOGtxZWM1bzZldl9XYWxraW5nX1RvdXJfTWFwX1NlcHQyMDE4LnBkZiJdXQ/Walking_Tour_Map_Sept2018.pdf\"> The current self-guided tour can be found here.</a></p>"
                 }
               ]
             }
@@ -1722,7 +1722,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "An important part of creating a tour was coming up with personas, or imaginary people that would take this tour. In creating these personas, I tried to imagine prospective students and parents and what they would be trying to get out of a tour. I tried to think about what questions they would have and what they would be trying to learn. <a target=\"_blank\" href=\"https://medium.com/@scarpent_51045/environments-studio-i-personas-for-project-2-8bc1ec06df54\">A Medium article containing the personas I created for this project can be found here.</a>"
+                  "content": "<p>An important part of creating a tour was coming up with personas, or imaginary people that would take this tour. In creating these personas, I tried to imagine prospective students and parents and what they would be trying to get out of a tour. I tried to think about what questions they would have and what they would be trying to learn. <a target=\"_blank\" href=\"https://medium.com/@scarpent_51045/environments-studio-i-personas-for-project-2-8bc1ec06df54\">A Medium article containing the personas I created for this project can be found here.</a></p>"
                 }
               ]
             }
@@ -2249,7 +2249,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "I did not create the final vector graphic icons used for the categories. The icons in this project were used under Creative Commons license from <a target=\"_blank\" href=\"https://thenounproject.com\">the Noun Project</a><br />Specific icons were created by:  Adrien Coquet, Aldric Rodríguez, Aleks, amantaka, Bieutuong Nam, carlos gonzalez, Creative Mahira, Dinosoft Labs, farias, Hopkins, Icon Solid, Ivan Colic, Juan Carlos Altamirano, Lemon Liu, Saifurrijal100, Smalllike, and Tom Ingebretsen<br /><br />The music in the final interaction video is \"Thereafter\" by A A Aalto. It was used under Creative Commons license and was found on <a target=\"_blank\" href=\"http://freemusicarchive.org\">Free Music Archive</a>"
+                  "content": "<p>I did not create the final vector graphic icons used for the categories. The icons in this project were used under Creative Commons license from <a target=\"_blank\" href=\"https://thenounproject.com\">the Noun Project</a><br />Specific icons were created by:  Adrien Coquet, Aldric Rodríguez, Aleks, amantaka, Bieutuong Nam, carlos gonzalez, Creative Mahira, Dinosoft Labs, farias, Hopkins, Icon Solid, Ivan Colic, Juan Carlos Altamirano, Lemon Liu, Saifurrijal100, Smalllike, and Tom Ingebretsen<br /><br />The music in the final interaction video is \"Thereafter\" by A A Aalto. It was used under Creative Commons license and was found on <a target=\"_blank\" href=\"http://freemusicarchive.org\">Free Music Archive</a></p>"
                 }
               ]
             }
@@ -3489,7 +3489,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>TAKE ME TO ITilly</strong> is a proposal for a popup promotional environment for illy coffee. The project aims to increase familiarity with the illy brand among a primarily American audience. Centered around illy's identity as an experience of authentic Italian culture, the popup is simultaneously erected in two locations: a stationary location in Lucca, Italy, and another installation on tour around the United States. Using two-way, livestreamed, 360&#176; projections, patrons in the US installation have an opportunity to immerse themselves in a real Italian piazza as they sip a cup of coffee, while patrons of the Lucca installation experience a more full-service coffee shop from a brand they are familiar with while also getting to interact in real-time with the American patrons."
+                  "content": "<p><strong>TAKE ME TO ITilly</strong> is a proposal for a popup promotional environment for illy coffee. The project aims to increase familiarity with the illy brand among a primarily American audience. Centered around illy's identity as an experience of authentic Italian culture, the popup is simultaneously erected in two locations: a stationary location in Lucca, Italy, and another installation on tour around the United States. Using two-way, livestreamed, 360&#176; projections, patrons in the US installation have an opportunity to immerse themselves in a real Italian piazza as they sip a cup of coffee, while patrons of the Lucca installation experience a more full-service coffee shop from a brand they are familiar with while also getting to interact in real-time with the American patrons.</p>"
                 }
               ]
             }
@@ -4289,7 +4289,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>NOTE:</strong> illy and the illy logo are registered trademarks of illycaff&#232; S.p.A. My work was never commissioned by nor proposed to illycaff&#232; S.p.A. or to any representatives of the company or its subsidiaries. I am not associated with the company and do not speak for their brand or marketing strategy. The illy brand was used as a case study for academic purposes."
+                  "content": "<p><strong>NOTE:</strong> illy and the illy logo are registered trademarks of illycaff&#232; S.p.A. My work was never commissioned by nor proposed to illycaff&#232; S.p.A. or to any representatives of the company or its subsidiaries. I am not associated with the company and do not speak for their brand or marketing strategy. The illy brand was used as a case study for academic purposes.</p>"
                 }
               ]
             }
@@ -4325,7 +4325,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>Pittsburgh Tweets</strong> is a proposal for a data visualization interface using geotagged tweets to map how general sentiment changes across the city of Pittsburgh over time, and where tweets tend to concentrate over time. An implemented version of this proposal could be used as a tool to understand emotions of residents across the city and also as a potential layer over other mapped data to understand how different factors might affect people's emotions."
+                  "content": "<p><strong>Pittsburgh Tweets</strong> is a proposal for a data visualization interface using geotagged tweets to map how general sentiment changes across the city of Pittsburgh over time, and where tweets tend to concentrate over time. An implemented version of this proposal could be used as a tool to understand emotions of residents across the city and also as a potential layer over other mapped data to understand how different factors might affect people's emotions.</p>"
                 }
               ]
             }
@@ -4842,7 +4842,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>Faxtivities</strong> is a piece of participatory art using GPT-2 and a couple Python scripts to generate unique drawing prompts and fax them to participants, who then respond to the prompts and fax their drawings back to me.\n\nThe final piece consisted of a collection of 20 drawings compiled from participants who had access to fax machines in quarantine. A few samples of this final set can be seen below."
+                  "content": "<p><strong>Faxtivities</strong> is a piece of participatory art using GPT-2 and a couple Python scripts to generate unique drawing prompts and fax them to participants, who then respond to the prompts and fax their drawings back to me.\n\nThe final piece consisted of a collection of 20 drawings compiled from participants who had access to fax machines in quarantine. A few samples of this final set can be seen below.</p>"
                 }
               ]
             }
@@ -5036,7 +5036,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>Faxtivities</strong> primarily pulls inspiration from the fax art of the 1980s (an example being the <a href=\"https://www.artsy.net/artwork/kaii-higashiyama-global-art-fusion\" target=\"_blank\"><strong>Global-Art-Fusion</strong></a> project by Ueli Fuchser, Andy Warhol, Joseph Beuys, and Kaii Higashiyama). Fax art was an early example of collaborative art that could be easily created and disseminated by and to parties across the world. It was one of the earliest forms of technology-assisted, visual, telematic art.<br /><br />The concept for the AI-generated drawing prompts was inspired by two sources: <strong><a href=\"http://learningtoloveyoumore.com/index.php\" target=\"_blank\">Learning to Love You More</a></strong>, a piece created by Miranda July and Harrell Fletcher which asks its audience to respond to a list of assignments. I was also inspired by <strong><a href=\"https://youtu.be/K0c94ghBS4A\" target=\"_blank\">Billie Eilish Gets Interviewed by a Robot</a></strong>, created by Brook Linder, Taeko Masuyama, Lisa Romagnoli, and Nicole He for <strong>Vogue</strong>, a video in which Billie Eilish is interviewed using questions generated by a tweaked GPT-2 AI. Synthesizing the concepts from these pieces of work are what led to the strange, almost anachronistic, mix of disparate things that became <strong>Faxtivities</strong>."
+                  "content": "<p><strong>Faxtivities</strong> primarily pulls inspiration from the fax art of the 1980s (an example being the <a href=\"https://www.artsy.net/artwork/kaii-higashiyama-global-art-fusion\" target=\"_blank\"><strong>Global-Art-Fusion</strong></a> project by Ueli Fuchser, Andy Warhol, Joseph Beuys, and Kaii Higashiyama). Fax art was an early example of collaborative art that could be easily created and disseminated by and to parties across the world. It was one of the earliest forms of technology-assisted, visual, telematic art.<br /><br />The concept for the AI-generated drawing prompts was inspired by two sources: <strong><a href=\"http://learningtoloveyoumore.com/index.php\" target=\"_blank\">Learning to Love You More</a></strong>, a piece created by Miranda July and Harrell Fletcher which asks its audience to respond to a list of assignments. I was also inspired by <strong><a href=\"https://youtu.be/K0c94ghBS4A\" target=\"_blank\">Billie Eilish Gets Interviewed by a Robot</a></strong>, created by Brook Linder, Taeko Masuyama, Lisa Romagnoli, and Nicole He for <strong>Vogue</strong>, a video in which Billie Eilish is interviewed using questions generated by a tweaked GPT-2 AI. Synthesizing the concepts from these pieces of work are what led to the strange, almost anachronistic, mix of disparate things that became <strong>Faxtivities</strong>.</p>"
                 }
               ]
             }
@@ -5075,7 +5075,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>Gear Tetrahedron</strong> is a puzzle based on Oskar van Deventer's <strong><a href=\"https://youtu.be/PkAlP9W0PM0\" target=\"_blank\">Gear Shift</a></strong> that allows uses a series of engaging and disengaging gears to alter the shape and color combinations of the puzzle. Unlike the other puzzles in my portfolio, the parts of <strong>Gear Tetrahedron</strong> never change position relative to each other; instead the puzzle is scrambled merely by rotating the corners at various states of gear engagement to change the rotations of the pieces."
+                  "content": "<p><strong>Gear Tetrahedron</strong> is a puzzle based on Oskar van Deventer's <strong><a href=\"https://youtu.be/PkAlP9W0PM0\" target=\"_blank\">Gear Shift</a></strong> that allows uses a series of engaging and disengaging gears to alter the shape and color combinations of the puzzle. Unlike the other puzzles in my portfolio, the parts of <strong>Gear Tetrahedron</strong> never change position relative to each other; instead the puzzle is scrambled merely by rotating the corners at various states of gear engagement to change the rotations of the pieces.</p>"
                 }
               ]
             },
@@ -5185,7 +5185,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<strong>zo&#246;id</strong> is a line of networked wearable art inspired by deep-sea organisms that communicate with light. Each piece is equipped with LED lights powered by an Arduino. Using XBee radio transmitters, the pieces are able to communicate with each other and with a central computer in order to synchronize their patterns and rhythms.<br /><br />We were interested in using these electronic formats to create a line of eight pieces that functioned as a single mega-organism. We looked to pyrosomes in the depths of the ocean that use flashes of light to synchronize their movements. Despite being small organisms on their own, this ability to communicate allows the pyrosomes to work together and operate as a much larger organism. <strong>zo&#246;id</strong> functions in much the same way on a stage, using synchronized light and choreography to transform 8 pieces of clothing into a single, fluid spectacle.<br /><br /><strong>zo&#246;id</strong> was designed and fabricated with my lovely partners, Connie Ye and Alice Fang, and was made possible by the generous support of CMU's competitive <a href=\"https://www.cmu.edu/uro/research%20grants/SURG/index.html\" target=\"_blank\">SURG</a> and <a href=\"https://studioforcreativeinquiry.org/grants\" target=\"_blank\">FRFAF</a> research grant programs. The line was presented in <a href=\"https://lunargala.org/\" target=\"_blank\">Lunar Gala</a>, one of Pittsburgh's largest annual fashion events."
+                  "content": "<p><strong>zo&#246;id</strong> is a line of networked wearable art inspired by deep-sea organisms that communicate with light. Each piece is equipped with LED lights powered by an Arduino. Using XBee radio transmitters, the pieces are able to communicate with each other and with a central computer in order to synchronize their patterns and rhythms.<br /><br />We were interested in using these electronic formats to create a line of eight pieces that functioned as a single mega-organism. We looked to pyrosomes in the depths of the ocean that use flashes of light to synchronize their movements. Despite being small organisms on their own, this ability to communicate allows the pyrosomes to work together and operate as a much larger organism. <strong>zo&#246;id</strong> functions in much the same way on a stage, using synchronized light and choreography to transform 8 pieces of clothing into a single, fluid spectacle.<br /><br /><strong>zo&#246;id</strong> was designed and fabricated with my lovely partners, Connie Ye and Alice Fang, and was made possible by the generous support of CMU's competitive <a href=\"https://www.cmu.edu/uro/research%20grants/SURG/index.html\" target=\"_blank\">SURG</a> and <a href=\"https://studioforcreativeinquiry.org/grants\" target=\"_blank\">FRFAF</a> research grant programs. The line was presented in <a href=\"https://lunargala.org/\" target=\"_blank\">Lunar Gala</a>, one of Pittsburgh's largest annual fashion events.</p>"
                 }
               ]
             }
