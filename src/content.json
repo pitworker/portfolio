@@ -5298,7 +5298,7 @@
               "width": 12,
               "content": [
                 {
-                  "type": "subHeader",
+                  "type": "header",
                   "content": "In Lunar Gala"
                 }
               ]
@@ -5343,7 +5343,7 @@
               "width": 12,
               "content": [
                 {
-                  "type": "subHeader",
+                  "type": "header",
                   "content": "Studio Shots"
                 }
               ]
@@ -5385,7 +5385,7 @@
               "width": 12,
               "content": [
                 {
-                  "type": "subHeader",
+                  "type": "header",
                   "content": "Project Development"
                 }
               ]
@@ -5480,7 +5480,7 @@
               "width": 12,
               "content": [
                 {
-                  "type": "subHeader",
+                  "type": "header",
                   "content": "Attributions"
                 }
               ]
@@ -5513,6 +5513,207 @@
                   "type": "img",
                   "alt": "designers walking out after zooid at Lunar Gala",
                   "url": "full02.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "COVID Obituaries",
+      "hash": "covid-obit",
+      "rank": 5,
+      "size": 1,
+      "tags": {
+        "year": 2020,
+        "course": ["Computational Design Thinking"],
+        "people": ["Jenna Kim", "Vicky Zhou"],
+        "company": null,
+        "skills": [
+          "JavaScript"
+        ],
+        "categories": [
+          "Generative Art",
+          "Data Visualization",
+          "COVID"
+        ]
+      },
+      "content": [
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<p><strong>COVID Obituaries</strong> is an online experience designed to remember those taken by COVID-19. The site graphs deaths from COVID-19 by month, but clicking on any particular month presents the visitor with candles honoring 20 individuals taken by the disease in that month. Clicking on any candle allows the visitor to explore that person's obituary. The project aims to break down the inhuman aggregate of the pandemic's death toll and create a visualization that honors the individuals taken by the disease rather than let them be forgotten as a statistic.<br /><br />This project was created with Jenna Kim and Vicky Zhou, and the site pulls the aggregate COVID-19 death tolls from <a href=\"https://covidtracking.com/\" target=\"_blank\"><strong>the Atlantic</strong>'s \"COVID Tracking Project\"</a> and the obituaries from <a href=\"https://www.nytimes.com/interactive/2020/obituaries/people-died-coronavirus-obituaries.html\" target=\"_blank\"><strong>the New York Times</strong>' \"Those We've Lost.\"</a> All three members of my team worked together to come up with the concept and general flow of the site, but beyond that, my primary focus was to implement the designs into a functioning website.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "html",
+                  "content": "<h6><a href=\"http://sebastiancarpenter.xyz/special/covid-obit/\" target=\"_blank\">Visit the site!</a></h6>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Please note that this site makes multiple requests to the NYTimes API, which caps number of requests per minute, so the site might take 3 or more minutes to load."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "header",
+                  "content": "Site Walkthrough"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "covid-19 death toll graph",
+                  "url": "graph.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Upon entering the site, visitors are greeted with a macro view of the pandemic's death toll. The graph plots the deaths each month since March 2020.\n\nThe individual data points are pulled from \"the COVID Tracking Project.\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "deaths in a certain month, represented by 20 candles",
+                  "url": "candles.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Clicking on one of the stars brings the visitor to a grid of twenty candles. Each candle is associated with an individual taken by COVID-19 that month. The number twenty was chosen as we found it to be a good balance between not overwhelming the visitor, yet providing enough cases that the visitor had a range of people to learn about.\n\nThe site pulls obituaries tagged with \"COVID-19\" from the NYTimes API for each month and uses that data to construct the candles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "an individual's obituary snapshot",
+                  "url": "obit.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Clicking on one of the candles presents the visitor with a card representing the individual taken by the corona virus, as well as a brief excerpt from their obituary. A link to the full obituary on the New York Times site is provided so visitors can learn even more about the individual if inclined."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "img",
+                  "alt": "diagram of candle features",
+                  "url": "card.png"
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "width": 6,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Each of the candles is individualized based on data pulled from that person's obituary. The height of the candle is determined by the age the person died at, the icon on the candle indicates the industry the person worked in, and the inscription on the bottom shows the date the person died. This individualization gives visitors to the site the ability to quickly survey the grid of candles to get a sense of the characteristics of those taken, and these characteristics might pique the visitor's interest in a certain person. A particulary short or tall candle, or one with a certain date or industry on it might spark something in the visitor and encourage real engagement with the content."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "content": [
+            {
+              "type": "column",
+              "width": 12,
+              "content": [
+                {
+                  "type": "text",
+                  "content": "I want to give a special thanks to Kyuha Shim for advising us on this project and providing conceptual and design critique that helped us streamline this project into its final form."
                 }
               ]
             }
