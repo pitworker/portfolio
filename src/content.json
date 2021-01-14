@@ -6145,6 +6145,148 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Motional Internship",
+      "hash": "motional-internship",
+      "rank": 5,
+      "size": 1,
+      "tags": {
+        "year": 2020,
+        "course": null,
+        "people": null,
+        "company": ["Motional"],
+        "skills": [
+          "JavaScript",
+          "MapBox",
+          "Adobe Illustrator"
+        ],
+        "categories": [
+          "UX Design"
+        ]
+      },
+      "content": [
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "For the Summer of 2020 I took an internship with Motional (a joint venture between Hyundai and Aptiv) to do UX design and prototyping for autonomous vehicles. Whereas last Summer I focused on the passenger display inside the car, this Summer I focused on the Command Center, the software used to manage the fleet of autonomous taxis Motional operates.\n\nMy task during this internship was to design and implement a demo of a 3D map view for the software. I mocked up various features and designs for this layer using Illustrator and built a functioning demo with JavaScript and MapBox to be used to judge the value of this feature before having a fully funcitonal version integrated by the development team. Based on internal research using the work I produced, Motional made the decision to integrate the 3D map features into the operational Command Center soon after the conclusion of my internship."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "header",
+		  "content": "Why Add 3D?"
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "The map already has a 2D roadmap and satellite view built in, but there are some advantages to also having a 3D view. 3D buildings add context and details. The additional view also adds an opportunity for additional awareness of passengers (their location in relation to buildings can be viewed to ease helping passengers find their rides). Lastly, the layer adds a more dynamic element to the view that makes it more engaging. This last element might not be necessary for day-to-day fleet monitoring, but it might be a helpful tool in selling the fleet manager to potential customers and partners."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "Motional's fleet operates with predetermined pick-up and drop-off locations (PuDos), something more analagous to a bus than a ride-hailing app. Because of thse predetermined labels, having those locations pointed out on a map is a necessary feature. In the 3D view, to limit obstruction to the map, PuDos are labelled with a small but noticable pin, which reveals the name of the location upon a mouse hover."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "All vehicles have an ID number and being able to see identify cars to keep note of potential issues is essential for fleet operators. Although identifying cars is necessary, though, having that information present all the time can become obstructive, especially when zoomed out. Therefore, like the PuDo labels, car ID labels appear when cars are selected or hovered over. When the car is not selected, the label disappears and the car is highlighted with a color to indicate its status (blue for active, grey for inactive)."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "Sometimes, for a whole host of reasons, it is necessary to track a specific vehicle. This is actually a feature that already existed to some capacity in the Command Center before I started, but I modified it slightly while working on the 3D view. I moved the button for vehicle tracking to the popout display, which I thought made more sense than the previous location being next to the zoom in/out buttons. I also modified the car trajectory line to fit better with the 3D view."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "Passenger pickup works quite similarly to the previous iterations of the Command Center, but with one big added feature. The building associated with the pickup location (in the cases that there are buildings associated) is highlighted and the position of the passenger who hailed the ride is shown. The view also displays the trajectory of the car and the path to the PuDo the hailing app is instructing the passenger to follow. All of these features are designed to aid fleet managers identify why a car might not be leaving yet or why a passenger is having trouble finding the car."
+		}
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "type": "row",
+	  "content": [
+	    {
+	      "type": "column",
+	      "width": 12,
+	      "content": [
+		{
+		  "type": "text",
+		  "content": "The original Command Center was written using the Google Maps API, but there had been intentions of moving to MapBox given the tool's additional features. Specifically, MapBox renders its maps with vector graphics rather than images, which allows for faster loading, and it also has countless customizability with additional layers, including a built-in 3D building layer (not supported in web versions of the Google Maps API) and the ability to integrate Three.js. Given that all of these features were a necessity for a 3D map view demo, I took the initiative, with the support of the team I was working with, to build the demo in MapBox rather than Google Maps."
+		}
+	      ]
+	    }
+	  ]
+	}
+      ]
     }
   ]
 }
