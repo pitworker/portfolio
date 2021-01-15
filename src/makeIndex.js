@@ -1,3 +1,6 @@
+const TAGS_OFFSET_BIG = "73px";
+const TAGS_OFFSET_SMALL = "41px";
+
 let content;
 
 let pageTitle;
@@ -359,6 +362,8 @@ function generateTags(t,n) {
 
   r.appendChild(c);
 
+  n.style.top =
+    (window.innerWidth < 992) ? TAGS_OFFSET_BIG : TAGS_OFFSET_SMALL;
   n.appendChild(r);
 }
 
@@ -372,7 +377,7 @@ function generateTiles(t,c) {
   r.className = "row";
   for (let i = 0; i < thumbs.length; i++) {
     let tileCol = document.createElement("DIV");
-    tileCol.className = "col-lg-3 col-md-4 col-sm-6 col-12 spacer";
+    tileCol.className = "col-lg-3 col-md-4 col-sm-6 col-6 spacer";
 
     let tileContainer = document.createElement("DIV");
     tileContainer.className = "imgContainer";
@@ -462,6 +467,12 @@ function init() {
     content = JSON.parse(response);
     populate();
   });
+}
+
+window.onresize = function(event) {
+  document.getElementById("tagsRow").style.top =
+    (window.innerWidth < 992) ? TAGS_OFFSET_BIG : TAGS_OFFSET_SMALL;
+  topBarResize();
 }
 
 init();

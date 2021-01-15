@@ -5,7 +5,7 @@ const NAV = [
   ["About", "about.html"]
 ];
 const DIVIDER = " | ";
-const BREAK = 1000;
+const BREAK = 992;
 
 function generateName() {
   let e = document.getElementById("name");
@@ -40,12 +40,12 @@ function generateNav() {
   }
 }
 
-generateName();
-generateNav();
-
-window.onresize = function(event) {
+function topBarResize() {
   document.getElementById("nav").innerText = "";
   document.getElementById("name").innerText = "";
   generateNav();
   generateName();
 }
+
+generateName();
+generateNav();

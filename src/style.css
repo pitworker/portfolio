@@ -14,8 +14,8 @@ h1 {
   font-family: 'Space Mono', Mono;
   color: #000000;
   font-weight: 400;
-  font-size: 38pt;
-  line-height: 42pt;
+  font-size: 24pt;
+  line-height: 28pt;
   text-align: left;
   padding-top: 30px;
   padding-bottom: 15px;
@@ -25,8 +25,8 @@ h2 {
   font-family: 'Space Mono', Mono;
   color: #000000;
   font-weight: 400;
-  font-size: 28pt;
-  line-height: 28pt;
+  font-size: 18pt;
+  line-height: 24pt;
   float: left;
   vertical-align: bottom;
 }
@@ -35,8 +35,8 @@ h3 {
   font-family: 'Space Mono', Mono;
   color: #000000;
   font-weight: 400;
-  font-size: 28pt;
-  line-height: 28pt;
+  font-size: 18pt;
+  line-height: 24pt;
   float: right;
   vertical-align: bottom;
 }
@@ -54,8 +54,8 @@ h5 {
   font-family: 'Space Mono', Mono;
   color: #000000;
   font-weight: 400;
-  font-size: 24pt;
-  line-height: 30pt;
+  font-size: 22pt;
+  line-height: 28pt;
   text-align: left;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -291,7 +291,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   position: -webkit-sticky;
   position: sticky;
   z-index: 2;
-  top: 46px;
+  /*top: 46px;*/
 }
 
 #tags {
@@ -572,7 +572,9 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 .imgText {
   color: #000000;
   font-family: "Space Mono", Mono;
-  font-size: 25pt;
+  font-weight: 400;
+  font-size: 18pt;
+  line-height: 24pt;
   position: absolute;
   top: 50%;
   left: 50%;

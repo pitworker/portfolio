@@ -326,4 +326,8 @@ function init() {
   });
 }
 
+window.onresize = function(event) {
+  topBarResize();
+}
+
 init();
