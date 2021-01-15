@@ -164,13 +164,39 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   padding: 0;
   border: none;
   color: #000000;
-  background-color: transparent;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
 #tagsButton:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+#clearBtn {
+  padding: 0;
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12pt;
+  font-family: "IBM Plex Sans", Sans-Serif;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#clearBtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#tagListTitle {
+  color: #000000;
+  background-color: transparent;
+  margin-left: 20px;
+  margin-top: 0px;
+  font-family: "Space Mono", Mono;
+  font-weight: 400;
+  font-size: 16pt;
 }
 
 #sideNav {
@@ -183,7 +209,7 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   background-color: #ffffff;
   overflow-x: hidden;
   transition: 0.3s;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 #sideNav a {
@@ -207,20 +233,21 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
   outline-width: 3px;
 }
 
-#sideNav .closebtn {
+#closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 24px;
-  margin-left: 50px;
   padding: 0;
   border: none;
   color: #000000;
   background-color: transparent;
   cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-#sideNav .closebtn:hover {
+#closebtn:hover {
   color: #ffc600;
 }
 
@@ -255,12 +282,16 @@ a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
 
 #indexTags {
   background-color: #ffffff;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 13px;
-  z-index: 1;
+}
+
+#tagsRow {
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  z-index: 2;
+  top: 46px;
 }
 
 #tags {

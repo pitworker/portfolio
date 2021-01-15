@@ -11,7 +11,7 @@ function loadJSON(callback) {
     }
   };
   xobj.send(null);
-  console.log("loadingJSON");
+  //console.log("loadingJSON");
 }
 
 function findHash(h) {
@@ -171,7 +171,7 @@ function generateContent(c,n) {
     } else if (c[i].type == "subHeader") {
       generateSubHeader(c[i].content, n);
     } else {
-      console.log("type " + c[i].type + " is unrecognized");
+      //console.log("type " + c[i].type + " is unrecognized");
     }
   }
 }

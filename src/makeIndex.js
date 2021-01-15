@@ -13,7 +13,7 @@ function loadJSON(callback) {
     }
   };
   xobj.send(null);
-  console.log("loadingJSON");
+  //console.log("loadingJSON");
 }
 
 function findHash(h) {
@@ -106,7 +106,7 @@ function labelTags(t,allTags) {
     }
 
     if (!foundTag) {
-      console.log("INVALID TAG: " + t[i]);
+      //console.log("INVALID TAG: " + t[i]);
     }
   }
   
@@ -132,7 +132,7 @@ function removeTag(t) {
     writeHash(tags);
   }
 
-  console.log("removeTag " + t);
+  //console.log("removeTag " + t);
 }
 
 function addTag(t) {
@@ -144,7 +144,15 @@ function addTag(t) {
     writeHash(tags);
   }
 
-  console.log("addTag " + t);
+  //console.log("addTag " + t);
+}
+
+function clearAllTags() {
+  let tags = parseTags(location.hash);
+
+  if (tags.length > 0) {
+    writeHash([]);
+  }
 }
 
 function getTaggedWork(t) {
@@ -164,7 +172,7 @@ function getTaggedWork(t) {
       } else {
         let found = false;
         for (let i = 0; i < t[tagSection].length; i++) {
-          console.log(w.tags[tagSection]);
+          //console.log(w.tags[tagSection]);
           if (w.tags[tagSection] != null &&
               ((typeof w.tags[tagSection] == "number" &&
                 w.tags[tagSection] == t[tagSection][i]) ||
@@ -190,10 +198,16 @@ function getTaggedWork(t) {
 
 function clearPage() {
   let c = document.getElementById("content");
+  let r = document.getElementById("tagsRow");
   let m = document.getElementById("sideNav");
   if (c != null) {
     while (c.hasChildNodes()) {
       c.removeChild(c.lastChild);
+    }
+  }
+  if (r != null) {
+    while (r.hasChildNodes()) {
+      r.removeChild(r.lastChild);
     }
   }
   if (m != null) {
@@ -207,11 +221,26 @@ function generateTagList(tags,allTags,c) {
   let menu = document.getElementById("sideNav");
 
   let closeBtn = document.createElement("BUTTON");
-  closeBtn.className = "closebtn";
+  closeBtn.id = "closebtn";
   closeBtn.onclick = function() {closeTags();};
   closeBtn.innerHTML = "&#215;";
+  closeBtn.style.marginLeft =
+    screen.width > 600 ? "350px" : ((screen.width - 50) + "px");
 
   menu.appendChild(closeBtn);
+
+  let filterTitle = document.createElement("DIV");
+  filterTitle.id = "tagListTitle";
+  filterTitle.innerText = "Filters";
+
+  menu.appendChild(filterTitle);
+  
+  let clearBtn = document.createElement("BUTTON");
+  clearBtn.id = "clearBtn";
+  clearBtn.onclick = function() {clearAllTags();};
+  clearBtn.innerHTML = "&nbsp;Clear&nbsp;";
+
+  menu.appendChild(clearBtn);
   
   let tagSections = {
     year: document.createElement("DIV"),
@@ -221,7 +250,7 @@ function generateTagList(tags,allTags,c) {
     skills: document.createElement("DIV"),
     categories: document.createElement("DIV")
   };
-
+  
   for (let t in tagSections) {
     if (t != "people") {
       tagSections[t].id = "tagsMenuTitle";
@@ -256,8 +285,8 @@ function generateTags(t,n) {
   let r = document.createElement("DIV");
   r.className = "row align-items-bottom";
   r.style["padding-top"] = "30px";
-  r.style["padding-left"] = "15px";
-  r.style["padding-right"] = "15px";
+  r.style["padding-left"] = "12px";
+  r.style["padding-right"] = "12px";
   r.style["padding-bottom"] = "30px";
 
   let c = document.createElement("DIV");
@@ -412,7 +441,7 @@ function populateIndexPage(t, allTags) {
   let c = document.getElementById("content");
   let labelT = labelTags(t,allTags);
   generateTagList(labelT,allTags,c);
-  generateTags(labelT,c);
+  generateTags(labelT,document.getElementById("tagsRow"));
   generateTiles(labelT,c);
   generateCopyright(c);
 }
