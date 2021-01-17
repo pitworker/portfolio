@@ -76,11 +76,11 @@ function parseTags(h) {
     let subH = h.substring(1);
     let i = subH.indexOf('+');
     while (i > 0) {
-      tags.push(subH.substring(0,i).replace(/-/g, ' '));
+      tags.push(subH.substring(0,i).replace(/-/g, ' ').replace(/_/g, '/'));
       subH = subH.substring(i + 1);
       i = subH.indexOf('+');
     }
-    tags.push(subH.replace(/-/g, ' '));
+    tags.push(subH.replace(/-/g, ' ').replace(/_/g, '/'));
     
     tags.sort();
   }
@@ -120,7 +120,8 @@ function writeHash(tags) {
   let hash = "#";
   let scroll = document.documentElement.scrollTop;
   for (let j = 0; j < tags.length; j++) {
-    hash = hash + (j < 1 ? "" : "+") + tags[j].replace(/ /g, '-'); 
+    hash = hash + (j < 1 ? "" : "+") +
+      tags[j].replace(/ /g, '-').replace(/\//g,'_'); 
   }
   location.hash = hash;
   document.documentElement.scrollTop = scroll;

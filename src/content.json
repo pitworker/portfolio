@@ -861,7 +861,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<p>Between September 2017 and February 2018 I designed a four-piece line of wearable sculpture titled <strong>Stack</strong>. The line explored multiple different concepts: the intersection of the organic with the inorganic, forms that reveal themselves when viewed at multiple angles, and the idea of personal space. Using flat, rigid, and inorganic materials, I constructed organic, wearable forms. The layering technique used allowed the looks to give very different impressions when viewed from the front or back than when viewed from the sides. From some angles, the outfits hide most of the body, while from others, they reveal the body underneath; each look features spikes, that while they look elegant, also announce to viewers to keep their distance.<br /><br />The line was featured in Lunar Gala in 2018, Carnegie Mellon's premiere student fashion show, and Pittsburgh's largest fashion event.</p>"
+                  "content": "<p>Between September 2017 and February 2018 I designed a four-piece line of wearable sculpture titled <strong>Stack</strong>. The line explored multiple different concepts: the intersection of the organic with the inorganic, forms that reveal themselves when viewed at multiple angles, and the idea of personal space. Using flat, rigid, and inorganic materials, I constructed organic, wearable forms. Layering rigit sheets allowed the looks to give very different impressions when viewed from the front or back than when viewed from the sides. From some angles, the outfits hide most of the body, while from others, they reveal the body underneath; each look features spikes, that while they look elegant, also announce to viewers to keep their distance.<br /><br />The line was featured in Lunar Gala in 2018, Carnegie Mellon's premiere student fashion show, and Pittsburgh's largest fashion event.</p>"
                 }
               ]
             }
@@ -1074,7 +1074,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "With a rigid outfit that was going to be produced entirely in a CAD software (specifically Fusion 360), there were unique challenges in measuring the models. The tape-measure typically used in fashion design proved to messy for what I needed to do, so I resorted to 3D-scanning my models. I took hundreds of photos at different angles of each model, ran the photos through Agisoft Photoscan, and produced rough 3D models or each model. I then modelled the outfits directly on top of these 3D models.\n\nThe rings were 3D-printed, and the flat layers were cut on a CNC mill. I initially intended to make the layers out of transparent, colored acrylic. The acrylic proved to be far too expensive incredibly heavy. I ended up replacing the acrylic with white Gator Foam (similar to foamcore but far more rigid). After being cut and printed, all the pieces were glued and press-fit together by hand."
+                  "content": "With a rigid outfit that was going to be produced entirely in a CAD software (specifically Fusion 360), there were unique challenges in measuring the models. The tape-measure typically used in fashion design proved to messy for what I needed to do, so I resorted to 3D-scanning my models. I took hundreds of photos at different angles of each model, ran the photos through Agisoft Photoscan, and produced rough 3D models or each model. I then modelled the outfits directly on top of these 3D models.\n\nThe rings were 3D-printed, and the flat layers were cut on a CNC mill. I initially intended to make the layers out of transparent, colored acrylic. The acrylic proved to be far too expensive and incredibly heavy. I ended up replacing the acrylic with white Gator Foam (similar to foamcore but far more rigid). After being cut and printed, all the pieces were glued and press-fit together by hand."
                 }
               ]
             }
@@ -2841,7 +2841,7 @@
         "year": 2019,
         "course": null,
         "people": null,
-        "company": ["Aptiv"],
+        "company": ["Aptiv/Motional"],
         "skills": [
           "Java",
           "Android Studio",
@@ -2861,7 +2861,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "For the Summer of 2019, I did a short internship in the autonomous vehicles divison of APTIV (later spun-off into a joint-venture with Hyundai called Motional). My primary project that Summer was to design and prototype a feature for the passenger display inside a self-driving taxi that would add contextual information about events and points of interest happening nearby as the vehicle navigates a city. The work I did that summer involved two parts: prototyping what the added interface layers would look like using Illustrator, and then building a functional demo into a fork of actual in-car display app using Android Studio.\n\nDue to intellectual property constraints, I am unable to share the code or video of the functional demo through this medium."
+                  "content": "For the Summer of 2019, I did an internship in the autonomous vehicles divison of APTIV (later spun-off into a joint-venture with Hyundai called Motional). My primary project that Summer was to design and prototype a feature for the passenger display inside a self-driving taxi that would add contextual information about events and points of interest happening nearby as the vehicle navigates a city. The work I did that summer involved two parts: prototyping what the added interface layers would look like using Illustrator, and then building a functional demo into a fork of actual in-car display app using Android Studio.\n\nDue to intellectual property constraints, I am unable to share the code or video of the functional demo through this medium."
                 }
               ]
             }
@@ -3099,7 +3099,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "After To start developing the visual prototypes of the new features I was adding, I looked at two sources for inspiration: the current display interface (on the left), and online map softwares that identified their landmarks, such as Google Maps, Apple Maps, and Waze (my notes on Google Maps on the right)"
+                  "content": "To start developing the visual prototypes of the new features I was adding, I looked at two sources for inspiration: the current display interface (on the left), and online map softwares that identified their landmarks, such as Google Maps, Apple Maps, and Waze (my notes on Google Maps on the right)"
                 }
               ]
             }
@@ -3166,7 +3166,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Pretty early on, I had decided it made most sense to make information about landmarks collect in one place, given that everything would always be moving in the app and might be hard to see. This is what led me to prototype primarily concepts with stacks or rows of building cards. "
+                  "content": "Early on, I had decided it made the most sense to display landmark information in one place, given that the car's movement would cause landmarks on the map to move, thus likely hard to see. This is what led me to prototype primarily concepts with stacks or rows of building cards. "
                 }
               ]
             },
@@ -3176,7 +3176,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "This led to a issue: associating those cards with the actual buildings in the context of the map. I tried various concepts: aligning buildings to tags with colors, simply highlighting buildings an letting passengers connect the two on their own, and using text or images of the buildings to connect the two."
+                  "content": "This led to an issue: associating those cards with the actual buildings in the context of the map. I tried various concepts: aligning buildings to tags with colors, simply highlighting buildings an letting passengers connect the two on their own, and using text or images of the buildings to connect the two."
                 }
               ]
             }
@@ -3245,7 +3245,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "After figuring out on paper an from talking to coworkers what information would be important to include in the popup cards, I prototyped different concepts for the cards. These included a small card that was just an expansion of one of the tags, and also a full screen popup that provided more space to include information."
+                  "content": "After figuring out on paper and from talking to coworkers what information would be important to include in the popup cards, I prototyped different concepts for the cards. These included a small card that was just an expansion of one of the tags, and also a full screen popup that provided more space to include information."
                 }
               ]
             }
@@ -3298,26 +3298,11 @@
           "content": [
             {
               "type": "column",
-              "width": 12,
-              "content": [
-                {
-                  "type": "subHeader",
-                  "content": "Design Language Change"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "row",
-          "content": [
-            {
-              "type": "column",
               "width": 6,
               "content": [
                 {
                   "type": "text",
-                  "content": "In the last couple weeks of my internship, the visual language of the in-car display app was changed. I redesigned my UI to match this new language. Due to the heavy dominance of a singular color in the redesign, and my own concerns about implementing a system for picking and designating colors that could be differentiated from each other and could fell within brand guidelines to an undefined number of items, I decided to move away from the color identifiers, which had previously seemed the most promising."
+                  "content": "In the last couple weeks of my internship, the visual language of the in-car display app was changed. I redesigned my UI to match this new language. Due to the heavy dominance of a singular color in the redesign, and my own concerns about implementing a system for picking and designating colors that could be differentiated from each other and could fall within brand guidelines to an undefined number of items, I decided to move away from the color identifiers, which had previously seemed the most promising."
                 }
               ]
             },
@@ -3327,7 +3312,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "I went back to pins, but was caught between text and images of the buildings. Ultimately, it made most sense to go with the text given that it seemed easier to quickly identify than the images, which might look the same at their small scale.\n\nWith the expanded information card, it made most sense to go full-screen rather than a small panel within the list in order to avoid clutter and maximize use of space. I adjusted the new panel to fit more images and use the space a little bit better."
+                  "content": "I went back to pins, but was caught between text and images of the buildings. Ultimately, it made the most sense to go with the text, given that it seemed easier to quickly identify than the images, which might look the same at their small scale.\n\nWith the expanded information card, it made the most sense to go full-screen, rather than a small panel within the list, to minimize visual clutter. The expanded space also provided opportunities to include more images and give more breathing room to information."
                 }
               ]
             }
@@ -3406,7 +3391,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "I implemented a working demo of the final concepts within the app using Android Studio. Most of the development was fairly straight-forward, the only real hurdle was figuring out how to get the information into the app. Given indications I had received that most of the information would be native to Aptiv's system, rather than pulled from some other service, it made most sense to just add this to a geojson file, given that geojsons were already being used to store the data used to draw buildings in the app."
+                  "content": "I implemented a working demo of the final concepts within the app using Android Studio. Most of the development was fairly straight-forward, the only real hurdle was figuring out how to get the information into the app. Given indications I had received that most of the information would be native to Aptiv's system, rather than pulled from some other service, it made the most sense to just add this to a geojson file, given that geojsons were already being used to store the data used to draw buildings in the app."
                 }
               ]
             },
@@ -5100,7 +5085,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<p><strong>Gear Tetrahedron</strong> is a puzzle based on Oskar van Deventer's <strong><a href=\"https://youtu.be/PkAlP9W0PM0\" target=\"_blank\">Gear Shift</a></strong> that allows uses a series of engaging and disengaging gears to alter the shape and color combinations of the puzzle. Unlike the other puzzles in my portfolio, the parts of <strong>Gear Tetrahedron</strong> never change position relative to each other; instead the puzzle is scrambled merely by rotating the corners at various states of gear engagement to change the rotations of the pieces.</p>"
+                  "content": "<p><strong>Gear Tetrahedron</strong> is a puzzle based on Oskar van Deventer's <strong><a href=\"https://youtu.be/PkAlP9W0PM0\" target=\"_blank\">Gear Shift</a></strong> that uses a series of engaging and disengaging gears to alter the shape and color combinations of the puzzle. Unlike the other puzzles in my portfolio, the parts of <strong>Gear Tetrahedron</strong> never change position relative to each other; instead the puzzle is scrambled merely by rotating the corners at various states of gear engagement to change the rotations of the pieces.</p>"
                 }
               ]
             },
@@ -6155,7 +6140,7 @@
         "year": 2020,
         "course": null,
         "people": null,
-        "company": ["Motional"],
+        "company": ["Aptiv/Motional"],
         "skills": [
           "JavaScript",
           "MapBox",
