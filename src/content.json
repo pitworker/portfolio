@@ -1,5 +1,5 @@
 {
-  "copyright": "2020 Sebastian Carpenter",
+  "copyright": "2021 Sebastian Carpenter",
   "people": {
     "Paul Park": "https://paukparl.com/",
     "Alice Fang": "https://alicefang.me/",
@@ -2824,7 +2824,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "We see Western conifer seed bugs all over the place around where I live. These bugs crawl across the ground unbelievably slowly, but when stratled, they can fly quite quickly. Given the patterning on their exterior and their relatively flat body, they have incredible camouflage on the leaves and bark they evolved to spend most of their time on.\n\nInterested in combining the insect with the very things it hides on, I covered the wire armature with sticks and leaves.\n\nThis piece was completed in 2013."
+                  "content": "We see Western conifer seed bugs all over the place around where I live. These bugs crawl across the ground unbelievably slowly, but when startled, they can fly quite quickly. Given the patterns on their exterior and their relatively flat body, they have incredible camouflage on the leaves and bark they evolved to spend most of their time on.\n\nInterested in combining the insect with the very things it hides on, I covered the wire armature with sticks and leaves.\n\nThis piece was completed in 2013."
                 }
               ]
             }
@@ -2861,7 +2861,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "For the Summer of 2019, I did an internship in the autonomous vehicles divison of APTIV (later spun-off into a joint-venture with Hyundai called Motional). My primary project that Summer was to design and prototype a feature for the passenger display inside a self-driving taxi that would add contextual information about events and points of interest happening nearby as the vehicle navigates a city. The work I did that summer involved two parts: prototyping what the added interface layers would look like using Illustrator, and then building a functional demo into a fork of actual in-car display app using Android Studio.\n\nDue to intellectual property constraints, I am unable to share the code or video of the functional demo through this medium."
+                  "content": "For the Summer of 2019, I did an internship in the autonomous vehicles divison of APTIV (later spun-off into a joint-venture with Hyundai called Motional). My primary project that Summer was to design and prototype a feature for the passenger display inside a self-driving taxi that would add contextual information about events and points of interest happening nearby as the vehicle navigates a city. The work I did that summer involved two parts: prototyping what the added interface layers would look like using Illustrator, and then building a functional demo into a fork of an actual in-car display app using Android Studio.\n\nDue to intellectual property constraints, I am unable to share the code or video of the functional."
                 }
               ]
             }
@@ -2918,7 +2918,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "The final design consists of two elements: a display of the car in-context (including representations of objects identified by the car's sensors and overlayed GPS data) with a constantly updating stack of information cards identifying nearby points of interest and the associated tags identifying which buildings those cards are associated with, and a blown up information card for a point-of-interest including images, description, and upcoming events."
+                  "content": "The final design consists of two elements: 1) a display of the car in-context (including representations of objects identified by the car's sensors and overlayed GPS data) with a constantly updating stack of information cards identifying nearby points of interest and the associated tags identifying which buildings those cards are associated with, and 2) a blown up information card for a point-of-interest including images, description, and upcoming events."
                 }
               ]
             }
@@ -2963,7 +2963,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "The original task I was given was relatively open-ended: develop and create a demo of a system to convey additional information to make the passenger display more engaging and useful to the passenger.\n\nThe software already displayed the location of the car in context, information about the progress of the ride, and features necessary to interact with the display or the car."
+                  "content": "The original task I was given was relatively open-ended: develop and create a demo of a system to convey additional information to make the passenger display more engaging and useful to the passenger.\n\nThe software already displayed the location of the car in context, information about the progress of the ride, and features necessary to interact with the display or the ride."
                 }
               ]
             },
@@ -2973,7 +2973,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Together with a coworker, I came up with four candidates for additional information I could add: information about important landmarks, information about traffic events and the addition of agency to the rider with regards to what to do with those traffic events, a framework to add an interactive story or game to the user's ride (this could potentially be educational about the area the vehicle is navigating), and lastly to give information to get the rider better aquainted with their destination."
+                  "content": "Together with a coworker, I came up with four candidates for additional information I could add: information about important landmarks, information about traffic events and the addition of agency to the rider with regards to what to do with those traffic events, a framework to add an interactive story or game to the user's ride (this could potentially be educational about the area the vehicle is navigating), and lastly to better acquaintthe rider with their destination."
                 }
               ]
             }
@@ -3055,21 +3055,11 @@
           "content": [
             {
               "type": "column",
-              "width": 6,
+              "width": 12,
               "content": [
                 {
                   "type": "text",
-                  "content": "We ultimately ruled out the traffic events concept as it was somewhat out of the scope of the project I had been given, we ruled out the interactive story as it seemed to be too hard to scale to all the possible rides, and we ruled out the destination information concept as it seemed too likely that passengers were already aquainted with the destination they were going to and many would be unlikely to use the feature."
-                }
-              ]
-            },
-            {
-              "type": "column",
-              "width": 6,
-              "content": [
-                {
-                  "type": "text",
-                  "content": "This left me with the landmarks concept."
+                  "content": "We ultimately ruled out the traffic events concept as it was somewhat out of the scope of the project I had been given. We also ruled out the interactive story as it seemed to be too hard to scale to all the possible rides. Additionally, we ruled out the destination information concept as it seemed likely that passengers were already acquainted with the destination and thus would not find this feature useful.\n\nBased on these judgments, I focused on the landmarks concept."
                 }
               ]
             }
@@ -3099,7 +3089,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "To start developing the visual prototypes of the new features I was adding, I looked at two sources for inspiration: the current display interface (on the left), and online map softwares that identified their landmarks, such as Google Maps, Apple Maps, and Waze (my notes on Google Maps on the right)"
+                  "content": "To start developing the visual prototypes of the new features I was adding, I looked at two sources for inspiration: the current display interface (on the left), and online map software that identified landmarks, such as Google Maps, Apple Maps, and Waze (my notes on Google Maps are on the right)."
                 }
               ]
             }
@@ -3141,7 +3131,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Waze proved to be relatively unhelpful given its focus on being a map for people behind a wheel, giving information to help someone drive rather than to give context about what points-of-interest are around them."
+                  "content": "Waze proved to be relatively unhelpful given its focus on being a map for drivers, rather than delivering context about surrounding points of interest to passengers."
                 }
               ]
             },
@@ -3166,7 +3156,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Early on, I had decided it made the most sense to display landmark information in one place, given that the car's movement would cause landmarks on the map to move, thus likely hard to see. This is what led me to prototype primarily concepts with stacks or rows of building cards. "
+                  "content": "Early on, I decided to display landmark information in one place. This was because if the information was tied to landmarks that were shifting location as the car moved, they would be hard to see. This explains my decision to focus on prototyping concepts with stacks or rows of building cards."
                 }
               ]
             },
@@ -3176,7 +3166,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "This led to an issue: associating those cards with the actual buildings in the context of the map. I tried various concepts: aligning buildings to tags with colors, simply highlighting buildings an letting passengers connect the two on their own, and using text or images of the buildings to connect the two."
+                  "content": "This, however, led to an issue: associating those cards with the actual buildings in the context of the mapwas difficult. I tried various concepts, including aligning buildings to tags with colors, highlighting buildings and letting passengers connect the two on their own, and using text or images of the buildings to connect the two."
                 }
               ]
             }
@@ -3245,7 +3235,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "After figuring out on paper and from talking to coworkers what information would be important to include in the popup cards, I prototyped different concepts for the cards. These included a small card that was just an expansion of one of the tags, and also a full screen popup that provided more space to include information."
+                  "content": "After determining what information would be important to include in the popup cards, I prototyped different concepts for the cards. These included a small card that was just an expansion of one of the tags as well as a full screen popup that provided more space to include information."
                 }
               ]
             }
@@ -3302,7 +3292,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "In the last couple weeks of my internship, the visual language of the in-car display app was changed. I redesigned my UI to match this new language. Due to the heavy dominance of a singular color in the redesign, and my own concerns about implementing a system for picking and designating colors that could be differentiated from each other and could fall within brand guidelines to an undefined number of items, I decided to move away from the color identifiers, which had previously seemed the most promising."
+                  "content": "In the last few weeks of my internship, the visual language of the in-car display app was changed. I redesigned my UI to match this new language. Due to the heavy use of a singular color in the redesign, I decided to move away from the color identifiers which had previously seemed the most promising. I also made this decision because of my concerns that implementing a system for picking and designating an undefined number of distinct colors that all fall within brand guidelines."
                 }
               ]
             },
@@ -3391,7 +3381,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "I implemented a working demo of the final concepts within the app using Android Studio. Most of the development was fairly straight-forward, the only real hurdle was figuring out how to get the information into the app. Given indications I had received that most of the information would be native to Aptiv's system, rather than pulled from some other service, it made the most sense to just add this to a geojson file, given that geojsons were already being used to store the data used to draw buildings in the app."
+                  "content": "I implemented a working demo of the final concepts within the app using Android Studio. Most of the development was fairly straight-forward with the only real hurdle being to figure out how to get the information into the app. Given indications I had received that most of the information would be native to Aptiv's system, rather than pulled from a third party, it made the most sense to just add this to a geojson file, especially given that geojsons were already being used to store the data used to draw buildings in the app."
                 }
               ]
             },
@@ -3401,7 +3391,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "In the original geojson file, every feature includes a unique ID. To match the feature with the information from the info geojson, I used the same ID, and then matched the two at runtime in the app to determine which features to identify as important.\n\nBelow is a screenshot of a building and its associated landmark information in the geojson format and a screenshot of an early test of the code highlightin the buildings with landmark information in pink."
+                  "content": "In the original geojson file, every feature includes a unique ID. To match the feature with the information from the info geojson, I used the same ID I then matched the two at runtime in the app to determine which features to identify as important.\n\nBelow are two screenshots. One is of a building and its associated landmark information in the geojson format. The other is of an early test of the code highlighting the buildings with landmark information in pink."
                 }
               ]
             }
@@ -3482,7 +3472,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<p><strong>TAKE ME TO ITilly</strong> is a proposal for a popup promotional environment for illy coffee. The project aims to increase familiarity with the illy brand among a primarily American audience. Centered around illy's identity as an experience of authentic Italian culture, the popup is simultaneously erected in two locations: a stationary location in Lucca, Italy, and another installation on tour around the United States. Using two-way, livestreamed, 360&#176; projections, patrons in the US installation have an opportunity to immerse themselves in a real Italian piazza as they sip a cup of coffee, while patrons of the Lucca installation experience a more full-service coffee shop from a brand they are familiar with while also getting to interact in real-time with the American patrons.</p>"
+                  "content": "<p><strong>TAKE ME TO ITilly</strong> is a proposal for a popup promotional environment for illy coffee. The project aims to increase American consumers' familiarity with the illy brand. Centered around illy's identity as an experience of authentic Italian culture, the popup is simultaneously erected in two locations: a stationary location in Lucca, Italy, and another installation on tour around the United States. Using two-way, livestreamed, 360&#176; projections, patrons in the US installation have an opportunity to immerse themselves in a real Italian piazza as they sip a cup of coffee, while patrons of the Lucca installation experience a more full-service coffee shop from a brand they are familiar with while also getting to interact in real-time with the American patrons.</p>"
                 }
               ]
             }
@@ -3535,7 +3525,7 @@
                       "content": [
                         {
                           "type": "text",
-                          "content": "illy carries on an authentic Italian tradition of coffee roasting and preparation, the brand shares coffee as an experience of culture, rather than just a beverage, and its identity carries a simple, clean, elegant design language."
+                          "content": "illy carries on an authentic Italian tradition of coffee roasting and preparation. The brand shares coffee as an experience of culture, rather than just a beverage. Its identity carries a simple, clean, elegant design language."
                         }
                       ]
                     }
@@ -3612,7 +3602,7 @@
                       "content": [
                         {
                           "type": "text",
-                          "content": "The American half of the popup begins its tour in Pittsburgh, at the SouthSide Works Town Square, the center of an upscale shopping center. Lots of foot traffic and visitors with leisure time makes this a perfect location for the campaign’s audience.\nThe popup will be traveling to similar locations in cities with vibrant cultural centers."
+                          "content": "The American half of the popup begins its tour in Pittsburgh, at the SouthSide Works Town Square, the center of an upscale shopping center. Lots of foot traffic and visitors with leisure time make this a perfect location for the campaign’s audience. The popup will be traveling to similar locations in cities with vibrant cultural centers."
                         }
                       ]
                     }
@@ -3681,7 +3671,7 @@
                       "content": [
                         {
                           "type": "text",
-                          "content": "The Italian half of the popup will remain at a permanent location for the duration of the tour, in Lucca, Italy, at the Piazza del’Anfiteatro. Centered in the old walled city, the circular piazza provides an interesting view for visitors as well as small shops and restaurants. Buzzing with locals and tourists all day, the location is great for a long-term popup experience looking for fresh eyes."
+                          "content": "The Italian half of the popup will remain at a permanent location for the duration of the tour, in Lucca, Italy, at the Piazza del’Anfiteatro. Centered in the old walled city, the circular piazza provides an interesting view for visitors with its combination of unique architecture and quaint shops and restaurants. Always buzzing with locals and tourists, the location provides an outstanding setting for a long-term pop-up experience."
                         }
                       ]
                     }
@@ -3770,7 +3760,7 @@
                       "content": [
                         {
                           "type": "text",
-                          "content": "Pulling from illy’s color and material palette, the popup emphasizes the brand identity without looking too out of place in its context."
+                          "content": "Pulling from illy’s color and material palette, the popup emphasizes the brand identity without looking out of place in its context."
                         }
                       ]
                     }
@@ -3998,7 +3988,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Success of the popup will be measured by two metrics.\n\nAs two different physical experiences, it will be important to take note of the traffic that the two generate. Number of visitors, amount of interaction with the livestream, and sales of coffee will mark the success of the physical location.\n\nBeyond physical visitors, though, success of the popup will be measured by social media and press interest. Social media posts using #TakeMeToItILLY will be encouraged throughout the space, and patrons will likely intuitively want to post about the space given the novel experience it offers."
+                  "content": "Success of the popup will be measured by two metrics.\n\nAs two different physical experiences, it will be important to take note of the traffic that the two generate. Number of visitors, amount of interaction with the livestream, and sales of coffee will mark the success of the physical location.\n\nBeyond physical visitors, though, success of the popup will be measured by social media and press interest. Social media posts using #TakeMeToItILLY will be encouraged throughout the space, and patrons will likely intuitively want to post about the space given the novel experience it offers.\n\nBelow is an image of the copy written on the counter in the American location."
                 }
               ]
             }
@@ -4159,7 +4149,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "I considered a couple concepts early on, including a popup shop where visitors select their own beans to make their own coffee and a curated mini-museum to show work by illy-affiliated artists. I initially settled on a popup that allowed visitors to put their own designs on illy coffee cans. A riff on illy’s collaborations with established artists where the artists put their work on a set of illy coffee cups, the popup would allow visitors to become the illy artists themselves. The aim is to make illy’s art collaborations feel more accessible and to push the idea that illy coffee is the coffee for artists, but an artist is a role anybody can aspire to. This idea also presents an opportunity for visitors to walk away with something they can keep that is branded but also of personal significance, and also an opportunity to have people go home with a sample of the brand’s coffee."
+                  "content": "I considered a few concepts early on, including a popup shop where visitors select their own beans to make their own coffee and a curated mini-museum to show work by illy-affiliated artists. I initially settled on a popup that allowed visitors to put their own designs on illy coffee cans. A riff on illy’s collaborations with established artists where the artists put their work on a set of illy coffee cups, the popup would allow visitors to become the illy artists themselves. The aim is to make illy’s art collaborations feel more accessible, to push the idea that illy coffee is the coffee for artists and encourage illy customers to have fun being creative while enjoying the brand's products. This idea also presents an opportunity for visitors to walk away with something they can keep that is branded but also of personal significance, and also an opportunity to have people go home with a sample of the brand’s coffee."
                 }
               ]
             }
@@ -4190,7 +4180,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "After some examination, though, it became clear that this concept presented some potential brand issues, including the existence of illy cans with content the company would rather not be associated with. It also seemed that focusing on the art side of illy's brand might be focusing on something too far divorced from the central tenets of the American marketing strategy. Based on these considerations, I shifted focus of the project to centering illy's identity as a representation of authentic Italian culture."
+                  "content": "After some examination, though, it became clear that this concept presented some potential brand issues, including the existence of illy cans with content the company would rather not be associated with. It also seemed that focusing on the art side of illy's brand might be focusing on something too far divorced from the illy brand which is anchored in its Italian cultural roots. Based on these considerations, I shifted focus of the project to centering illy's identity as a representation of authentic Italian culture."
                 }
               ]
             }
@@ -4220,7 +4210,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "The outer form of the popup was initially inspired heavily by the illy can. Given the cylindrical nature of the internal space and the metaphor that the illy coffee is taking its drinkers to Italy, I thought reflecting the can design in the popup would make sense. Exploring a couple of ideas, I initially wanted to deconstruct the can a little bit to make the form more dynamic from the outside. This ended up being a little too abstracted, so I brought the form closer to that of the can. Even closer to the can’s design, the popup looked rather like a spaceship or something from the future, which is not exactly the concept I was going after, particularly given the location context in which the popup was located."
+                  "content": "The outer form of the popup was initially inspired heavily by the illy can. Given the cylindrical nature of the internal space and the metaphor that the illy coffee is taking its drinkers to Italy, reflecting the can design in the popup was more consistent with my conceptual goals. Exploring a number of ideas, I initially wanted to deconstruct the can to make the form more dynamic from the outside. This ended up being too abstracted, so I brought the form closer to that of the can. With those modifications, the popup resembled a spaceship or something equally futuristic, which did not meet my design goals, especially given the Italian portion's location in a historic piazza."
                 }
               ]
             }
@@ -4267,7 +4257,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "I shifted the outside design to an octagonal shape instead. This grounded the form more in a traditional architecture style, while still suggesting the round interior. I made most of the sides of the octagon red instead of silver to make the popup not so reflective."
+                  "content": "I shifted the outside design to an octagonal shape instead. This grounded the form more in a traditional architecture style, while still suggesting the round interior. I made most of the sides of the octagon red instead of silver to minimize reflective glare."
                 }
               ]
             }
@@ -4282,7 +4272,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<p><strong>NOTE:</strong> illy and the illy logo are registered trademarks of illycaff&#232; S.p.A. My work was never commissioned by nor proposed to illycaff&#232; S.p.A. or to any representatives of the company or its subsidiaries. I am not associated with the company and do not speak for their brand or marketing strategy. The illy brand was used as a case study for academic purposes.</p>"
+                  "content": "<p><strong>NOTE:</strong> illy and the illy logo are registered trademarks of illycaff&#232; S.p.A. My work was never commissioned by, nor proposed to, illycaff&#232; S.p.A., nor to any representatives of the company or its subsidiaries. I am not associated with the company and do not speak for their brand or marketing strategy. The illy brand was used as a case study for academic purposes.</p>"
                 }
               ]
             }
@@ -5317,23 +5307,8 @@
               "width": 12,
               "content": [
                 {
-                  "type": "text",
-                  "content": "Skip to 1:58:21!"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "row",
-          "content": [
-            {
-              "type": "column",
-              "width": 12,
-              "content": [
-                {
                   "type": "html",
-                  "content": "<div style=\"position: relative; overflow: hidden; padding-bottom: 56.25%;\"><iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0\" id=\"ls_embed_1610345829\" src=\"https://livestream.com/accounts/37333/events/9018519/videos/202420260/player?enableInfo=true&defaultDrawer=&autoPlay=false&mute=false\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen> </iframe></div>"
+                  "content": "<div style=\"position: relative; overflow: hidden; padding-bottom: 56.25%;\"><iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0\" src=\"https://player.vimeo.com/video/423457555\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allow=\"fullscreen; picture-in-picture\" allowfullscreen></iframe></div>"
                 }
               ]
             }
@@ -5691,7 +5666,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Clicking on one of the candles presents the visitor with a card representing the individual taken by the corona virus, as well as a brief excerpt from their obituary. A link to the full obituary on the New York Times site is provided so visitors can learn even more about the individual if inclined."
+                  "content": "Clicking on one of the candles presents the visitor with a card representing the individual taken by the coronavirus, as well as a brief excerpt from their obituary. A link to the full obituary on the New York Times site is provided so visitors can learn even more about the individual if inclined."
                 }
               ]
             }
@@ -5717,7 +5692,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Each of the candles is individualized based on data pulled from that person's obituary. The height of the candle is determined by the age the person died at, the icon on the candle indicates the industry the person worked in, and the inscription on the bottom shows the date the person died. This individualization gives visitors to the site the ability to quickly survey the grid of candles to get a sense of the characteristics of those taken, and these characteristics might pique the visitor's interest in a certain person. A particulary short or tall candle, or one with a certain date or industry on it might spark something in the visitor and encourage real engagement with the content."
+                  "content": "Each of the candles is individualized based on data pulled from that person's obituary. The height of the candle is determined by the age the person died at, the icon on the candle indicates the industry the person worked in, and the inscription on the bottom shows the date the person died. This individualization gives visitors to the site the ability to quickly survey the grid of candles to get a sense of the characteristics of those taken, and these characteristics might pique the visitor's interest in a certain person. A particularly short or tall candle, or one with a certain date or industry on it, might spark something in the visitor and encourage real engagement with the content."
                 }
               ]
             }
@@ -5732,7 +5707,7 @@
               "content": [
                 {
                   "type": "html",
-                  "content": "<p>I want to give a special thanks to Kyuha Shim for advising us on this project and providing conceptual and design critique that helped us streamline this project into its final form.<br /><br />Code for this project can be found on <a href=\"https://github.com/pitworker/QProj02\" target=\"blank\">my GitHub</a>.</p>"
+                  "content": "<p>I want to give a special thanks to Kyuha Shim for advising us on this project and providing conceptual and design critiques that helped us streamline this project into its final form.<br /><br />Code for this project can be found on <a href=\"https://github.com/pitworker/QProj02\" target=\"blank\">my GitHub</a>.</p>"
                 }
               ]
             }
@@ -6160,7 +6135,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "For the Summer of 2020 I took an internship with Motional (a joint venture between Hyundai and Aptiv) to do UX design and prototyping for autonomous vehicles. Whereas last Summer I focused on the passenger display inside the car, this Summer I focused on the Command Center, the software used to manage the fleet of autonomous taxis Motional operates.\n\nMy task during this internship was to design and implement a demo of a 3D map view for the software. I mocked up various features and designs for this layer using Illustrator and built a functioning demo with JavaScript and MapBox to be used to judge the value of this feature before having a fully funcitonal version integrated by the development team. Based on internal research using the work I produced, Motional made the decision to integrate the 3D map features into the operational Command Center soon after the conclusion of my internship."
+                  "content": "For the Summer of 2020 I took an internship with Motional (a joint venture between Hyundai and Aptiv) to do UX design and prototyping for autonomous vehicles. Whereas last Summer I focused on the passenger display inside the car, this Summer I focused on the Command Center, the software used to manage the fleet of autonomous taxis Motional operates.\n\nMy task during this internship was to design and implement a demo of a 3D map view for the software. I mocked up various features and designs for this layer using Illustrator and built a functioning demo with JavaScript and MapBox to be used to judge the value of this feature before having a fully functional version integrated by the development team. Based on internal research using the work I produced, Motional made the decision to integrate the 3D map features into the operational Command Center soon after the conclusion of my internship."
                 }
               ]
             }
@@ -6273,7 +6248,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Motional's fleet operates with predetermined pick-up and drop-off locations (PuDos), something more analagous to a bus than a ride-hailing app. Because of thse predetermined labels, having those locations pointed out on a map is a necessary feature. In the 3D view, to limit obstruction to the map, PuDos are labelled with a small but noticable pin, which reveals the name of the location upon a mouse hover."
+                  "content": "Motional's fleet operates with predetermined pick-up and drop-off locations (PuDos), something more analogous to a bus than a ride-hailing app. Because of these predetermined labels, having those locations pointed out on a map is a necessary feature. In the 3D view, to limit obstruction to the map, PuDos are labelled with a small but noticable pin, which reveals the name of the location upon a mouse hover."
                 }
               ]
             }
@@ -6341,7 +6316,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "All vehicles have an ID number and being able to see identify cars to keep note of potential issues is essential for fleet operators. Although identifying cars is necessary, though, having that information present all the time can become obstructive, especially when zoomed out. Therefore, like the PuDo labels, car ID labels appear when cars are selected or hovered over. When the car is not selected, the label disappears and the car is highlighted with a color to indicate its status (blue for active, grey for inactive)."
+                  "content": "All vehicles have an ID number and being able to identify cars to keep note of potential issues is essential for fleet operators. Although identifying cars is necessary having that information present all the time can become obstructive, especially when zoomed out. Therefore, like the PuDo labels, car ID labels appear when cars are selected or hovered over. When the car is not selected, the label disappears and the car is highlighted with a color to indicate its status (blue for active, grey for inactive)."
                 }
               ]
             }
@@ -6382,7 +6357,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Sometimes, for a whole host of reasons, it is necessary to track a specific vehicle. This is actually a feature that already existed to some capacity in the Command Center before I started, but I modified it slightly while working on the 3D view. I moved the button for vehicle tracking to the popout display, which I thought made more sense than the previous location being next to the zoom in/out buttons. I also modified the car trajectory line to fit better with the 3D view."
+                  "content": "Sometimes, for a whole host of reasons, it is necessary to track a specific vehicle. This is actually a feature that already existed to some capacity in the Command Center before I started, but I modified it slightly while working on the 3D view. I moved the button for vehicle tracking to the popout display, which makes more sense than the previous location next to the zoom in/out buttons. I also modified the car trajectory line to fit better with the 3D view."
                 }
               ]
             }
@@ -6423,7 +6398,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "Passenger pickup works quite similarly to the previous iterations of the Command Center, but with one big added feature. The building associated with the pickup location (in the cases that there are buildings associated) is highlighted and the position of the passenger who hailed the ride is shown. The view also displays the trajectory of the car and the path to the PuDo the hailing app is instructing the passenger to follow. All of these features are designed to aid fleet managers identify why a car might not be leaving yet or why a passenger is having trouble finding the car."
+                  "content": "Passenger pickup works quite similarly to the previous iterations of the Command Center, but with one big added feature. The building associated with the pickup location (in the cases that there are buildings associated) is highlighted and the position of the passenger who hailed the ride is shown. The view also displays the trajectory of the car and the path to the PuDo that the hailing app is instructing the passenger to follow. All of these features are designed to aid fleet managers with identifying why a car might not be leaving yet or why a passenger is having trouble finding the car."
                 }
               ]
             }
@@ -6464,7 +6439,7 @@
               "content": [
                 {
                   "type": "text",
-                  "content": "The original Command Center was written using the Google Maps API, but there had been intentions of moving to MapBox given the tool's additional features. Specifically, MapBox renders its maps with vector graphics rather than images, which allows for faster loading, and it also has countless customizability with additional layers, including a built-in 3D building layer (not supported in web versions of the Google Maps API) and the ability to integrate Three.js. Given that all of these features were a necessity for a 3D map view demo, I took the initiative, with the support of the team I was working with, to build the demo in MapBox rather than Google Maps."
+                  "content": "The original Command Center was written using the Google Maps API, but there had been intentions of moving to MapBox given the tool's additional features. Specifically, MapBox renders its maps with vector graphics rather than images, which allows for faster loading, and it also has countless customization options with additional layers, including a built-in 3D building layer (not supported in web versions of the Google Maps API) and the ability to integrate Three.js. Given that all of these features were a necessity for a 3D map view demo, I took the initiative, with the support of the team I was working with, to build the demo in MapBox rather than Google Maps."
                 }
               ]
             }
