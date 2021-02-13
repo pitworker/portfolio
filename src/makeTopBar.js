@@ -8,13 +8,17 @@ const NAV = [
 ];
 const DIVIDER = " | ";
 const BREAK = 992;
+const MBREAK = 412;
 const OBREAK = 15;
 
 let lastOffset = document.getElementById("nav").getBoundingClientRect().top;
 
 function generateName() {
   let e = document.getElementById("name");
-  if (lastOffset <= OBREAK && window.innerWidth < BREAK) {
+  if (lastOffset <= OBREAK && window.innerWidth < MBREAK) {
+    e.className = "col-0 justify-content-between text-left";
+    e.innerText = "";
+  } else if (lastOffset <= OBREAK && window.innerWidth < BREAK) {
     e.className = "col-1 justify-content-between text-left";
     e.innerText = NAME_SHORT;
   } else if (window.innerWidth < BREAK) {
@@ -36,7 +40,9 @@ function generateName() {
 function generateNav() {
   let e = document.getElementById("nav");
 
-  if (lastOffset <= OBREAK && window.innerWidth < BREAK) {
+  if (lastOffset <= OBREAK && window.innerWidth < MBREAK) {
+    e.className = "col-12 justify-content-between text-right";
+  } else if (lastOffset <= OBREAK && window.innerWidth < BREAK) {
     e.className = "col-11 justify-content-between text-right";
   } else {
     e.className = "col-6 justify-content-between text-right";
