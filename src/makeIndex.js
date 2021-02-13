@@ -363,8 +363,8 @@ function generateTags(t,n) {
 
   r.appendChild(c);
 
-  n.style.top =
-    (window.innerWidth < 992) ? TAGS_OFFSET_BIG : TAGS_OFFSET_SMALL;
+  n.style.top = TAGS_OFFSET_SMALL;
+    //(window.innerWidth < 992) ? TAGS_OFFSET_BIG : TAGS_OFFSET_SMALL;
   n.appendChild(r);
 }
 
@@ -471,8 +471,8 @@ function init() {
 }
 
 window.onresize = function(event) {
-  document.getElementById("tagsRow").style.top =
-    (window.innerWidth < 992) ? TAGS_OFFSET_BIG : TAGS_OFFSET_SMALL;
+  document.getElementById("tagsRow").style.top = TAGS_OFFSET_SMALL;
+    //(window.innerWidth < 992) ? TAGS_OFFSET_BIG : TAGS_OFFSET_SMALL;
   topBarResize();
 }
 
