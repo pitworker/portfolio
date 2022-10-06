@@ -1,10 +1,10 @@
-const NAME = "Sebastian Carpenter";
-const NAME_LINES = ["Sebastian", "Carpenter"];
+const NAME = "Swan Carpenter";
+const NAME_LINES = ["Swan", "Carpenter"];
 const NAME_SHORT = "SBC";
 const NAV = [
   ["Work", "index.html"],
-  ["About", "about.html"],
-  ["Resume", "docs/resume.pdf"]
+  ["About", "about.html"]/*,
+  ["Resume", "docs/resume.pdf"]*/
 ];
 const DIVIDER = " | ";
 const BREAK = 992;
@@ -22,7 +22,7 @@ function generateName() {
     e.className = "col-1 justify-content-between text-left";
     e.innerText = NAME_SHORT;
   } else if (window.innerWidth < BREAK) {
-    let brokenName = "\n";
+    let brokenName = "";
     for (let i = 0; i < NAME_LINES.length; i++) {
       brokenName = brokenName + NAME_LINES[i];
       if (i < NAME_LINES.length - 1) {

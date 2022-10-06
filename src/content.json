@@ -1,5 +1,5 @@
 {
-  "copyright": "2021 Sebastian Carpenter",
+  "copyright": "2021 Swan Carpenter",
   "people": {
     "Paul Park": "https://paukparl.com/",
     "Alice Fang": "https://alicefang.me/",
@@ -2277,7 +2277,7 @@
         "company": null,
         "skills": [
           "Mechanism Design",
-          "Physical Prototyping"  
+          "Physical Prototyping"
         ],
         "categories": [
           "Product Design"
@@ -3421,7 +3421,7 @@
               ]
             }
           ]
-        },      
+        },
         {
           "type": "row",
           "content": [
