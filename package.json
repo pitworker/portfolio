@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of my work.",
+  "author": "Swan Carpenter",
+  "homepage": "https://thingsbyspoon.cc/",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack --config webpack.dev-config.js",
+    "start": "webpack-dev-server",
+    "predeploy": "rm -rf dist/* && webpack --config webpack.config.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pitworker/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0",
+    "gh-pages": "^4.0.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
