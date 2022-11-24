@@ -1,6 +1,6 @@
 # swan's stuff
 *~
-media/*
+/public/assets
 
 # dependencies
 /node_modules

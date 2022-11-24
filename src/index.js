@@ -1,8 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route,
+         useNavigate, useLocation } from 'react-router-dom';
+import { QueryParamProvider } from 'use-query-params';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Work from './pages/work';
+import Layout from './pages/layout';
+import NoPage from './pages/nopage';
+
+const RouteAdapter = ({ children }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const adaptedHistory = React.useMemo(
+    () => ({
+      replace(location) {
+        navigate(location, { replace: true, state: location.state });
+      },
+      push(location) {
+        navigate(location, { replace: false, state: location.state });
+      },
+    }),
+    [navigate]
+  );
+  return children({ history: adaptedHistory, location });
+};
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <QueryParamProvider ReactRouterRoute={RouteAdapter}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Work />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </QueryParamProvider>
+    </BrowserRouter>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,8 +47,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
