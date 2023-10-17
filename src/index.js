@@ -1,12 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route,
-         useNavigate, useLocation } from 'react-router-dom';
-import { QueryParamProvider } from 'use-query-params';
-import './index.css';
-import Work from './pages/work';
-import Layout from './pages/layout';
-import NoPage from './pages/nopage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useNavigate,
+  useLocation
+} from "react-router-dom";
+import { QueryParamProvider } from "use-query-params";
+import "./index.css";
+import Work from "./pages/work";
+import Layout from "./pages/layout";
+import NoPage from "./pages/nopage";
 
 const RouteAdapter = ({ children }) => {
   const navigate = useNavigate();
@@ -41,7 +46,7 @@ export default function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
