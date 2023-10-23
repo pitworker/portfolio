@@ -46,12 +46,12 @@ const vimeoEmbed = () => {
   };
 };
 
-const formatFailure = (contentId) => {
+const FormatFailure = (contentId) => {
   return `# Oops! \nUnable to load Markdown for ${contentId}`;
 };
 
 const RenderMarkdown = (contentId) => {
-  const [ workContent, setWorkContent ] = useState();
+  const [ workInnerContent, setWorkInnerContent ] = useState();
 
   useEffect(() => {
     const contentURL = `${window.location.origin}/content/${contentId}.md`;
@@ -59,34 +59,45 @@ const RenderMarkdown = (contentId) => {
       return response.text();
     }).then((contentString) => {
       console.log("Received content with body:", contentString);
-      setWorkContent(contentString);
+      setWorkInnerContent(contentString);
     }).catch((error) => {
       console.log(`Error fetching content for ${contentId}:`, error);
-      setWorkContent(formatFailure(contentId));
+      setWorkInnerContent(FormatFailure(contentId));
     });
   }, []);
 
   return (
-    <div className="work-content">
-      <Markdown remarkPlugins={[remarkDirective, vimeoEmbed]}>{
-        workContent
-      }</Markdown>
-    </div>
+    <Markdown remarkPlugins={[remarkDirective, vimeoEmbed]}>{
+      workInnerContent
+    }</Markdown>
   );
 };
 
-export default function WorkContent () {
-  const { contentId } = useParams();
+const WorkContent = () => {
+  const [ workContent, setWorkContent ] = useState();
+  let { contentId } = useParams();
 
   for (let contentItem of content.work) {
     if (contentItem.id === contentId) {
-      return RenderMarkdown(contentId);
+      setWorkContent(RenderMarkdown(contentId));
     }
   }
+  setWorkContent(<Markdown>{FormatFailure(contentId)}</Markdown>);
+
+  /*
+  useEffect(() => {
+    for (let contentItem of content.work) {
+      if (contentItem.id === contentId) {
+        setWorkContent(RenderMarkdown(contentId));
+      }
+    }
+    setWorkContent(<Markdown>{FormatFailure(contentId)}</Markdown>);
+  }, [contentId]);
+  */
 
   return (
-    <div className="work-content">
-      <Markdown>{ formatFailure(contentId) }</Markdown>
-    </div>
+    <div className="work-content"> { workContent } </div>
   );
 };
+
+export default WorkContent;
