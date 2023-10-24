@@ -46,6 +46,7 @@ const vimeoEmbed = () => {
 };
 
 const formatFailure = (contentId) => {
+  console.warn("Attempted to load nonexistent page");
   return `# Oops! \nUnable to load content for ${contentId}`;
 };
 
@@ -70,8 +71,8 @@ const loadMarkdown = (contentId) => {
 
 const WorkContent = () => {
   const { contentId } = useParams();
-  const [ workContent, setWorkContent ] = useState(formatLoading(contentId));
-  const contentDidLoad = useRef(false);
+  const [ workContent, setWorkContent ] = useState(formatFailure(contentId));
+  // const contentDidLoad = useRef(false);
 
   for (let contentItem of content.work) {
     if (contentItem.id === contentId) {
@@ -80,12 +81,12 @@ const WorkContent = () => {
       }).catch((error) => {
         setWorkContent(formatFailure(contentId));
       });
-      contentDidLoad.current = true;
+      // contentDidLoad.current = true;
       break;
     }
   }
 
-  if (!contentDidLoad.current) setWorkContent(formatFailure(contentId));
+  // if (!contentDidLoad.current) setWorkContent(formatFailure(contentId));
 
   return (
     <div className="work-content">
