@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import WorkContent from "./pages/WorkContent";
 import NoPage from "./pages/NoPage";
 
-import './App.css';
+import "./style/App.css";
+import "./style/Fonts.css";
 
 function App() {
   return (

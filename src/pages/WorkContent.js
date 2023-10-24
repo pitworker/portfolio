@@ -1,10 +1,12 @@
 import { useState, useRef } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { visit } from "unist-util-visit";
 import Markdown from "react-markdown";
 import remarkDirective from "remark-directive";
 
 import content from "../content/content.json";
+
+import "../style/WorkContent.css";
 
 const vimeoEmbed = () => {
   return (tree, file) => {
@@ -56,7 +58,8 @@ const formatLoading = (contentId) => {
 
 const loadMarkdown = (contentId) => {
   return new Promise((resolve, reject) => {
-    const contentURL = `${window.location.origin}/content/${contentId}.md`;
+    const contentURL =
+      `${window.location.origin}/content/${contentId}/${contentId}-text.md`;
     fetch(contentURL).then((response) => {
       return response.text();
     }).then((contentString) => {
@@ -90,6 +93,9 @@ const WorkContent = () => {
 
   return (
     <div className="work-content">
+      <Link to="/" className="close-btn">
+        { "\u00d7" }
+      </Link>
       <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed ] }>
         { workContent }
       </Markdown>
