@@ -1,11 +1,11 @@
 :root {
-  --red-bright: #f66151;
-  --green-bright: #33d17a;
-  --blue-bright: #2a7bde;
-  --cyan-bright: #33c7de;
-  --magenta-bright: #e16dee;
-  --yellow-bright: #ffba00;
-  --grey-bright: #dadada;
+  --bright-red: #f66151;
+  --bright-green: #33d17a;
+  --bright-blue: #2a7bde;
+  --bright-cyan: #33c7de;
+  --bright-magenta: #e16dee;
+  --bright-yellow: #ffba00;
+  --bright-grey: #dadada;
   --red: #fa1644;
   --green: #26a269;
   --blue: #12488b;
@@ -15,6 +15,10 @@
   --grey: #5e5c64;
   --black: #000000;
   --white: #ffffff;
+
+  --serif: "ZillaSlab", Georgia, "Times New Roman", "Liberation Serif", serif;
+  --sans: "IBMPlexSans", Arial, Helvetica, "Liberation Sans", sans-serif;
+  --mono: "SplineSansMono", Consolas, Menlo, "Liberation Mono", monospace;
 }
 
 .all-content {
@@ -31,7 +35,7 @@
 }
 
 h1, h2, h3, h4 {
-  font-family: "ZillaSlab", Georgia, serif;
+  font-family: var(--serif);
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.075rem;
@@ -66,7 +70,7 @@ ul {
 }
 
 p, li {
-  font-family: "IBMPlexSans", Arial, sans-serif;
+  font-family: var(--sans);
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -89,4 +93,15 @@ a:hover {
 }
 a:active {
   color: var(--yellow);
+}
+
+code {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.065rem;
+  color: var(--magenta);
+  background-color: var(--bright-grey);
 }
