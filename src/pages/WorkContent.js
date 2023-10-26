@@ -4,6 +4,7 @@ import { visit } from "unist-util-visit";
 import Markdown from "react-markdown";
 import remarkDirective from "remark-directive";
 
+import ContentContainer from "../components/ContentContainer";
 // import { loadedFiles, getMarkdown } from "../components/MarkdownIndex";
 
 import content from "../content/content.json";
@@ -76,7 +77,10 @@ const loadMarkdown = (contentId) => {
 
 const WorkContent = () => {
   const { contentId } = useParams();
-  const [ workContent, setWorkContent ] = useState(formatFailure(contentId));
+  const [ workContent, setWorkContent ] = useState({
+    title: "",
+    body: formatFailure(contentId)
+  });
   const contentDidLoad = useRef(false);
 
   useEffect(() => {
@@ -84,14 +88,20 @@ const WorkContent = () => {
       if (contentItem.id === contentId) {
         loadMarkdown(contentId).then((response) => {
           if (!contentDidLoad.current) {
-            setWorkContent(response);
+            setWorkContent({
+              title: contentItem.title,
+              body: response
+            });
             contentDidLoad.current = true;
           } else {
             console.warn("Content already loaded???");
           }
         }).catch((error) => {
           if (!contentDidLoad) {
-            setWorkContent(formatFailure(contentId));
+            setWorkContent({
+              title: "",
+              body: formatFailure(contentId)
+            });
             contentDidLoad.current = true;
           } else {
             console.warn("Content already loaded???");
@@ -106,16 +116,28 @@ const WorkContent = () => {
 
   // if (!contentDidLoad.current) setWorkContent(formatFailure(contentId));
 
+  const innerContent = (
+    <div className="work-content">
+      <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed ] }>
+        { workContent.body }
+      </Markdown>
+    </div>
+  );
+
+  return ContentContainer(workContent.title, innerContent);
+
+  /*
   return (
     <div className="work-content">
       <Link to="/" className="close-btn">
         { "\u00d7" }
       </Link>
       <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed ] }>
-        { workContent /*getMarkdown(contentId).body*/ }
+        { workContent }
       </Markdown>
     </div>
   );
+  */
 };
 
 export default WorkContent;
