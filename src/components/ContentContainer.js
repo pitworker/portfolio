@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 import "../style/ContentContainer.css";
 
@@ -30,10 +31,7 @@ const useScreenIsSmall = () => {
 
 const ContentContainer = (title, innerContent) => {
   return (
-    <div className={
-    "content-container desktop"
-    //`content-container ${useScreenIsSmall ? "mobile" : "desktop"}`
-    }>
+    <div className={`content-container ${isMobile ? "mobile" : "desktop"}`}>
       <div className="container-bar">
         <div className="container-title"> { title } </div>
         <Link to="/" className="close-btn"> { "\u00d7" } </Link>
