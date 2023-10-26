@@ -21,7 +21,7 @@ const MainContent = () => {
           </p>
           <ul> {
             content.work.map((workItem) =>
-              <li>
+              <li key={workItem.id}>
                 <Link to={ `/work/${workItem.id}` }> {
                   workItem.description
                 } </Link>

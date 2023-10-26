@@ -1,8 +1,10 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { visit } from "unist-util-visit";
 import Markdown from "react-markdown";
 import remarkDirective from "remark-directive";
+
+// import { loadedFiles, getMarkdown } from "../components/MarkdownIndex";
 
 import content from "../content/content.json";
 
@@ -75,19 +77,32 @@ const loadMarkdown = (contentId) => {
 const WorkContent = () => {
   const { contentId } = useParams();
   const [ workContent, setWorkContent ] = useState(formatFailure(contentId));
-  // const contentDidLoad = useRef(false);
+  const contentDidLoad = useRef(false);
 
-  for (let contentItem of content.work) {
-    if (contentItem.id === contentId) {
-      loadMarkdown(contentId).then((response) => {
-        setWorkContent(response);
-      }).catch((error) => {
-        setWorkContent(formatFailure(contentId));
-      });
-      // contentDidLoad.current = true;
-      break;
+  useEffect(() => {
+    for (let contentItem of content.work) {
+      if (contentItem.id === contentId) {
+        loadMarkdown(contentId).then((response) => {
+          if (!contentDidLoad.current) {
+            setWorkContent(response);
+            contentDidLoad.current = true;
+          } else {
+            console.warn("Content already loaded???");
+          }
+        }).catch((error) => {
+          if (!contentDidLoad) {
+            setWorkContent(formatFailure(contentId));
+            contentDidLoad.current = true;
+          } else {
+            console.warn("Content already loaded???");
+          }
+        });
+        // contentDidLoad.current = true;
+        break;
+      }
     }
-  }
+  }, []);
+
 
   // if (!contentDidLoad.current) setWorkContent(formatFailure(contentId));
 
@@ -97,7 +112,7 @@ const WorkContent = () => {
         { "\u00d7" }
       </Link>
       <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed ] }>
-        { workContent }
+        { workContent /*getMarkdown(contentId).body*/ }
       </Markdown>
     </div>
   );
