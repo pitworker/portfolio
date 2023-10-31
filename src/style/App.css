@@ -32,7 +32,26 @@
   padding: 0px;
   margin-top: 10px;
   margin-bottom: 0px;
+  scrollbar-color: var(--black) var(--white);
+  scrollbar-width: auto;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--white);
+  outline: var(--black) solid 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--white);
+  outline: var(--black) solid 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--black);
+}
+
 
 h1, h2, h3, h4 {
   font-family: var(--serif);
