@@ -12,14 +12,16 @@
       "description": "This is a test :)",
       "id": "test1",
       "thumb": "./assets/test/thumb.png",
-      "color": "red"
+      "color": "red",
+      "category": "personal"
     },
     {
       "title": "Test 2",
       "description": "This is another test :)",
       "id": "test2",
       "thumb": "./assets/test/thumb.png",
-      "color": "blue"
+      "color": "blue",
+      "category": "professional"
     }
   ]
 }

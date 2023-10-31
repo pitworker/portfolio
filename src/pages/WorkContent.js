@@ -5,7 +5,6 @@ import Markdown from "react-markdown";
 import remarkDirective from "remark-directive";
 
 import ContentContainer from "../components/ContentContainer";
-// import { loadedFiles, getMarkdown } from "../components/MarkdownIndex";
 
 import content from "../content/content.json";
 
@@ -81,18 +80,22 @@ const loadMarkdown = (contentId) => {
 const WorkContent = () => {
   const { contentId } = useParams();
   const [ workContent, setWorkContent ] = useState({
-    title: "",
+    title: "0x00 loading",
     body: formatLoading(contentId)
   });
   const contentDidLoad = useRef(false);
 
   useEffect(() => {
-    for (let contentItem of content.work) {
+    for (let contentIndex in content.work) {
+      const contentItem = content.work[contentIndex];
       if (contentItem.id === contentId) {
         loadMarkdown(contentId).then((response) => {
           if (!contentDidLoad.current) {
+            const itemHex =
+              `0x${(Number(contentIndex) + 1).toString(16).padStart(2, "0")}`;
+            const itemTitle = `${itemHex} ${contentItem.id}`;
             setWorkContent({
-              title: contentItem.title,
+              title: itemTitle,
               body: response
             });
             contentDidLoad.current = true;
@@ -100,9 +103,9 @@ const WorkContent = () => {
             console.warn("Content already loaded???");
           }
         }).catch((error) => {
-          if (!contentDidLoad) {
+          if (!contentDidLoad.current) {
             setWorkContent({
-              title: "",
+              title: "0x00 error",
               body: formatFailure(contentId)
             });
             contentDidLoad.current = true;
@@ -114,9 +117,9 @@ const WorkContent = () => {
       }
     }
     setTimeout(() => {
-      if (!contentDidLoad) {
+      if (!contentDidLoad.current) {
         setWorkContent({
-          title: "",
+          title: "0x00 error",
           body: formatFailure(contentId)
         });
       }

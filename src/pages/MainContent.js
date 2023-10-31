@@ -20,7 +20,24 @@ const MainContent = () => {
             experiences. Their work includes:
           </p>
           <ul> {
-            content.work.map((workItem) =>
+            content.work.filter((workItem) =>
+              workItem.category === "professional"
+            ).map((workItem) =>
+              <li key={workItem.id}>
+                <Link to={ `/work/${workItem.id}` }> {
+                  workItem.description
+                } </Link>
+              </li>
+            )
+          } </ul>
+          <p>
+            Swan has also worked on a diverse range of self-directed projects.
+            Their personal work includes:
+          </p>
+          <ul> {
+            content.work.filter((workItem) =>
+              workItem.category === "personal"
+            ).map((workItem) =>
               <li key={workItem.id}>
                 <Link to={ `/work/${workItem.id}` }> {
                   workItem.description
