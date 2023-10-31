@@ -63,6 +63,7 @@ const loadMarkdown = (contentId) => {
   return new Promise((resolve, reject) => {
     const contentURL =
       `${window.location.origin}/content/${contentId}/${contentId}-text.md`;
+    console.debug(`Attempting to fetch content at ${contentURL}`);
     fetch(contentURL).then((response) => {
       return response.text();
     }).then((contentString) => {
@@ -83,7 +84,7 @@ const WorkContent = () => {
   });
   const contentDidLoad = useRef(false);
 
-  useEffect(() => {
+  //useEffect(() => {
     for (let contentItem of content.work) {
       if (contentItem.id === contentId) {
         loadMarkdown(contentId).then((response) => {
@@ -111,7 +112,7 @@ const WorkContent = () => {
         break;
       }
     }
-  }, []);
+  //}, []);
 
 
   // if (!contentDidLoad.current) setWorkContent(formatFailure(contentId));
