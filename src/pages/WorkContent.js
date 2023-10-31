@@ -11,6 +11,8 @@ import content from "../content/content.json";
 
 import "../style/WorkContent.css";
 
+const LOAD_FAILURE_TIMEOUT_MS = 10;
+
 const vimeoEmbed = () => {
   return (tree, file) => {
     visit(tree, (node) => {
@@ -80,11 +82,11 @@ const WorkContent = () => {
   const { contentId } = useParams();
   const [ workContent, setWorkContent ] = useState({
     title: "",
-    body: formatFailure(contentId)
+    body: formatLoading(contentId)
   });
   const contentDidLoad = useRef(false);
 
-  //useEffect(() => {
+  useEffect(() => {
     for (let contentItem of content.work) {
       if (contentItem.id === contentId) {
         loadMarkdown(contentId).then((response) => {
@@ -108,14 +110,18 @@ const WorkContent = () => {
             console.warn("Content already loaded???");
           }
         });
-        // contentDidLoad.current = true;
         break;
       }
     }
-  //}, []);
-
-
-  // if (!contentDidLoad.current) setWorkContent(formatFailure(contentId));
+    setTimeout(() => {
+      if (!contentDidLoad) {
+        setWorkContent({
+          title: "",
+          body: formatFailure(contentId)
+        });
+      }
+    }, LOAD_FAILURE_TIMEOUT_MS);
+  }, []);
 
   const innerContent = (
     <div className="work-content">
@@ -126,19 +132,6 @@ const WorkContent = () => {
   );
 
   return ContentContainer(workContent.title, innerContent);
-
-  /*
-  return (
-    <div className="work-content">
-      <Link to="/" className="close-btn">
-        { "\u00d7" }
-      </Link>
-      <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed ] }>
-        { workContent }
-      </Markdown>
-    </div>
-  );
-  */
 };
 
 export default WorkContent;

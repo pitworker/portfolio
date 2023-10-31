@@ -37,12 +37,15 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 0px;
 }
 ::-webkit-scrollbar-track {
   background: var(--white);
   outline: var(--black) solid 2px;
+}
+::-webkit-scrollbar-track:disabled {
+  display: none;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--white);
@@ -123,4 +126,14 @@ code {
   letter-spacing: 0.065rem;
   color: var(--magenta);
   background-color: var(--bright-grey);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
