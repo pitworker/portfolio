@@ -19,7 +19,7 @@
 .content-container.desktop {
   top: 50%;
   width: 850px;
-  height: 100%;
+  height: calc(100% - 20px);
   margin-left: auto;
   margin-right: auto;
   transform: translate(0%, -50%);

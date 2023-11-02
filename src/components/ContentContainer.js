@@ -7,9 +7,10 @@ import "../style/ContentContainer.css";
 const SMALL_WINDOW_THRESHOLD = 850;
 const MOBILE = "mobile";
 const DESKTOP = "desktop";
+const NONE = "";
 
 const useDeviceType = () => {
-  const [deviceType, setDeviceType] = useState(isMobile ? MOBILE : DESKTOP);
+  const [deviceType, setDeviceType] = useState(isMobile ? MOBILE : NONE);
 
   // Small desktop windows get rendered as "mobile"
   useEffect(() => {
@@ -19,6 +20,8 @@ const useDeviceType = () => {
       };
 
       const handleScreenResize = () => {
+        console.debug(`NEW WINDOW WIDTH: ${window.innerWidth}`);
+
         const currentDeviceType = identifyDeviceType();
         if (currentDeviceType !== deviceType) {
           setDeviceType(currentDeviceType);
