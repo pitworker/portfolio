@@ -19,11 +19,16 @@ const useDeviceType = () => {
       };
 
       const handleScreenResize = () => {
-        const currentDeviceType = identifyDeviceType;
+        const currentDeviceType = identifyDeviceType();
         if (currentDeviceType !== deviceType) {
           setDeviceType(currentDeviceType);
+          console.debug(`Re-rendering screen for ${currentDeviceType}`);
+        } else {
+          console.debug(`Screen already rendered for ${currentDeviceType}`);
         }
       };
+
+      handleScreenResize();
 
       window.addEventListener("resize", handleScreenResize);
       return () => window.removeEventListener("resize", handleScreenResize);
