@@ -1,6 +1,12 @@
+html {
+  scrollbar-color: #000 #fff;
+  scrollbar-width: auto;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
+  scrollbar-width: auto;
 }
 
 .lock-scroll {
