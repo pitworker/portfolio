@@ -141,3 +141,14 @@ iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
 }
+
+table, th, td {
+  border: none;
+}
+
+table {
+  padding: 0px;
+  border-spacing: 12px 0px;
+  border-collapse: separate;
+  margin: -10px;
+}

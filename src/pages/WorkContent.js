@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { visit } from "unist-util-visit";
 import Markdown from "react-markdown";
 import remarkDirective from "remark-directive";
+import remarkGfm from "remark-gfm";
 // import rehypeExternalLinks from "rehype-external-links";
 
 import ContentContainer from "../components/ContentContainer";
@@ -131,7 +132,7 @@ const WorkContent = () => {
 
   const innerContent = (
     <div className="work-content">
-      <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed, ] }>
+      <Markdown remarkPlugins={ [ remarkGfm, remarkDirective, vimeoEmbed ] }>
         { workContent.body }
       </Markdown>
     </div>
