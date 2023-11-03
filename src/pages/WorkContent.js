@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { visit } from "unist-util-visit";
 import Markdown from "react-markdown";
 import remarkDirective from "remark-directive";
+import rehypeExternalLinks from "rehype-external-links";
 
 import ContentContainer from "../components/ContentContainer";
 
@@ -130,7 +131,10 @@ const WorkContent = () => {
 
   const innerContent = (
     <div className="work-content">
-      <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed ] }>
+      <Markdown
+        remarkPlugins={ [ remarkDirective, vimeoEmbed, ] }
+        rehypePlugins={ [ [ rehypeExternalLinks, { target: [ "_blank" ] } ] ] }
+      >
         { workContent.body }
       </Markdown>
     </div>
