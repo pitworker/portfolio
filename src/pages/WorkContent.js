@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { visit } from "unist-util-visit";
 import Markdown from "react-markdown";
 import remarkDirective from "remark-directive";
-import rehypeExternalLinks from "rehype-external-links";
+// import rehypeExternalLinks from "rehype-external-links";
 
 import ContentContainer from "../components/ContentContainer";
 
@@ -127,14 +127,11 @@ const WorkContent = () => {
         });
       }
     }, LOAD_FAILURE_TIMEOUT_MS);
-  }, []);
+  }, [contentId]);
 
   const innerContent = (
     <div className="work-content">
-      <Markdown
-        remarkPlugins={ [ remarkDirective, vimeoEmbed, ] }
-        rehypePlugins={ [ [ rehypeExternalLinks, { target: [ "_blank" ] } ] ] }
-      >
+      <Markdown remarkPlugins={ [ remarkDirective, vimeoEmbed, ] }>
         { workContent.body }
       </Markdown>
     </div>

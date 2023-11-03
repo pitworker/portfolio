@@ -1,2 +1,6 @@
-.work-content {
+.work-content a:after {
+  content: "\219d";
+  padding-left: 1px;
+  vertical-align: super;
+  font-size: 75%
 }

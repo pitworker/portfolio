@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -41,9 +40,9 @@ const MainContent = () => {
               workItem.category === "professional"
             ).map((workItem) =>
               <li key={workItem.id}>
-                <Link to={ `/work/${workItem.id}` }> {
+                <Link to={ `/work/${workItem.id}` }>{
                   workItem.description
-                } </Link>
+                }</Link>
               </li>
             )
           } </ul>
@@ -57,9 +56,9 @@ const MainContent = () => {
               workItem.category === "personal"
             ).map((workItem) =>
               <li key={workItem.id}>
-                <Link to={ `/work/${workItem.id}` }> {
+                <Link to={ `/work/${workItem.id}` }>{
                   workItem.description
-                } </Link>
+                }</Link>
               </li>
             )
           } </ul>
@@ -89,7 +88,7 @@ const MainContent = () => {
                 className="social-item"
               >
                 <p>
-                  <a href={ socialItem.url } target="_blank">
+                  <a href={ socialItem.url }>
                     <FontAwesomeIcon
                       icon={ ICONS[socialItem.id] }
                       className="icon"

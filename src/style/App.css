@@ -105,18 +105,20 @@ p, li {
 
 a {
   text-decoration: inherit;
+  color: var(--black);
 }
-a:link {
-  color: var(--blue);
-}
-a:visited {
-  color: var(--magenta);
+a:link, a:visited {
+  background: none;
 }
 a:hover {
-  color: var(--cyan);
+  background: var(--bright-yellow);
 }
 a:active {
-  color: var(--yellow);
+  background: var(--bright-yellow);
+  outline: 2px solid var(--black);
+}
+a:hover:after, a:active:after {
+  color: var(--white);
 }
 
 code {

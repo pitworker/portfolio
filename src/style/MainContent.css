@@ -3,6 +3,17 @@
   margin-right: 10px;
 }
 
+.main-content a:after {
+  content: "\219d";
+  padding-left: 1px;
+  vertical-align: super;
+  font-size: 75%;
+}
+
+.social a:after {
+  content: "";
+}
+
 #github a:link, #github a:visited {
   color: var(--black);
 }

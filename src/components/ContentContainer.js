@@ -43,6 +43,21 @@ const useDeviceType = () => {
 };
 
 const ContentContainer = (title, innerContent) => {
+  useEffect(() => {
+    const LOCK_SCROLL_CLASS = "lock-scroll";
+    const html = document.getElementsByTagName("html")[0];
+
+    if (!html.classList.contains(LOCK_SCROLL_CLASS)) {
+      html.classList.add(LOCK_SCROLL_CLASS);
+    }
+
+      return () => {
+        if (html.classList.contains(LOCK_SCROLL_CLASS)) {
+          html.classList.remove(LOCK_SCROLL_CLASS);
+        }
+      };
+  }, []);
+
   return (
     <div>
       <div className="content-overlay" />
