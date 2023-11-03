@@ -1,27 +1,119 @@
 {
-  "links": [
-    {
-      "description": "I did this project",
-      "url": "https://pitworker.github.io/tartanGenerator/",
-      "color": "blue"
-    }
-  ],
   "work": [
     {
-      "title": "Test 1",
-      "description": "This is a test :)",
-      "id": "test1",
-      "thumb": "./assets/test/thumb.png",
-      "color": "red",
+      "id": "zobits",
+      "title": "Zobits",
+      "description": "A creative toy through which players can use physical toys to spawn generative digital ecosystems",
       "category": "personal"
     },
     {
+      "id": "zooid",
+      "title": "zoöid",
+      "description": "A line of networked, glowing fashion pieces inspired by deep-sea organisms",
+      "category": "personal"
+    },
+    {
+      "id": "faxtivities",
+      "title": "Faxtivities",
+      "description": "A participatory art event using fax machines and AI-generated drawing prompts",
+      "category": "personal"
+    },
+    {
+      "id": "tartan-generator",
+      "title": "Tartan Generator",
+      "description": "A webapp that allows users to convert uploaded images to custom tartan plaids",
+      "category": "personal"
+    },
+    {
+      "id": "twisty-puzzles",
+      "title": "Twisty Puzzles",
+      "description": "An assortment of custom-made mechanical puzzles",
+      "category": "personal"
+    },
+    {
+      "id": "entomology-zines",
+      "title": "Entomology Zines",
+      "description": "A series of zines exploring local insects and their related arthropods",
+      "category": "personal"
+    },
+    {
+      "id": "thuidiniska",
+      "title": "Þúdiniska",
+      "description": "A contact language that combines Old Irish with Norse influences",
+      "category": "personal"
+    },
+    {
+      "id": "stack",
+      "title": "Stack",
+      "description": "A series of rigid wearable sculptures exploring slatted geometry and 3D-scanning",
+      "category": "personal"
+    },
+    {
+      "id": "lollipop-licker",
+      "title": "Lollipop Licker",
+      "description": "A machine that licks lollipops down to the stick",
+      "category": "personal"
+    },
+    {
+      "id": "test1",
+      "title": "Test 1",
+      "description": "This is a test",
+      "category": "professional"
+    },
+    {
+      "id": "test2",
       "title": "Test 2",
       "description": "This is another test :)",
-      "id": "test2",
-      "thumb": "./assets/test/thumb.png",
-      "color": "blue",
       "category": "professional"
+    }
+  ],
+  "reference": {
+    "art": {
+      "id": "pleiades",
+      "title": "Pleiades",
+      "author": "James Turrell"
+    },
+    "book": {
+      "id": "craeft",
+      "title": "Cræft",
+      "author": "Alexander Langlands"
+    },
+    "music": {
+      "id": "fauna",
+      "title": "Fauna",
+      "author": "Haken"
+    }
+  },
+  "social": [
+    {
+      "id": "github",
+      "display": "pitworker",
+      "url": "https://github.com/pitworker",
+      "icon": "fa-brands fa-github-alt"
+    },
+    {
+      "id": "linkedin",
+      "display": "swanio",
+      "url": "https://www.linkedin.com/in/swanio/",
+      "icon": "fa-brands fa-linkedin-in"
+    },
+    {
+      "id": "instagram",
+      "display": "things.by.spoon",
+      "url": "https://www.instagram.com/things.by.spoon/",
+      "icon": "fa-brands fa-instagram"
+    },
+    {
+      "id": "tumblr",
+      "display": "thingsbyspoon",
+      "url": "https://www.tumblr.com/thingsbyspoon",
+      "icon": "fa-brands fa-tumblr"
+    },
+    {
+      "id": "email",
+      "display": "swanio at duck dot com",
+      "url": "mailto:swanio@duck.com",
+      "icon": "fa-regular fa-envelope"
     }
   ]
 }

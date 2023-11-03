@@ -91,9 +91,11 @@ const WorkContent = () => {
       if (contentItem.id === contentId) {
         loadMarkdown(contentId).then((response) => {
           if (!contentDidLoad.current) {
-            const itemHex =
-              `0x${(Number(contentIndex) + 1).toString(16).padStart(2, "0")}`;
-            const itemTitle = `${itemHex} ${contentItem.id}`;
+            const itemHex = (Number(contentIndex) + 1)
+              .toString(16)
+              .padStart(2, "0")
+              .toUpperCase();
+            const itemTitle = `0x${itemHex} ${contentItem.id}`;
             setWorkContent({
               title: itemTitle,
               body: response
