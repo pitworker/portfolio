@@ -14,7 +14,13 @@ import "../style/WorkContent.css";
 
 const LOAD_FAILURE_TIMEOUT_MS = 10;
 
-const vimeoEmbed = () => {
+const YOUTUBE_URL = "https://www.youtube.com/embed/";
+const YOUTUBE_SUFFIX = "?si=vNlABpz0Wukyuy64";
+
+const VIMEO_URL = "https://player.vimeo.com/video/";
+const VIMEO_SUFFIX = "?h-65c72d93be&color=ffffff&title=0&byline=0&portrait=0";
+
+const videoEmbed = () => {
   return (tree, file) => {
     visit(tree, (node) => {
       if (
@@ -22,7 +28,7 @@ const vimeoEmbed = () => {
         node.type === "leafDirective" ||
         node.type === "textDirective"
       ) {
-        if (node.name !== "vimeo") return;
+        if (node.name !== "vimeo" && node.name !== "youtube") return;
 
         const data = node.data || (node.data = {});
         const attributes = node.attributes || {};
@@ -30,20 +36,24 @@ const vimeoEmbed = () => {
 
         if (node.type === "textDirective") {
           file.fail(
-            "Unexpected `:vimeo` text directive",
+            `Unexpected \`:${node.name}\` text directive`,
             node
           );
         }
 
         if (!id) {
-          file.fail("Unexpected missing `id` on `vimeo` directive", node);
+          file.fail(
+            `Unexpected missing \`id\` on \`${node.name}\` directive`,
+            node
+          );
         }
+
+        const srcStart = node.name === "vimeo" ? VIMEO_URL : YOUTUBE_URL;
+        const srcEnd = node.name === "vimeo" ? VIMEO_SUFFIX : YOUTUBE_SUFFIX;
 
         data.hName = "iframe";
         data.hProperties = {
-          src: `https://player.vimeo.com/video/${
-                  id
-                }?h-65c72d93be&color=ffffff&title=0&byline=0&portrait=0`,
+          src: `${srcStart}${id}${srcEnd}`,
           frameborder: 0,
           allow: "autoplay; fullscreen; picture-in-picture",
           allowfullscreen: true
@@ -132,7 +142,7 @@ const WorkContent = () => {
 
   const innerContent = (
     <div className="work-content">
-      <Markdown remarkPlugins={ [ remarkGfm, remarkDirective, vimeoEmbed ] }>
+      <Markdown remarkPlugins={ [ remarkGfm, remarkDirective, videoEmbed ] }>
         { workContent.body }
       </Markdown>
     </div>
