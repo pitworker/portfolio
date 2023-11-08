@@ -27,8 +27,8 @@ This repository uses a mixed license. Licenses are assigned to different parts o
   `./public/content/jen-ai`
   `./public/content/lollipop-licker`
   `./public/content/moderation-workstation`
-  `./public/content/zooid`
   `./public/content/zobits`
+`.  /public/content/zooid`
 
 ## Running the app
 
