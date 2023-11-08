@@ -92,6 +92,10 @@ ul {
   list-style-position: inside;
   list-style-type: "- "
 }
+li {
+  padding-left: 11px !important;
+  text-indent: -11px;
+}
 
 p, li {
   font-family: var(--sans);

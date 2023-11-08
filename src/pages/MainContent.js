@@ -101,7 +101,13 @@ const MainContent = () => {
           } </div>
         </div>
         <div className="bottom-stamp">
-          this site was written by Swan in 2023 using React and Markdown
+          <div>
+            this site was written by Swan in 2023 using React and Markdown
+          </div>
+          <div>
+            {"the source code for this site can be found "}
+            <a href="https://github.com/pitworker/portfolio">here</a>
+          </div>
         </div>
         <Outlet />
       </div>

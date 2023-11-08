@@ -3,7 +3,7 @@
   margin-right: 10px;
 }
 
-.main-content a:after {
+.main-content a:after, .bottom-stamp a:after {
   content: "\219d";
   padding-left: 1px;
   vertical-align: super;
@@ -69,4 +69,10 @@
   font-height: 18px;
   letter-spacing: 0.05rem;
   color: var(--grey);
+}
+.bottom-stamp a:link, .bottom-stamp a:visited {
+  color: var(--grey);
+}
+.bottom-stamp a:hover, .bottom-stamp a:active {
+  color: var(--black);
 }
