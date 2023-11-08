@@ -18,35 +18,40 @@
   color: var(--black);
 }
 #github a:hover, #github a:active {
-  color: var(--grey);
+  color: var(--white);
+  background: var(--grey);
 }
 
 #instagram a:link, #instagram a:visited {
   color: var(--magenta);
 }
 #instagram a:hover, #instagram a:active {
-  color: var(--bright-magenta);
+  color: var(--white);
+  background: var(--bright-magenta);
 }
 
 #linkedin a:link, #linkedin a:visited {
   color: var(--blue);
 }
 #linkedin a:hover, #linkedin a:active {
-  color: var(--bright-blue);
+  color: var(--white);
+  background: var(--bright-blue);
 }
 
 #tumblr a:link, #tumblr a:visited {
   color: var(--cyan);
 }
 #tumblr a:hover, #tumblr a:active {
-  color: var(--bright-cyan);
+  color: var(--white);
+  background: var(--bright-cyan);
 }
 
 #email a:link, #email a:visited {
   color: var(--red);
 }
 #email a:hover, #email a:active {
-  color: var(--bright-red);
+  color: var(--white);
+  background: var(--bright-red);
 }
 
 .icon {
