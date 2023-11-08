@@ -30,4 +30,4 @@ The concept for the AI-generated drawing prompts was inspired by two sources: [*
 
 Synthesizing the concepts from these pieces of work led to a strange, almost anachronistic, mix of disparate things that became Faxtivities.
 
-The code repository for this project can be found [here.](https://github.com/pitworker/Faxtivities)
+The source code for this project can be found [here.](https://github.com/pitworker/Faxtivities)

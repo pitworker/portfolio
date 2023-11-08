@@ -33,4 +33,4 @@ Pieces were made from a myriad of materials, including ABS and TPU plastics, acr
 
 In addition to Alice and Connie, I want to give a special thanks to Sidney Church for advising us on the electronic components and code, to Richard Parsakian and Scott Andrew for mentoring us on the designs, to Golan Levin for lending us tools and studio space for the project, to the Lunar Gala Photo Team for the show and studio photographs, and to our models, Remi Adeoti, Taylor Campbell, Baris Denizli, Rahjshiba Koanda, Angela Lee, Audry Stuart, Ale van Praag, and Emily Wu.
 
-The code repository for this project can be found [here.](https://github.com/pitworker/lg2020)
+The source code for this project can be found [here.](https://github.com/pitworker/lg2020)
