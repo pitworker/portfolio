@@ -6,13 +6,13 @@ This is the source code for the current iteration of my portfolio. The site is p
 
 This repository uses a mixed license. Most of the source code[^1] is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). The content and visual design choices[^2] are licensed under the [Creative Commons Attribution NonCommercial ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. The typefaces[^3] retain their original [SIL Open Font License 1.1](https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web). Any linked or embedded content (such as YouTube and Vimeo videos) retains its original license and falls outside of the licensing of this project. _All content_ (images, text, videos, etc) related to collaborative and professional projects[^4] falls outside this licensing, and, unless otherwise stated, _full copyright_ is maintained by myself and my collaborators, and/or any clients or employers.
 
-[^1] "Source code" is defined here as all HTML, Markdown outside of the `./public/content/` directory, NodeJS and React configuration files, and JavaScript code exclusive of any embedded titles, headers, body text, or captions within the page layouts in the `./src/pages/` directory.
+[^1]: "Source code" is defined here as all HTML, Markdown outside of the `./public/content/` directory, NodeJS and React configuration files, and JavaScript code exclusive of any embedded titles, headers, body text, or captions within the page layouts in the `./src/pages/` directory.
 
-[^2] "Content and visual design choices" is defined here as all images, titles, headers, body text, or captions (both standalone and enclosed within JavaScript files in the `./src/pages/` directory), CSS code, and all Markdown files located within the `./public/content/` directory.
+[^2]: "Content and visual design choices" is defined here as all images, titles, headers, body text, or captions (both standalone and enclosed within JavaScript files in the `./src/pages/` directory), CSS code, and all Markdown files located within the `./public/content/` directory.
 
-[^3] "Typefaces" are defined here as all files located within the `./src/fonts/` directory.
+[^3]: "Typefaces" are defined here as all files located within the `./src/fonts/` directory.
 
-[^4] "Collaborative and professional projects" are defined here as ALL files located within the following directories:
+[^4]: "Collaborative and professional projects" are defined here as ALL files located within the following directories:
 - `./public/content/cloud-next-postcards`
 - `./public/content/doodles-nftnyc`
 - `./public/content/gml-pinball`
