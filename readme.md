@@ -13,16 +13,16 @@ This repository uses a mixed license. Most of the source code[^1] is licensed un
 [^3]: "Typefaces" are defined here as all files located within the `./src/fonts/` directory.
 
 [^4]: "Collaborative and professional projects" are defined here as ALL files located within the following directories:
-  - `./public/content/cloud-next-postcards`
-  - `./public/content/doodles-nftnyc`
-  - `./public/content/gml-pinball`
-  - `./public/content/google-woogle`
-  - `./public/content/highmark-hig`
-  - `./public/content/jen-ai`
-  - `./public/content/lollipop-licker`
-  - `./public/content/moderation-workstation`
-  - `./public/content/zooid`
-  - `./public/content/zobits`
+  `./public/content/cloud-next-postcards`
+  `./public/content/doodles-nftnyc`
+  `./public/content/gml-pinball`
+  `./public/content/google-woogle`
+  `./public/content/highmark-hig`
+  `./public/content/jen-ai`
+  `./public/content/lollipop-licker`
+  `./public/content/moderation-workstation`
+  `./public/content/zooid`
+  `./public/content/zobits`
 
 ## Running the app
 
