@@ -88,13 +88,12 @@ h4 {
   line-height: 22px;
 }
 
-ul {
-  list-style-position: inside;
-  list-style-type: "- "
-}
+ul, ol { list-style-position: inside; }
+ul { list-style-type: "- "; }
+ol { list-style-type: decimal; }
 li {
-  padding-left: 11px !important;
-  text-indent: -11px;
+  padding-left: 21px !important;
+  text-indent: -21px;
 }
 
 p, li {
