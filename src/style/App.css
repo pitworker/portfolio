@@ -58,7 +58,7 @@
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, th {
   font-family: var(--serif);
   font-weight: 700;
   font-style: normal;
@@ -83,7 +83,7 @@ h3 {
   line-height: 26px;
 }
 
-h4 {
+h4, th {
   font-size: 20px;
   line-height: 22px;
 }
@@ -155,5 +155,6 @@ table {
   border-collapse: separate;
   margin: -10px;
 }
+th, td { text-align: left }
 td { padding-top: 10px !important; }
 td > img { margin: 0px !important; }

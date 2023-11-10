@@ -24,6 +24,8 @@ Awarded the 2021 Henry Armero Award for Creative Inclusivity
 
 ![The Zobits figures with the pad](/content/zobits/images/figures-and-pad.jpg "The Zobits figures with the pad")
 
+The wider *Zobits* ecosystem contains 16 species of plants, animals, fungi, and micro-organisms. Each organism occupies a specific niche. As users experiment with their biomes, they begin understanding how these niches complement and obstruct each other.
+
 | ID | Organism | Sprite | Description |
 | -- | -------- | ------ | ----------- |
 | `0x0`  | Large Carnivore | ![large carnivore](/content/zobits/images/carnivoreA.gif "large carnivore") | The *large carnivore* is the apex predator. An opportunistic hunter, it will eat nearly any animal it encounters. |
@@ -44,3 +46,11 @@ Awarded the 2021 Henry Armero Award for Creative Inclusivity
 | `0xF` | Mollusk | ![mollusk](/content/zobits/images/molluskA.gif "mollusk") | The *mollusk* is a small organism that eats plants and fungi. This organism is one of the few animals in the *Zobits* ecosystem that consumes mold. |
 
 ## Creative Context
+
+*Zobits* can be categorized squarely under the genres of toys-to-life and slow games. The toy's digital ecosystem also draws direct inspiration from the algorithmic environments and societies of Max Bittker's [*orb.farm*](https://orb.farm/) and Ian cheng's [*Emissaries*](http://iancheng.com/emissaries).
+
+## Attributions
+
+This project was advised by Golan Levin, Matt Zywica. Financial support was provided by Carnegie Mellon's SURG/CW and FRFAF grant programs. Additional support was provided by Tom Hughes and Stephanie Murray.
+
+Much of the source code for this project can be found [here.](https://github.com/pitworker/emile)
