@@ -16,9 +16,13 @@ Awarded the 2021 Henry Armero Award for Creative Inclusivity
 
 ### Ecosystem Balance and Decay
 
+![A successful Zobits ecosystem](/content/zobits/images/ecosystem.gif "A successful Zobits ecosystem")
+
 *Zobits* employs slow game dynamics and delayed gratification in the context of an exploratory, generative toy. Players select ecosystem tetrads from among the sixteen organisms, snap their organisms onto the pad, and watch as their ecosystem develops over the course of a couple days. While many ecosystems will settle into some form of stasis, some might go through wild fluctuations in populations before reaching this point, and more still will simply slowly die out.
 
 ### Organisms
+
+![The Zobits figures with the pad](/content/zobits/images/figures-and-pad.jpg "The Zobits figures with the pad")
 
 | ID | Organism | Sprite | Description |
 | -- | -------- | ------ | ----------- |
