@@ -96,7 +96,7 @@ li {
   text-indent: -21px;
 }
 
-p, li {
+p, li, td {
   font-family: var(--sans);
   font-weight: 400;
   font-style: normal;
@@ -155,3 +155,5 @@ table {
   border-collapse: separate;
   margin: -10px;
 }
+td { padding-top: 10px !important; }
+td > img { margin: 0px !important; }
