@@ -32,8 +32,9 @@ const MainContent = () => {
           </p>
           <h2> I write software for a living </h2>
           <p>
-            I've worked on many interactive installations for an all-star cast
-            of clients. Here are some highlights:
+            I've worked on a range of interactive products, web experiences, and
+            installations for an all-star cast of clients.
+            Here are some highlights:
           </p>
           <ul> {
             content.work.filter((workItem) =>
