@@ -71,6 +71,12 @@
       "title": "Doodles Concierge @ NFT.NYC",
       "description": "A live-animated digital concierge, part of Doodles' award winning Genesis Factory activation at NFT.NYC 2022",
       "category": "professional"
+    },
+    {
+      "id": "misc-professional",
+      "title": "Miscellaneous Professional Work",
+      "description": "A spectrum of other products and experiences for major clients ranging from tech to retail to media companies",
+      "category": "professional"
     }
   ],
   "reference": {

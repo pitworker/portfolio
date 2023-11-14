@@ -1,6 +1,6 @@
 # Google Marketing Live Pinball Machines
 
-Completed May 2023
+Installed May 2023
 
 Created with Deeplocal for Google
 
