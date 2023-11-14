@@ -20,6 +20,31 @@ const ICONS = {
   linkedin: faLinkedinIn
 };
 
+const ListWorkItems = (workCategory) => {
+  return content.work.map((workItem, index) => {
+    let newWorkItem = workItem;
+    newWorkItem.hexIndex =
+      (Number(index) + 1).toString(16).padStart(2, "0" ).toUpperCase();
+    return newWorkItem;
+  }).filter((workItem) =>
+    workItem.category === workCategory
+  ).map((workItem) =>
+    <li key={ workItem.id }>
+      <Link
+        to={ `/work/${workItem.id}` }
+        className={ `work-link` }
+      >
+        <span className="main-link-text">{
+          workItem.description
+        }</span>
+        <span className={ `super-link link-${workItem.color}` }>{
+          `[0x${workItem.hexIndex}]\u219d`
+        }</span>
+      </Link>
+    </li>
+  );
+};
+
 const MainContent = () => {
   return (
     <>
@@ -36,33 +61,13 @@ const MainContent = () => {
             installations for an all-star cast of clients.
             Here are some highlights:
           </p>
-          <ul> {
-            content.work.filter((workItem) =>
-              workItem.category === "professional"
-            ).map((workItem) =>
-              <li key={workItem.id}>
-                <Link to={ `/work/${workItem.id}` }>{
-                  workItem.description
-                }</Link>
-              </li>
-            )
-          } </ul>
+          <ul> { ListWorkItems("professional") } </ul>
           <h2> And I make all sorts of other stuff, too </h2>
           <p>
             Through my personal practice, I've explored a plethora niche
             subjects. This is some of the coolest stuff I've made:
           </p>
-          <ul> {
-            content.work.filter((workItem) =>
-              workItem.category === "personal"
-            ).map((workItem) =>
-              <li key={workItem.id}>
-                <Link to={ `/work/${workItem.id}` }>{
-                  workItem.description
-                }</Link>
-              </li>
-            )
-          } </ul>
+          <ul> { ListWorkItems("personal") } </ul>
           <h2> I'm always enjoying all sorts of art </h2>
           <p>
             At the moment, I'm reading
@@ -89,7 +94,10 @@ const MainContent = () => {
                 className="social-item"
               >
                 <p>
-                  <a href={ socialItem.url }>
+                  <a
+                    href={ socialItem.url }
+                    className={ `link-${socialItem.color}` }
+                  >
                     <FontAwesomeIcon
                       icon={ ICONS[socialItem.id] }
                       className="icon"

@@ -57,6 +57,9 @@
   background: var(--black);
 }
 
+h1, h2, h3, h4, p, a, code {
+  margin-bottom: 15px !important;
+}
 
 h1, h2, h3, h4, th {
   font-family: var(--serif);
@@ -69,18 +72,18 @@ h1, h2, h3, h4, th {
 h1 {
   font-size: 42px;
   line-height: 48px;
-  margin-top: 20px;
 }
 
 h2 {
   font-size: 30px;
   line-height: 32px;
-  margin-top: 15px;
+  margin-top: 30px !important;
 }
 
 h3 {
   font-size: 24px;
   line-height: 26px;
+  margin-top: 15px !important;
 }
 
 h4, th {
@@ -92,8 +95,8 @@ ul, ol { list-style-position: inside; }
 ul { list-style-type: "- "; }
 ol { list-style-type: decimal; }
 li {
-  padding-left: 21px !important;
-  text-indent: -21px;
+  padding-left: 11px !important;
+  text-indent: -11px;
 }
 
 p, li, td {
@@ -113,16 +116,19 @@ a {
 a:link, a:visited {
   background: none;
 }
-a:hover {
-  background: var(--bright-yellow);
+a:hover, a:active {
+  background: var(--grey);
+  color: var(--white);
 }
+/*
 a:active {
-  background: var(--bright-yellow);
+  background: var(--grey);
   outline: 2px solid var(--black);
 }
 a:hover:after, a:active:after {
   color: var(--white);
 }
+*/
 
 code {
   font-family: var(--mono);

@@ -4,3 +4,125 @@
   vertical-align: super;
   font-size: 75%
 }
+
+.red h1, .red h2, .red h3, .red h4, .red th {
+  color: var(--red);
+}
+.green h1, .green h2, .green h3, .green h4, .green th {
+  color: var(--green);
+}
+.blue h1, .blue h2, .blue h3, .blue h4, .blue th {
+  color: var(--blue);
+}
+.cyan h1, .cyan h2, .cyan h3, .cyan h4, .cyan th {
+  color: var(--cyan);
+}
+.magenta h1, .magenta h2, .magenta h3, .magenta h4, .magenta th {
+  color: var(--magenta);
+}
+.yellow h1, .yellow h2, .yellow h3, .yellow h4, .yellow th {
+  color: var(--yellow);
+}
+.grey h1, .grey h2, .grey h3, .grey h4, .grey th {
+  color: var(--grey);
+}
+.black h1, .black h2, .black h3, .black h4, .black th{
+  color: var(--black);
+}
+
+.red a:link, .red a:visited {
+  color: var(--red);
+}
+.red a:hover, .red a:active {
+  color: var(--white);
+  background: var(--bright-red);
+}
+
+.green a:link, .green a:visited {
+  color: var(--green);
+}
+.green a:hover, .green a:active {
+  color: var(--white);
+  background: var(--bright-green);
+}
+
+.blue a:link, .blue a:visited {
+  color: var(--blue);
+}
+.blue a:hover, .blue a:active {
+  color: var(--white);
+  background: var(--bright-blue);
+}
+
+.cyan a:link, .cyan a:visited {
+  color: var(--cyan);
+}
+.cyan a:hover, .cyan a:active {
+  color: var(--white);
+  background: var(--bright-cyan);
+}
+
+.magenta a:link, .magenta a:visited {
+  color: var(--magenta);
+}
+.magenta a:hover, .magenta a:active {
+  color: var(--white);
+  background: var(--bright-magenta);
+}
+
+.yellow a:link, .yellow a:visited {
+  color: var(--yellow);
+}
+.yellow a:hover, .yellow a:active {
+  color: var(--white);
+  background: var(--bright-yellow);
+}
+
+.grey a:link, .grey a:visited {
+  color: var(--grey);
+}
+.grey a:hover, .grey a:active {
+  color: var(--white);
+  background: var(--bright-grey);
+}
+
+.black a:link, .black a:visited {
+  color: var(--black);
+}
+.black a:hover, .black a:active {
+  color: var(--white);
+  background: var(--grey);
+}
+
+.red code {
+  color: var(--red);
+  background: var(--bright-grey);
+}
+.green code {
+  color: var(--green);
+  background: var(--bright-grey);
+}
+.blue code {
+  color: var(--blue);
+  background: var(--bright-grey);
+}
+.cyan code {
+  color: var(--cyan);
+  background: var(--bright-grey);
+}
+.magenta code {
+  color: var(--magenta);
+  background: var(--bright-grey);
+}
+.yellow code {
+  color: var(--yellow);
+  background: var(--bright-grey);
+}
+.grey code {
+  color: var(--grey);
+  background: var(--bright-grey);
+}
+.black code {
+  color: var(--black);
+  background: var(--bright-grey);
+}

@@ -93,6 +93,7 @@ const WorkContent = () => {
   const { contentId } = useParams();
   const [ workContent, setWorkContent ] = useState({
     title: "0x00 loading",
+    color: "black",
     body: formatLoading(contentId)
   });
   const contentDidLoad = useRef(false);
@@ -110,6 +111,7 @@ const WorkContent = () => {
             const itemTitle = `0x${itemHex} ${contentItem.id}`;
             setWorkContent({
               title: itemTitle,
+              color: contentItem.color,
               body: response
             });
             contentDidLoad.current = true;
@@ -120,6 +122,7 @@ const WorkContent = () => {
           if (!contentDidLoad.current) {
             setWorkContent({
               title: "0x00 error",
+              color: "black",
               body: formatFailure(contentId)
             });
             contentDidLoad.current = true;
@@ -134,6 +137,7 @@ const WorkContent = () => {
       if (!contentDidLoad.current) {
         setWorkContent({
           title: "0x00 error",
+          color: "black",
           body: formatFailure(contentId)
         });
       }
@@ -148,7 +152,7 @@ const WorkContent = () => {
     </div>
   );
 
-  return ContentContainer(workContent.title, innerContent);
+  return ContentContainer(workContent.title, workContent.color, innerContent);
 };
 
 export default WorkContent;

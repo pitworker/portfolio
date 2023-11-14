@@ -3,55 +3,104 @@
   margin-right: 10px;
 }
 
-.main-content a:after, .bottom-stamp a:after {
+.bottom-stamp a:after {
   content: "\219d";
   padding-left: 1px;
   vertical-align: super;
   font-size: 75%;
 }
 
-.social a:after {
-  content: "";
-}
 
-#github a:link, #github a:visited {
+.work-link:link, .work-link:visited, .work-link:hover, .work-link:active {
   color: var(--black);
+  background: none;
+  outline: none;
+  border: none;
 }
-#github a:hover, #github a:active {
-  color: var(--white);
-  background: var(--grey);
-}
-
-#instagram a:link, #instagram a:visited {
-  color: var(--magenta);
-}
-#instagram a:hover, #instagram a:active {
-  color: var(--white);
-  background: var(--bright-magenta);
+.work-link:hover > .main-link-text, .work-link:active > .main-link-text {
+  text-decoration: underline;
 }
 
-#linkedin a:link, #linkedin a:visited {
-  color: var(--blue);
-}
-#linkedin a:hover, #linkedin a:active {
-  color: var(--white);
-  background: var(--bright-blue);
+.super-link {
+  vertical-align: super;
+  font-family: var(--mono);
+  font-size: 75%;
 }
 
-#tumblr a:link, #tumblr a:visited {
-  color: var(--cyan);
-}
-#tumblr a:hover, #tumblr a:active {
-  color: var(--white);
-  background: var(--bright-cyan);
-}
-
-#email a:link, #email a:visited {
+.link-red:link, .link-red:visited, .work-link:link > .link-red, .work-link:visited > .link-red {
   color: var(--red);
 }
-#email a:hover, #email a:active {
+.link-red:hover, .link-red:active, .work-link:hover > .link-red, .work-link:active > .link-red {
   color: var(--white);
   background: var(--bright-red);
+  text-decoration: none;
+}
+
+.link-green:link, .link-green:visited, .work-link:link > .link-green, .work-link:visited > .link-green {
+  color: var(--green);
+}
+.link-green:hover, .link-green:active, .work-link:hover > .link-green, .work-link:active > .link-green {
+  color: var(--white);
+  background: var(--bright-green);
+  text-decoration: none;
+}
+
+.link-blue:link, .link-blue:visited, .work-link:link > .link-blue, .work-link:visited > .link-blue {
+  color: var(--blue);
+}
+.link-blue:hover, .link-blue:active, .work-link:hover > .link-blue, .work-link:active > .link-blue {
+  color: var(--white);
+  background: var(--bright-blue);
+  text-decoration: none;
+}
+
+.link-cyan:link, .link-cyan:visited, .work-link:link > .link-cyan, .work-link:visited > .link-cyan {
+  color: var(--cyan);
+}
+.link-cyan:hover, .link-cyan:active, .work-link:hover > .link-cyan, .work-link:active > .link-cyan {
+  color: var(--white);
+  background: var(--bright-cyan);
+  text-decoration: none;
+}
+
+.link-magenta:link, .link-magenta:visited, .work-link:link > .link-magenta, .work-link:visited > .link-magenta {
+  color: var(--magenta);
+}
+.link-magenta:hover, .link-magenta:active, .work-link:hover > .link-magenta, .work-link:active > .link-magenta {
+  color: var(--white);
+  background: var(--bright-magenta);
+  text-decoration: none;
+}
+
+.link-yellow:link, .link-yellow:visited, .work-link:link > .link-yellow, .work-link:visited > .link-yellow {
+  color: var(--yellow);
+}
+.link-yellow:hover, .link-yellow:active, .work-link:hover > .link-yellow, .work-link:active > .link-yellow {
+  color: var(--white);
+  background: var(--bright-yellow);
+  text-decoration: none;
+}
+
+.link-grey:link, .link-grey:visited, .work-link:link > .link-grey, .work-link:visited > .link-grey {
+  color: var(--grey);
+}
+.link-grey:hover, .link-grey:active, .work-link:hover > .link-grey, .work-link:active > .link-grey {
+  color: var(--white);
+  background: var(--bright-grey);
+  text-decoration: none;
+}
+
+.link-black:link, .link-black:visited, .work-link:link > .link-black, .work-link:visited > .link-black {
+  color: var(--black);
+}
+.link-black:hover, .link-black:active, .work-link:hover > .link-black, .work-link:active > .link-black {
+  color: var(--white);
+  background: var(--grey);
+  text-decoration: none;
+}
+
+.super-link:after, .social a:after {
+  content: "";
 }
 
 .icon {
@@ -74,5 +123,6 @@
   color: var(--grey);
 }
 .bottom-stamp a:hover, .bottom-stamp a:active {
-  color: var(--black);
+  color: var(--white);
+  background: var(--bright-grey);
 }

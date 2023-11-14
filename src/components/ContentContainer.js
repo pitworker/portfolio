@@ -42,7 +42,7 @@ const useDeviceType = () => {
   return deviceType;
 };
 
-const ContentContainer = (title, innerContent) => {
+const ContentContainer = (title, color, innerContent) => {
   useEffect(() => {
     const LOCK_SCROLL_CLASS = "lock-scroll";
     const html = document.getElementsByTagName("html")[0];
@@ -61,7 +61,7 @@ const ContentContainer = (title, innerContent) => {
   return (
     <div>
       <div className="content-overlay" />
-      <div className={`content-container ${useDeviceType()}`}>
+      <div className={`content-container ${color} ${useDeviceType()}`}>
         <div className="inner-content">
           { innerContent }
         </div>

@@ -81,16 +81,16 @@
   outline: 2px solid var(--black);
 }
 .close-btn:link, .close-btn:visited {
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--black) !important;
+  background-color: var(--white) !important;
 }
 .close-btn:hover {
-  color: var(--white);
-  background-color: var(--red);
+  color: var(--white) !important;
+  background-color: var(--red) !important;
 }
 .close-btn:active {
-  color: var(--red);
-  background-color: var(--black);
+  color: var(--red) !important;
+  background-color: var(--black) !important;
 }
 
 .inner-content {
