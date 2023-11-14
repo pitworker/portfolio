@@ -8,6 +8,10 @@ Created with Deeplocal for Google
 
 Google approached Deeplocal to create the centerpiece for its AI Pavilion at Google Marketing Live 2023. I was brought onto the project as software lead during the concept development phase and saw it through to the machines' permanent re-installation after the conclusion of the event. Over the course of six weeks, I led a team of three developers to build a game for a trio of bespoke pinball machines.
 
+| ![Wide shot of AI Pavilion](/content/gml-pinball/images/pinball-crowd.jpg "Wide shot of pinball machines") | ![Pinball machine player](/content/gml-pinball/images/pinball-player-side.jpg "Pinball machine player") |
+| --- | --- |
+| ![Pinball machine closeup](/content/gml-pinball/images/pinball-machine.jpg "Pinball machine closeup") | ![Crowd around machines](/content/gml-pinball/images/pinball-selfie.jpg "Crowd around machines") |
+
 ## Architecture and Process
 
 Built in Unity on the Multimorphic pinball framework, the machines' software handled the game logic, scoring, timing, controls for all the machine's mechanical components and lighting, in-game animations, and the between-game resting state.
