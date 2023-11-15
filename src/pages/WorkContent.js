@@ -12,7 +12,7 @@ import content from "../content/content.json";
 
 import "../style/WorkContent.css";
 
-const LOAD_FAILURE_TIMEOUT_MS = 10;
+const LOAD_FAILURE_TIMEOUT_MS = 5000;
 
 const YOUTUBE_URL = "https://www.youtube.com/embed/";
 const YOUTUBE_SUFFIX = "?si=vNlABpz0Wukyuy64";
