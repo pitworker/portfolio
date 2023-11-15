@@ -16,4 +16,4 @@ Google approached Deeplocal to create the centerpiece for its AI Pavilion at Goo
 
 Built in Unity on the Multimorphic pinball framework, the machines' software handled the game logic, scoring, timing, controls for all the machine's mechanical components and lighting, in-game animations, and the between-game resting state.
 
-As software lead on the project, my primary focus was on software architecture, developing the game's state machine, high-score tracking, and game start/end mechanics, as well as overseeing the rest of the software development. I also acted as the onsite software developer for the project's installation and wrote any needed bug fixes during the testing and activation phases.
+As software lead on the project, my primary focus was on software architecture, developing the game's state machine, high-score tracking, and game start/end mechanics, as well as overseeing the rest of the software development. I also acted as the onsite software support for the project's installation and wrote any needed bug fixes during the testing and activation phases.

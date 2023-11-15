@@ -50,10 +50,14 @@ const MainContent = () => {
     <>
       <div id="content" className="all-content">
         <div className="main-content">
-          <h1> My name is Swan (they/them)! </h1>
+          <h1> Hello! My name is Swan (they/them) </h1>
           <p>
             I'm a software developer, artist, and amateur entomologist based
-            in Pittsburgh PA.
+            in Pittsburgh, Pennsylvania.
+          </p>
+          <p>
+            I hold a bachelor's degree in computer science and environments
+            design from Carnegie Mellon University.
           </p>
           <h2> I write software for a living </h2>
           <p>
@@ -62,13 +66,13 @@ const MainContent = () => {
             Here are some highlights:
           </p>
           <ul> { ListWorkItems("professional") } </ul>
-          <h2> And I make all sorts of other stuff, too </h2>
+          <h2> And I make tech-centered art, too </h2>
           <p>
-            Through my personal practice, I've explored a plethora niche
-            subjects. This is some of the coolest stuff I've made:
+            Through my personal practice, I've explored a plethora of distinct
+            subjects and media. These are some of my best pieces:
           </p>
           <ul> { ListWorkItems("personal") } </ul>
-          <h2> I'm always enjoying all sorts of art </h2>
+          <h2> I'm always learning from the work others are creating </h2>
           <p>
             At the moment, I'm reading
             <i> { content.reference.book.title } </i>
@@ -114,7 +118,7 @@ const MainContent = () => {
             this site was written by Swan in 2023 using React and Markdown
           </div>
           <div>
-            {"the source code for this site can be found "}
+            {"the source code can be found "}
             <a href="https://github.com/pitworker/portfolio">here</a>
           </div>
         </div>

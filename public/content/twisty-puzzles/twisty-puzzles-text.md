@@ -10,7 +10,7 @@ I've been designing twisty puzzles* since I was in high school. The way these to
 
 Completed 2016
 
-One of my favorite mass-produced puzzles for a long time has been the [*Square-1*](https://twistypuzzles.com/cgi-bin/puzzle.cgi?pkey=602) (originally called *Cube21*). It's among the most mechanically simple twisty puzzles in existence, yet it exhibits movement dynamics typical of far more complex puzzles. I was interested in exploring higher-order variants of the puzzle (think the 5-layer *Professor Cube* compared to the 3-layer *Rubik's Cube*), while keeping the basic properties of the puzzle as close to the original as possible, something that turns out to be surprisingly rare among comparable Square-1 variations.
+One of my favorite mass-produced puzzles for a long time has been the [*Square-1*](https://twistypuzzles.com/cgi-bin/puzzle.cgi?pkey=602) (also called *Cube21*). It's among the least mechanically complex twisty puzzles in existence, yet it exhibits movement dynamics (bandaging, shape-shifting) typical of far more complex puzzles. I was interested in exploring higher-order variants of the puzzle (think the 5-layer *Professor Cube* compared to the 3-layer *Rubik's Cube*), while keeping the basic properties of the puzzle as close to the original as possible, something that turns out to be surprisingly rare among comparable *Square-1* variations.
 
 | ![Professor Square-1, solved](/content/twisty-puzzles/images/profSQ1Forum1.jpg "Professor Square-1, solved") | ![Professor Square-1, solved](/content/twisty-puzzles/images/profSQ1Forum2.jpg "Professor Square-1, rotated along horizontal axis") |
 | ---- | ---- |
@@ -28,7 +28,7 @@ Completed 2018
 
 I love tetrahedral puzzles. While I can't really explain why, I've just always found something about the way the shape fits in my hands alluring.
 
-When designing the *Offset Tetrahedron*, I adapted the mechanism of David Pitcher's [*Face Turning Octahedron*](https://twistypuzzles.com/app/museum/museum_showitem.php?pkey=1663) to a tetrahedral shape,so half the rotating faces from the original puzzle were now vertices. By shifting the cut planes, I added a couple more visible pieces to the puzzle. By tilting the rotation axes slightly off-center, I created an asymetric geometry on each face. When scrambled, the resulting puzzle creates a chaos of pieces that obscures its simple solved shape.
+When designing the *Offset Tetrahedron*, I adapted the mechanism of David Pitcher's [*Face Turning Octahedron*](https://twistypuzzles.com/app/museum/museum_showitem.php?pkey=1663) to a tetrahedral shape, so half the rotating faces from the original puzzle were now vertices. By shifting the cut planes, I added a couple more visible pieces to the puzzle. By tilting the rotation axes slightly off-center, I created an asymetric geometry on each face. When scrambled, the resulting puzzle creates a chaos of pieces that obscures its simple solved shape.
 
 | ![Offset Tetrahedron, solved](/content/twisty-puzzles/images/IMG1.JPG "Offset Tetrahedron, solved") | ![Offset Tetrahedron, solved](/content/twisty-puzzles/images/IMG3.JPG "Offset Tetrahedron, with two layers rotated") |
 | ---- | ---- |

@@ -2,7 +2,8 @@
   content: "\219d";
   padding-left: 1px;
   vertical-align: super;
-  font-size: 75%
+  font-size: 75%;
+  line-height: 50%;
 }
 
 .red h1, .red h2, .red h3, .red h4, .red th {

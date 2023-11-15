@@ -6,7 +6,7 @@ In collaboration with [Paul Park](https://paukparl.com/)
 
 ## Background
 
-There isn't really that much to explain about this project—it's a robot that licks lollipops down to their sticks and makes a mess while doing it. It senses when a lollipop is placed into it, and, using a sponge wetted from a trough of water, licks the lollipop until it is just a stick. The intentional lack of a runoff collection system leads to a pool of liquid lollipop to collect around the robot all over the table the robot is on. Inspiration for this piece rose entirely from a conversation my collaborator, Paul, and I had about possible robots we could build centering objects from a bag of disparate items we'd collected from the Pittsburgh Center for Creative Reuse.
+There isn't really that much to explain about this project—it's a robot that licks lollipops down to their sticks and makes an absolute mess while doing it. It senses when a lollipop is placed into it, and, using a sponge wetted from a trough of water, licks the lollipop until only the stick remains. The intentional lack of a runoff collection system leads to a pool of liquid lollipop to spread all over the table. Inspiration for this piece rose entirely from a conversation my collaborator, Paul, and I had about possible robots we could build centering objects from a bag of disparate items we'd collected from the Pittsburgh Center for Creative Reuse.
 
 ::youtube[lollipop-licker]{#DW7IsEc858w}
 

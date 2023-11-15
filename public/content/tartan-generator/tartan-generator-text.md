@@ -12,13 +12,17 @@ Completed August 2022
 
 ## Development
 
+### Original Iteration
+
 This project began in the Spring of 2021 after I'd followed an internet rabbit-hole to reading the entire Wikipedia page on Tartan cloth. Interested in generating representations of these patterns digitally, I started drawing twill-like patterns using p5.js.
 
 ![A digitally-rendered tartan](/content/tartan-generator/images/digitalTartan.png "A digitally rendered tartan")
 
-I was interested in automating this process a little more, so I looked to scraping images for color palettes. My original method to scrape colors consisted of simply grabbing the 5 most frequent colors in the image (at this point I enforced a constant color count). While this method generally worked for images with limited color spaces, it stumbled on images with high color variations, with some high-resolution photographs only containing a handful of pixels of the same color.
+I was interested in automating this process a little more, so I looked to scraping images for color palettes. My original method to scrape colors consisted of simply grabbing roughly the 5 most frequent colors in the image (at this point I was [poorly] enforcing a [mostly] constant color count). While this method generally worked for images with limited color spaces, it stumbled on images with high color variations, with some high-resolution photographs only containing a handful of pixels of the same color. Many of these images also broke my mediocre color count enforcement mechanism, at times resulting in tartans with as few as two colors or as many as eight.
 
 ![A tartan rendered with the original method](/content/tartan-generator/images/calderTartan_v1.png "A tartan rendered with the original method")
+
+### Revisiting with Rust
 
 Other projects soon stole my attention, causing this one to get shelved in its rudimentary state for over a year. In the summer of 2022, though, I was eagerly learning Rust and unshelved the *Tartan Generator* as an excuse to use the language in a real project.
 

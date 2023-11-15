@@ -8,7 +8,7 @@ Awarded the 2021 Henry Armero Award for Creative Inclusivity
 
 ## Overview
 
-*Zobits* is a creative toy that invites players to iteratively assemble and tweak digital ecosystems. *Zobits* consists of a set of sixteen plastic figures representing different ecological niches, a magnetic pad with recepticles for four figures, and a ocompanion Android app on which the player's biomes develop. As players select and palce organisms in each of the recepticles, those organisms begin spawning within the phone app. Over the course of a couple days, the ecosystem develops and evolves, with balanced groupings of organisms thriving and unbalanced systems slowly dying off.
+*Zobits* is a creative toy that invites players to iteratively assemble and tweak digital ecosystems. *Zobits* consists of a set of sixteen plastic figures representing different ecological niches, a magnetic pad with recepticles for four figures, and a companion Android app on which the player's biomes develop. As players select and place organisms in each of the recepticles, those organisms begin spawning within the phone app. Over the course of a day, the ecosystem develops and evolves, with balanced groupings of organisms thriving and unbalanced systems slowly dying off.
 
 ::youtube[Zobits overview video]{#o3RI0cMLVMs}
 
@@ -18,7 +18,7 @@ Awarded the 2021 Henry Armero Award for Creative Inclusivity
 
 ![A successful Zobits ecosystem](/content/zobits/images/ecosystem.gif "A successful Zobits ecosystem")
 
-*Zobits* employs slow game dynamics and delayed gratification in the context of an exploratory, generative toy. Players select ecosystem tetrads from among the sixteen organisms, snap their organisms onto the pad, and watch as their ecosystem develops over the course of a couple days. While many ecosystems will settle into some form of stasis, some might go through wild fluctuations in populations before reaching this point, and more still will simply slowly die out.
+*Zobits* employs slow game dynamics and delayed gratification in the context of an exploratory, generative toy. Players select ecosystem tetrads from among the sixteen organisms, snap their organisms onto the pad, and watch as their ecosystem develops over the course of twenty-four hours. While many ecosystems will settle into some form of stasis, some might go through wild fluctuations in populations before reaching a stasis, and more still may simply slowly die out.
 
 ### Organisms
 
@@ -38,8 +38,8 @@ The wider *Zobits* ecosystem contains 16 species of plants, animals, fungi, and 
 | `0x7` | Tree | ![tree](/content/zobits/images/treeA.gif "tree") | The *tree* is the *Zobits* ecosystem's largest plant. These organisms have long lifespans and provide shelter, air, and food for many of the ecosystem's animals and fungi. |
 | `0x8` | Flower | ![flower](/content/zobits/images/flowerA.gif "flower") | The *flower* is a short plant. Its pollen and nectar provide food for small herbivores and its buds and stems provide food for larger herbivores and omnivores. |
 | `0x9` | Grass | ![grass](/content/zobits/images/grassC.gif "grass") | The *grass* fills out the Zobits ecosystem's underbrush. It is the grazer's primary food source. |
-| `0xA` | Legume | ![legume](/content/zobits/images/legumeA.gif "legume") | The *legume* is a small plant that nourishes the soil it grows in. The roots of the legume introduces fertilizers to the soil that help other plants grow. |
-| `0xB` | Vine | ![vine](/content/zobits/images/vineB.gif "vine") | The *vine* provides food for many herbivores, but its habit of growing on other plants can restrict their host plants' populations. |
+| `0xA` | Legume | ![legume](/content/zobits/images/legumeA.gif "legume") | The *legume* is a small plant that nourishes the soil it grows in. The roots of the legume introduce fertilizers to the soil that help other plants grow. |
+| `0xB` | Vine | ![vine](/content/zobits/images/vineB.gif "vine") | The *vine* provides food for many herbivores, but its habit of growing on other plants can restrict the host plants' populations. |
 | `0xC` | Lichen | ![lichen](/content/zobits/images/lichenA.gif "lichen") | The *lichen* is a composite of algaes and fungi that grows on stones and trees. These composites provide nutrients for the small animals that eat them. |
 | `0xD` | Fern | ![fern](/content/zobits/images/fernB.gif "fern") | The *fern* is another short plant. Its leaves provide food for many herbivores. |
 | `0xE` | Small Carnivore | ![Small Carnivore](/content/zobits/images/smallCarnivoreA.gif "Small Carnivore") | The *small carnivore* is a minor predator in the *Zobits* ecosystem. This organism keeps invertebrate populations in check, but it can also fall prey to larger omnivores and carnivores. |
@@ -51,6 +51,6 @@ The wider *Zobits* ecosystem contains 16 species of plants, animals, fungi, and 
 
 ## Attributions
 
-This project was advised by Golan Levin, Matt Zywica. Financial support was provided by Carnegie Mellon's SURG/CW and FRFAF grant programs. Additional support was provided by Tom Hughes and Stephanie Murray.
+This project was advised by Golan Levin and Matt Zywica. Financial support was provided by Carnegie Mellon's SURG/CW and FRFAF grant programs. Additional guidance and support was provided by Tom Hughes and Stephanie Murray.
 
 Much of the source code for this project can be found [here.](https://github.com/pitworker/emile)
