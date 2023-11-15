@@ -61,8 +61,9 @@ const MainContent = () => {
           </p>
           <h2> I write software for a living </h2>
           <p>
-            I've worked on a range of interactive products, web experiences, and
-            installations for an all-star cast of clients.
+            I've worked closely with other developers, engineers, designers,
+            and producers on a range of interactive products, web experiences,
+            and installations for an all-star cast of clients.
             Here are some highlights:
           </p>
           <ul> { ListWorkItems("professional") } </ul>
