@@ -1,0 +1,135 @@
+{
+  "work": [
+    {
+      "id": "zobits",
+      "title": "Zobits",
+      "color": "green",
+      "description": "A creative toy through which players can use physical toys to spawn generative digital ecosystems",
+      "category": "personal"
+    },
+    {
+      "id": "zooid",
+      "title": "zoöid",
+      "color": "blue",
+      "description": "A line of networked, glowing fashion pieces inspired by deep-sea organisms",
+      "category": "personal"
+    },
+    {
+      "id": "faxtivities",
+      "title": "Faxtivities",
+      "color": "yellow",
+      "description": "A participatory art event using fax machines and AI-generated drawing prompts",
+      "category": "personal"
+    },
+    {
+      "id": "tartan-generator",
+      "title": "Tartan Generator",
+      "color": "red",
+      "description": "A webapp that allows users to convert uploaded images to custom tartan plaids",
+      "category": "personal"
+    },
+    {
+      "id": "twisty-puzzles",
+      "title": "Twisty Puzzles",
+      "color": "magenta",
+      "description": "A myriad of bespoke mechanical puzzles",
+      "category": "personal"
+    },
+    {
+      "id": "stack",
+      "title": "Stack",
+      "color": "grey",
+      "description": "A series of rigid wearable sculptures exploring slatted geometry and 3D-scanning",
+      "category": "personal"
+    },
+    {
+      "id": "lollipop-licker",
+      "title": "Lollipop Licker",
+      "color": "cyan",
+      "description": "A machine that licks lollipops down to the stick",
+      "category": "personal"
+    },
+    {
+      "id": "gml-pinball",
+      "title": "Google Marketing Live Pinball",
+      "color": "green",
+      "description": "Three custom pinball machines for Google's Marketing Live event",
+      "category": "professional"
+    },
+    {
+      "id": "ai-postcards",
+      "title": "Cloud AI Postcards",
+      "color": "blue",
+      "description": "A generative AI-powered personalized postcard maker for Google's Cloud Next event",
+      "category": "professional"
+    },
+    {
+      "id": "moderation-workstation",
+      "title": "Moderation Workstation",
+      "color": "red",
+      "description": "A set of kiosks installed around the world that showcase TikTok's moderation process",
+      "category": "professional"
+    },
+    {
+      "id": "misc-professional",
+      "title": "Miscellaneous Professional Work",
+      "color": "grey",
+      "description": "A spectrum of other products and experiences for many Fortune Global 500 companies in industries ranging from tech to retail to media",
+      "category": "professional"
+    }
+  ],
+  "reference": {
+    "art": {
+      "id": "pleiades",
+      "title": "Pleiades",
+      "author": "James Turrell"
+    },
+    "book": {
+      "id": "craeft",
+      "title": "Cræft",
+      "author": "Alexander Langlands"
+    },
+    "music": {
+      "id": "fauna",
+      "title": "Fauna",
+      "author": "Haken"
+    }
+  },
+  "social": [
+    {
+      "id": "github",
+      "display": "pitworker",
+      "url": "https://github.com/pitworker",
+      "icon": "fa-brands fa-github-alt",
+      "color": "black"
+    },
+    {
+      "id": "linkedin",
+      "display": "swanio",
+      "url": "https://www.linkedin.com/in/swanio/",
+      "icon": "fa-brands fa-linkedin-in",
+      "color": "blue"
+    },
+    {
+      "id": "instagram",
+      "display": "things.by.spoon",
+      "url": "https://www.instagram.com/things.by.spoon/",
+      "icon": "fa-brands fa-instagram",
+      "color": "magenta"
+    },
+    {
+      "id": "tumblr",
+      "display": "thingsbyspoon",
+      "url": "https://www.tumblr.com/thingsbyspoon",
+      "icon": "fa-brands fa-tumblr",
+      "color": "cyan"
+    },
+    {
+      "id": "email",
+      "display": "swanio at duck dot com",
+      "url": "mailto:swanio@duck.com",
+      "icon": "fa-regular fa-envelope",
+      "color": "red"
+    }
+  ]
+}

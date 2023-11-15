@@ -1,0 +1,584 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*REGARDING THE CONTENT OF THE PAGE*/
+body {
+  margin-top: 50px;
+  margin-bottom: 85px;
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Space Mono', Mono;
+  color: #000000;
+  font-weight: 400;
+  font-size: 24pt;
+  line-height: 28pt;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Space Mono', Mono;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18pt;
+  line-height: 24pt;
+  float: left;
+  vertical-align: bottom;
+}
+
+h3 {
+  font-family: 'Space Mono', Mono;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18pt;
+  line-height: 24pt;
+  float: right;
+  vertical-align: bottom;
+}
+
+h4 {
+  font-family: 'Space Mono', Mono;
+  color: #000000;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+}
+
+h5 {
+  font-family: 'Space Mono', Mono;
+  color: #000000;
+  font-weight: 400;
+  font-size: 22pt;
+  line-height: 28pt;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h6 {
+  font-family: 'Space Mono', Mono;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16pt;
+  line-height: 24pt;
+  text-align: left;
+}
+
+p {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {color: #000000; text-decoration: none; transition: 0.3s}
+a:active {color: #ffc600; text-decoration: none;}
+a:hover {color: #ffc600; text-decoration: none; transition: 0.3s}
+
+.rightSideText {
+  padding-left: 20px;
+}
+
+.nLeft {
+  width: 250px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.wLeft {
+  width: 675px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.wRight {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 526px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nRight {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 20px;
+  width: 101px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.halves {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 20px;
+  padding-right: 0px;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rowSpacer {
+  padding-bottom: 50px;
+}
+
+.inGrid {
+  display: inline;
+}
+
+.pTop {
+  padding-top: 10px;
+}
+
+.pBottom {
+  padding-bottom: 10px;
+}
+
+.pRight {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.pLeft {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+/*TAGS! :)*/
+#tagsButton {
+  padding: 0;
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#tagsButton:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#clearBtn {
+  padding: 0;
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12pt;
+  font-family: "IBM Plex Sans", Sans-Serif;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#clearBtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#tagListTitle {
+  color: #000000;
+  background-color: transparent;
+  margin-left: 20px;
+  margin-top: 0px;
+  font-family: "Space Mono", Mono;
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+#sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 10px;
+}
+
+#sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+#sideNav a:hover {
+  color: #ffffff;
+}
+
+#link a:hover {
+  color: #000000;
+  background-color: #ffffff;
+  outline-style: solid;
+  outline-color: #000000;
+  outline-width: 3px;
+}
+
+#closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 24px;
+  padding: 0;
+  border: none;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#closebtn:hover {
+  color: #ffc600;
+}
+
+#main {
+  transition: margin-right .3s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  #sideNav {padding-top: 15px;}
+  #sideNav a {font-size: 18px;}
+}
+
+#tagsMenuTitle {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Space Mono", Mono;
+  font-weight: 400;
+  font-size: 12pt;
+}
+
+.tagButton {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  /*margin-left: 20px;*/
+  margin-top: 5px;
+  font-size: 12pt;
+  font-family: "IBM Plex Sans", Sans-Serif;
+  text-align: left;
+}
+
+#indexTags {
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+#tagsRow {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  /*top: 46px;*/
+}
+
+#tags {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+#tagsTitle {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+}
+
+#tagsMod {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+}
+
+#tagsMod a {
+  background-color: transparent;
+  color: #000000;
+}
+
+#tagsMod a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#YearSection {
+  /*white-space: nowrap;*/
+}
+
+#YearTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #fc532d;
+  color: #ffffff;
+}
+
+#YearTag a, #yearSelected, #yearUnselected:hover {
+  background-color: #fc532d;
+  color: #ffffff;
+}
+
+#YearTag a:hover, #yearUnselected, #yearSelected:hover {
+  background-color: #ffffff;
+  color: #fc532d;
+}
+
+#CourseSection {
+  /*white-space: nowrap;*/
+}
+
+#CourseTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #ff8402;
+  color: #ffffff;
+}
+
+#CourseTag a, #courseSelected, #courseUnselected:hover {
+  background-color: #ff8402;
+  color: #ffffff;
+}
+
+#CourseTag a:hover, #courseUnselected, #courseSelected:hover {
+  background-color: #ffffff;
+  color: #ff8402;
+}
+
+#CompanySection {
+  /*white-space: nowrap;*/
+}
+
+#CompanyTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #a955fc;
+  color: #ffffff;
+}
+
+#CompanyTag a, #companySelected, #companyUnselected:hover {
+  background-color: #a955fc;
+  color: #ffffff;
+}
+
+#CompanyTag a:hover, #companyUnselected, #companySelected:hover {
+  background-color: #ffffff;
+  color: #a955fc;
+}
+
+#PeopleSection {
+  /*white-space: nowrap;*/
+}
+
+#PeopleTag {
+  font-family : 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #828282;
+  color: #ffffff;
+}
+
+#PeopleTag a, #peopleSelected, #peopleUnselected:hover {
+  background-color: #828282;
+  color: #ffffff;
+}
+
+#PeopleTag a:hover, #peopleUnselected, #peopleSelected:hover {
+  background-color: #ffffff;
+  color: #828282;
+}
+  
+#SkillsSection {
+  /*white-space: nowrap;*/
+}
+
+#SkillsTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #11a0ff;
+  color: #ffffff;
+}
+
+#SkillsTag a, #skillsSelected, #skillsUnselected:hover {
+  background-color: #11a0ff;
+  color: #ffffff;
+}
+
+#SkillsTag a:hover, #skillsUnselected, #skillsSelected:hover {
+  background-color: #ffffff;
+  color: #11a0ff;
+}
+
+#TagsSection {
+  /*white-space: nowrap;*/
+}
+
+#TagsTag {
+  font-family: 'IBM Plex Sans', Sans-Serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #04db85;
+  color: #ffffff;
+}
+
+#TagsTag a, #categoriesSelected, #categoriesUnselected:hover {
+  background-color: #04db85;
+  color: #ffffff;
+}
+
+#TagsTag a:hover, #categoriesUnselected, #categoriesSelected:hover {
+  background-color: #ffffff;
+  color: #04db85;
+}
+
+/*REGARDING THE TOP BAR*/
+#topBar {
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+  border-bottom-width: 3px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+/*REGARDING THE SOCIAL BAR*/
+.fa {
+  padding: 9px 25px 9px 9px;
+  font-size: 18px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px -2px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.fa:hover {
+  background-color: #ffc600;
+  color: #000000;
+}
+
+.icon-bar {
+  margin: auto;
+  width: 168px;
+}
+
+/*REGARDING IMAGE LINKS*/
+.spacer {
+  padding-bottom: 30px;
+}
+
+.left {
+  padding-left: 0px;
+}
+
+.right {
+  padding-right: 0px;
+}
+
+.top {
+  padding-top: 10px;
+}
+
+.bottom {
+  padding-bottom: 10px;
+}
+
+.imgContainer {
+  position: relative;
+  z-index: 0;
+}
+
+.linkImage {
+  display: block;
+  width: 388px;
+  height: 388px;
+}
+
+.imgOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #ffc600;
+  outline-style: solid;
+  outline-color: #000000;
+  outline-width: 3px;
+}
+
+.imgContainer:hover .imgOverlay {
+  opacity: 1;
+}
+
+.imgText {
+  color: #000000;
+  font-family: "Space Mono", Mono;
+  font-weight: 400;
+  font-size: 18pt;
+  line-height: 24pt;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

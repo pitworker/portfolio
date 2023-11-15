@@ -1,28 +1,54 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Portfolio of my work.",
   "author": "Swan Carpenter",
   "homepage": "https://thingsbyspoon.cc/",
-  "main": "index.html",
+  "license": "mixed",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.0",
+    "react-router-dom": "^6.17.0",
+    "react-scripts": "5.0.1",
+    "rehype-external-links": "^3.0.0",
+    "remark-directive": "^3.0.0",
+    "remark-gfm": "^4.0.0",
+    "unist-util-visit": "^5.0.0",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "build": "webpack --config webpack.dev-config.js",
-    "start": "webpack-dev-server",
-    "predeploy": "rm -rf dist/* && webpack --config webpack.config.js",
-    "deploy": "gh-pages -d dist"
+    "start": "react-scripts start",
+    "grok": "PORT=4040 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pitworker/portfolio.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [
-    "portfolio"
-  ],
-  "devDependencies": {
-    "copy-webpack-plugin": "^5.0.0",
-    "gh-pages": "^4.0.0",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
