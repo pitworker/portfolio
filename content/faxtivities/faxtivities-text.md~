@@ -1,9 +1,0 @@
-# Faxtivities
-
-Completed April 2020
-
-*Faxtivities* is a piece of participatory art using GPT-2 and a couple Python scripts to generate unique drawing prompts and fax them to participants, who then respond to the prompts and fax their drawings back to me. The final piece consisted of a collection of 20 drawings compiled from participants who had access to fax machines in quarantine. A few samples of this final set can be seen below.
-
-| !(prompt: Draw in spring if you can find one)[/content/faxtivities/images/small_fax_04.jpg "prompt: Draw in spring if you can find one"] | !(prompt: Inspired by fairy tales? Line up tools and sketch tools)[/content/faxtivities/images/small_fax_06.jpg "prompt: Inspired by fairy tales? Line up tools and sketch tools"] |
-| ---- | ---- |
-| !(prompt: Draws three portraits - Drawing three animals)[/content/faxtivities/images/small_fax_08.jpg "prompt:Draws three portraits - Drawing three animals"] | !(prompt: Draws three fictional skyscrapers)[/content/faxtivities/images/small_fax_09.jpg "prompt: Draws three fictional skyscrapers"] |
