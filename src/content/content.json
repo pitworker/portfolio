@@ -130,6 +130,13 @@
       "url": "mailto:swanio@duck.com",
       "icon": "fa-regular fa-envelope",
       "color": "red"
+    },
+    {
+      "id": "resume",
+      "display": "resume",
+      "url": "https://github.com/pitworker/resume/blob/main/resume.pdf",
+      "icon": "fa-regular fa-file",
+      "color": "grey"
     }
   ]
 }

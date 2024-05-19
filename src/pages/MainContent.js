@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 import {
   faInstagram,
   faGithubAlt,
@@ -17,7 +17,8 @@ const ICONS = {
   instagram: faInstagram,
   github: faGithubAlt,
   tumblr: faTumblr,
-  linkedin: faLinkedinIn
+  linkedin: faLinkedinIn,
+  resume: faFile
 };
 
 const ListWorkItems = (workCategory) => {
