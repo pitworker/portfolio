@@ -80,19 +80,19 @@
   ],
   "reference": {
     "art": {
-      "id": "pleiades",
+      "id": "art",
       "title": "Pleiades",
       "author": "James Turrell"
     },
     "book": {
-      "id": "craeft",
-      "title": "Cræft",
-      "author": "Alexander Langlands"
+      "id": "book",
+      "title": "Future Histories",
+      "author": "Lizzie O'Shea"
     },
     "music": {
-      "id": "fauna",
-      "title": "Fauna",
-      "author": "Haken"
+      "id": "music",
+      "title": "Сердце не бьётся",
+      "author": "Green Apelsin"
     }
   },
   "social": [
