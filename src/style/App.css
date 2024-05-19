@@ -138,7 +138,7 @@ code {
   line-height: 22px;
   letter-spacing: 0.065rem;
   color: var(--magenta);
-  background-color: var(--bright-grey);
+  /* background-color: var(--bright-grey); */
 }
 
 img {

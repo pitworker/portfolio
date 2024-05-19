@@ -97,33 +97,33 @@
 
 .red code {
   color: var(--red);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
 .green code {
   color: var(--green);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
 .blue code {
   color: var(--blue);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
 .cyan code {
   color: var(--cyan);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
 .magenta code {
   color: var(--magenta);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
 .yellow code {
   color: var(--yellow);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
 .grey code {
   color: var(--grey);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
 .black code {
   color: var(--black);
-  background: var(--bright-grey);
+  /* background: var(--bright-grey); */
 }
