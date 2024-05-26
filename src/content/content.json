@@ -80,19 +80,19 @@
   ],
   "reference": {
     "art": {
-      "id": "pleiades",
+      "id": "art",
       "title": "Pleiades",
       "author": "James Turrell"
     },
     "book": {
-      "id": "craeft",
-      "title": "Cræft",
-      "author": "Alexander Langlands"
+      "id": "book",
+      "title": "Future Histories",
+      "author": "Lizzie O'Shea"
     },
     "music": {
-      "id": "fauna",
-      "title": "Fauna",
-      "author": "Haken"
+      "id": "music",
+      "title": "Multitude",
+      "author": "Stromae"
     }
   },
   "social": [
@@ -130,6 +130,13 @@
       "url": "mailto:swanio@duck.com",
       "icon": "fa-regular fa-envelope",
       "color": "red"
+    },
+    {
+      "id": "resume",
+      "display": "resume",
+      "url": "https://github.com/pitworker/resume/blob/main/resume.pdf",
+      "icon": "fa-regular fa-file",
+      "color": "grey"
     }
   ]
 }

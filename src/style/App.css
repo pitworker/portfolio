@@ -5,7 +5,7 @@
   --bright-cyan: #33c7de;
   --bright-magenta: #e16dee;
   --bright-yellow: #ffba00;
-  --bright-grey: #dadada;
+  --bright-grey: #b3b5b4;
   --red: #fa1644;
   --green: #26a269;
   --blue: #12488b;
@@ -138,7 +138,7 @@ code {
   line-height: 22px;
   letter-spacing: 0.065rem;
   color: var(--magenta);
-  background-color: var(--bright-grey);
+  /* background-color: var(--bright-grey); */
 }
 
 img {
