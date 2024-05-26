@@ -8,5 +8,4 @@ In addition to those I've discussed in-depth, I've led teams of developers and w
 - [Multiple interactive exhibits in the Google Store in New York City](https://www.deeplocal.com/google-store-chelsea)
 - [A generative, time-based installation for a 24-hour pop-up in downtown Santa Monica, promoting the new season of Netflix's *Stranger Things*](https://www.deeplocal.com/netflix-stranger-things-clock)
 - [A live-animated digital concierve, part of Doodles' award-winning Genesis Factory activation at NFT.NYC 2022](https://www.deeplocal.com/doodles-nftnyc)
-- A server for a MIDI device, a Linux native interface, and an iPad web app that concurrently acce
-ss and modify a shared set of user data for a mental health activation for Highmark
+- A server for a MIDI device, a Linux native interface, and an iPad web app that concurrently access and modify a shared set of user data for a mental health activation for Highmark
