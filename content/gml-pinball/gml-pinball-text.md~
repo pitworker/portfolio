@@ -1,0 +1,13 @@
+# Google Marketing Live Pinball Machines
+
+Completed May 2023
+
+Created with Deeplocal for Google
+
+## Overview
+
+Google approached Deeplocal to create the centerpiece for its AI Pavilion at Google Marketing Live 2023. I was brought onto the project as software lead during the concept development phase and saw it through to the machines' permanent re-installation after the conclusion of the event. Over the course of six weeks, I led a team of three developers to build a game for a trio of bespoke pinball machines.
+
+## Architecture and Process
+
+The software components for the pinball machines encompassed the game mechanics, score
