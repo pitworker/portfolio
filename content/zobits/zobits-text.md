@@ -47,7 +47,7 @@ The wider *Zobits* ecosystem contains 16 species of plants, animals, fungi, and 
 
 ## Creative Context
 
-*Zobits* can be categorized squarely under the genres of toys-to-life and slow games. The toy's digital ecosystem also draws direct inspiration from the algorithmic environments and societies of Max Bittker's [*orb.farm*](https://orb.farm/) and Ian cheng's [*Emissaries*](http://iancheng.com/emissaries).
+*Zobits* can be categorized squarely under the genres of toys-to-life and slow games. The toy's digital ecosystem also draws direct inspiration from the algorithmic environments and societies of Max Bittker's [*orb.farm*](https://orb.farm/) and Ian Cheng's [*Emissaries*](http://iancheng.com/emissaries).
 
 ## Attributions
 
