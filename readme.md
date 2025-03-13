@@ -19,6 +19,7 @@ This repository uses a mixed license. Licenses are assigned to different parts o
 [^3]: *Typefaces* are defined here as all files located within the `./src/fonts/` directory.
 
 [^4]: *Content related to collaborative and professional projects* is defined here as **all** files located within the following directories:
+  `./public/content/gemini-live-lounge`
   `./public/content/cloud-next-postcards`
   `./public/content/doodles-nftnyc`
   `./public/content/gml-pinball`
@@ -28,7 +29,7 @@ This repository uses a mixed license. Licenses are assigned to different parts o
   `./public/content/lollipop-licker`
   `./public/content/moderation-workstation`
   `./public/content/zobits`
-`.  /public/content/zooid`
+  `./public/content/zooid`
 
 ## Running the app
 

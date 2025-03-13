@@ -50,6 +50,13 @@
       "category": "personal"
     },
     {
+      "id": "gemini-live-lounge",
+      "title": "Gemini Live Lounge",
+      "color": "magenta",
+      "description": "An AI-powered mobile webapp for Google that generates custom magazine covers",
+      "category": "professional"
+    },
+    {
       "id": "gml-pinball",
       "title": "Google Marketing Live Pinball",
       "color": "green",
@@ -86,13 +93,13 @@
     },
     "book": {
       "id": "book",
-      "title": "The Politics of Design",
-      "author": "Ruben Pater"
+      "title": "Girlfriends",
+      "author": "Emily Zhou"
     },
     "music": {
       "id": "music",
-      "title": "Jinkougaku",
-      "author": "Zutomayo"
+      "title": "Les Chants de l'Aurore",
+      "author": "Alcest"
     }
   },
   "social": [

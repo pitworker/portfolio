@@ -117,7 +117,7 @@ const MainContent = () => {
         </div>
         <div className="bottom-stamp">
           <div>
-            this site was written by Swan in 2023 using React and Markdown
+            this site was written by Swan in 2025 using React and Markdown
           </div>
           <div>
             {"the source code can be found "}
